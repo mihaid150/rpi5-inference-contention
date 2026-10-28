@@ -32,6 +32,8 @@ Install the host build prerequisites `build-essential`, `cmake`, `git` and
 importance matrix from `assets/calibration.txt`, then produces Q4_K_M with
 one quantization thread. The calibration text is frozen from the original
 19 CoQA training conversations and is separate from the six E2/E3 questions.
+Its original whitespace is retained because it is part of the calibrated byte
+sequence; `.gitattributes` prevents line-ending conversion for this fixture.
 
 Conversion and quantization can differ across toolchains and platforms.
 The release has not yet rebuilt the entire model from scratch to establish
