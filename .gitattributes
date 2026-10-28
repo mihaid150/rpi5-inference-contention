@@ -10,3 +10,5 @@ paper/*.sty -text
 paper/*.bst -text
 paper/*.sty whitespace=-blank-at-eol,-blank-at-eof
 paper/*.bst whitespace=-blank-at-eol,-blank-at-eof
+paper/*.sty whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
+paper/*.bst whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
