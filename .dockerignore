@@ -1,0 +1,7 @@
+*
+!deploy/
+!deploy/Dockerfile
+!scripts/
+!scripts/**
+!requirements.txt
+**/__pycache__

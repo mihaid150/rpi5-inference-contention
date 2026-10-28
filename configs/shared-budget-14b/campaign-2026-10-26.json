@@ -1,0 +1,720 @@
+{
+  "schema": 1,
+  "status": "frozen-schedule",
+  "model": "Qwen2.5-14B Q4_K_M",
+  "model_sha256": "8123a526b3c9b9eeda6cb1dd3af78bd1de0da9af2cef8259f52c3e0a8cd3cebd",
+  "runtime_revision": "838374375cb8c467c33c263be4801c19d1089763",
+  "cpu_budget": 4,
+  "memory_safety_cap_gib": 12,
+  "deadline_hours": 24,
+  "baseline": {
+    "microbatch": 512,
+    "logical_batch": 512,
+    "kv": "f16",
+    "flash": "auto",
+    "repack": true,
+    "slots": 1,
+    "context": 2048,
+    "prompt_cache": false,
+    "greedy": true,
+    "max_new_tokens": 64
+  },
+  "policies": {
+    "shared": {
+      "llm_threads_prefill": 4,
+      "llm_threads_decode": 2,
+      "encoder_threads": 2,
+      "affinity": "same-four-cpus"
+    },
+    "partition-2-2": {
+      "llm_threads_prefill": 2,
+      "llm_threads_decode": 2,
+      "encoder_threads": 2,
+      "affinity": "disjoint-2-plus-2"
+    },
+    "partition-3-1": {
+      "llm_threads_prefill": 3,
+      "llm_threads_decode": 2,
+      "encoder_threads": 1,
+      "affinity": "disjoint-3-plus-1"
+    },
+    "deferred": {
+      "llm_threads_prefill": 4,
+      "llm_threads_decode": 2,
+      "encoder_threads": 2,
+      "update_start": "after-current-completion"
+    }
+  },
+  "encoder": {
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "batch": 4,
+    "interop_threads": 1,
+    "max_chunk_tokens": 256
+  },
+  "stages": [
+    {
+      "name": "diagnosis",
+      "count": 27
+    },
+    {
+      "name": "regimes",
+      "count": 36
+    },
+    {
+      "name": "prediction-check",
+      "count": 12
+    }
+  ],
+  "timing_holdout_only": true,
+  "independent_semantic_review": "pending",
+  "rows": [
+    {
+      "id": "diagnosis-001",
+      "stage": "diagnosis",
+      "block": 1,
+      "policy": "update-only",
+      "update": "incremental",
+      "fixture": null
+    },
+    {
+      "id": "diagnosis-002",
+      "stage": "diagnosis",
+      "block": 1,
+      "policy": "inference-only",
+      "update": null,
+      "fixture": "dev-shards"
+    },
+    {
+      "id": "diagnosis-003",
+      "stage": "diagnosis",
+      "block": 1,
+      "policy": "shared",
+      "update": "incremental",
+      "fixture": "dev-shards"
+    },
+    {
+      "id": "diagnosis-004",
+      "stage": "diagnosis",
+      "block": 1,
+      "policy": "partition-2-2",
+      "update": "incremental",
+      "fixture": "dev-shards"
+    },
+    {
+      "id": "diagnosis-005",
+      "stage": "diagnosis",
+      "block": 1,
+      "policy": "partition-3-1",
+      "update": "incremental",
+      "fixture": "dev-shards"
+    },
+    {
+      "id": "diagnosis-006",
+      "stage": "diagnosis",
+      "block": 1,
+      "policy": "inference-only",
+      "update": null,
+      "fixture": "eval-original-u3"
+    },
+    {
+      "id": "diagnosis-007",
+      "stage": "diagnosis",
+      "block": 1,
+      "policy": "shared",
+      "update": "incremental",
+      "fixture": "eval-original-u3"
+    },
+    {
+      "id": "diagnosis-008",
+      "stage": "diagnosis",
+      "block": 1,
+      "policy": "partition-2-2",
+      "update": "incremental",
+      "fixture": "eval-original-u3"
+    },
+    {
+      "id": "diagnosis-009",
+      "stage": "diagnosis",
+      "block": 1,
+      "policy": "partition-3-1",
+      "update": "incremental",
+      "fixture": "eval-original-u3"
+    },
+    {
+      "id": "diagnosis-010",
+      "stage": "diagnosis",
+      "block": 2,
+      "policy": "update-only",
+      "update": "incremental",
+      "fixture": null
+    },
+    {
+      "id": "diagnosis-011",
+      "stage": "diagnosis",
+      "block": 2,
+      "policy": "shared",
+      "update": "incremental",
+      "fixture": "dev-shards"
+    },
+    {
+      "id": "diagnosis-012",
+      "stage": "diagnosis",
+      "block": 2,
+      "policy": "partition-2-2",
+      "update": "incremental",
+      "fixture": "dev-shards"
+    },
+    {
+      "id": "diagnosis-013",
+      "stage": "diagnosis",
+      "block": 2,
+      "policy": "partition-3-1",
+      "update": "incremental",
+      "fixture": "dev-shards"
+    },
+    {
+      "id": "diagnosis-014",
+      "stage": "diagnosis",
+      "block": 2,
+      "policy": "inference-only",
+      "update": null,
+      "fixture": "dev-shards"
+    },
+    {
+      "id": "diagnosis-015",
+      "stage": "diagnosis",
+      "block": 2,
+      "policy": "shared",
+      "update": "incremental",
+      "fixture": "eval-original-u3"
+    },
+    {
+      "id": "diagnosis-016",
+      "stage": "diagnosis",
+      "block": 2,
+      "policy": "partition-2-2",
+      "update": "incremental",
+      "fixture": "eval-original-u3"
+    },
+    {
+      "id": "diagnosis-017",
+      "stage": "diagnosis",
+      "block": 2,
+      "policy": "partition-3-1",
+      "update": "incremental",
+      "fixture": "eval-original-u3"
+    },
+    {
+      "id": "diagnosis-018",
+      "stage": "diagnosis",
+      "block": 2,
+      "policy": "inference-only",
+      "update": null,
+      "fixture": "eval-original-u3"
+    },
+    {
+      "id": "diagnosis-019",
+      "stage": "diagnosis",
+      "block": 3,
+      "policy": "update-only",
+      "update": "incremental",
+      "fixture": null
+    },
+    {
+      "id": "diagnosis-020",
+      "stage": "diagnosis",
+      "block": 3,
+      "policy": "partition-2-2",
+      "update": "incremental",
+      "fixture": "dev-shards"
+    },
+    {
+      "id": "diagnosis-021",
+      "stage": "diagnosis",
+      "block": 3,
+      "policy": "partition-3-1",
+      "update": "incremental",
+      "fixture": "dev-shards"
+    },
+    {
+      "id": "diagnosis-022",
+      "stage": "diagnosis",
+      "block": 3,
+      "policy": "inference-only",
+      "update": null,
+      "fixture": "dev-shards"
+    },
+    {
+      "id": "diagnosis-023",
+      "stage": "diagnosis",
+      "block": 3,
+      "policy": "shared",
+      "update": "incremental",
+      "fixture": "dev-shards"
+    },
+    {
+      "id": "diagnosis-024",
+      "stage": "diagnosis",
+      "block": 3,
+      "policy": "partition-2-2",
+      "update": "incremental",
+      "fixture": "eval-original-u3"
+    },
+    {
+      "id": "diagnosis-025",
+      "stage": "diagnosis",
+      "block": 3,
+      "policy": "partition-3-1",
+      "update": "incremental",
+      "fixture": "eval-original-u3"
+    },
+    {
+      "id": "diagnosis-026",
+      "stage": "diagnosis",
+      "block": 3,
+      "policy": "inference-only",
+      "update": null,
+      "fixture": "eval-original-u3"
+    },
+    {
+      "id": "diagnosis-027",
+      "stage": "diagnosis",
+      "block": 3,
+      "policy": "shared",
+      "update": "incremental",
+      "fixture": "eval-original-u3"
+    },
+    {
+      "id": "regimes-001",
+      "stage": "regimes",
+      "block": 1,
+      "fixture": "newdoc-00",
+      "update": "incremental",
+      "fresh_arrival_s": 0,
+      "policy": "shared"
+    },
+    {
+      "id": "regimes-002",
+      "stage": "regimes",
+      "block": 1,
+      "fixture": "newdoc-00",
+      "update": "incremental",
+      "fresh_arrival_s": 0,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "regimes-003",
+      "stage": "regimes",
+      "block": 1,
+      "fixture": "newdoc-00",
+      "update": "incremental",
+      "fresh_arrival_s": 0,
+      "policy": "deferred"
+    },
+    {
+      "id": "regimes-004",
+      "stage": "regimes",
+      "block": 1,
+      "fixture": "newdoc-00",
+      "update": "incremental",
+      "fresh_arrival_s": 90,
+      "policy": "shared"
+    },
+    {
+      "id": "regimes-005",
+      "stage": "regimes",
+      "block": 1,
+      "fixture": "newdoc-00",
+      "update": "incremental",
+      "fresh_arrival_s": 90,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "regimes-006",
+      "stage": "regimes",
+      "block": 1,
+      "fixture": "newdoc-00",
+      "update": "incremental",
+      "fresh_arrival_s": 90,
+      "policy": "deferred"
+    },
+    {
+      "id": "regimes-007",
+      "stage": "regimes",
+      "block": 1,
+      "fixture": "newdoc-00",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 0,
+      "policy": "shared"
+    },
+    {
+      "id": "regimes-008",
+      "stage": "regimes",
+      "block": 1,
+      "fixture": "newdoc-00",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 0,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "regimes-009",
+      "stage": "regimes",
+      "block": 1,
+      "fixture": "newdoc-00",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 0,
+      "policy": "deferred"
+    },
+    {
+      "id": "regimes-010",
+      "stage": "regimes",
+      "block": 1,
+      "fixture": "newdoc-00",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 90,
+      "policy": "shared"
+    },
+    {
+      "id": "regimes-011",
+      "stage": "regimes",
+      "block": 1,
+      "fixture": "newdoc-00",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 90,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "regimes-012",
+      "stage": "regimes",
+      "block": 1,
+      "fixture": "newdoc-00",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 90,
+      "policy": "deferred"
+    },
+    {
+      "id": "regimes-013",
+      "stage": "regimes",
+      "block": 2,
+      "fixture": "newdoc-02",
+      "update": "incremental",
+      "fresh_arrival_s": 0,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "regimes-014",
+      "stage": "regimes",
+      "block": 2,
+      "fixture": "newdoc-02",
+      "update": "incremental",
+      "fresh_arrival_s": 0,
+      "policy": "deferred"
+    },
+    {
+      "id": "regimes-015",
+      "stage": "regimes",
+      "block": 2,
+      "fixture": "newdoc-02",
+      "update": "incremental",
+      "fresh_arrival_s": 0,
+      "policy": "shared"
+    },
+    {
+      "id": "regimes-016",
+      "stage": "regimes",
+      "block": 2,
+      "fixture": "newdoc-02",
+      "update": "incremental",
+      "fresh_arrival_s": 90,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "regimes-017",
+      "stage": "regimes",
+      "block": 2,
+      "fixture": "newdoc-02",
+      "update": "incremental",
+      "fresh_arrival_s": 90,
+      "policy": "deferred"
+    },
+    {
+      "id": "regimes-018",
+      "stage": "regimes",
+      "block": 2,
+      "fixture": "newdoc-02",
+      "update": "incremental",
+      "fresh_arrival_s": 90,
+      "policy": "shared"
+    },
+    {
+      "id": "regimes-019",
+      "stage": "regimes",
+      "block": 2,
+      "fixture": "newdoc-02",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 0,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "regimes-020",
+      "stage": "regimes",
+      "block": 2,
+      "fixture": "newdoc-02",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 0,
+      "policy": "deferred"
+    },
+    {
+      "id": "regimes-021",
+      "stage": "regimes",
+      "block": 2,
+      "fixture": "newdoc-02",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 0,
+      "policy": "shared"
+    },
+    {
+      "id": "regimes-022",
+      "stage": "regimes",
+      "block": 2,
+      "fixture": "newdoc-02",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 90,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "regimes-023",
+      "stage": "regimes",
+      "block": 2,
+      "fixture": "newdoc-02",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 90,
+      "policy": "deferred"
+    },
+    {
+      "id": "regimes-024",
+      "stage": "regimes",
+      "block": 2,
+      "fixture": "newdoc-02",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 90,
+      "policy": "shared"
+    },
+    {
+      "id": "regimes-025",
+      "stage": "regimes",
+      "block": 3,
+      "fixture": "newdoc-04",
+      "update": "incremental",
+      "fresh_arrival_s": 0,
+      "policy": "deferred"
+    },
+    {
+      "id": "regimes-026",
+      "stage": "regimes",
+      "block": 3,
+      "fixture": "newdoc-04",
+      "update": "incremental",
+      "fresh_arrival_s": 0,
+      "policy": "shared"
+    },
+    {
+      "id": "regimes-027",
+      "stage": "regimes",
+      "block": 3,
+      "fixture": "newdoc-04",
+      "update": "incremental",
+      "fresh_arrival_s": 0,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "regimes-028",
+      "stage": "regimes",
+      "block": 3,
+      "fixture": "newdoc-04",
+      "update": "incremental",
+      "fresh_arrival_s": 90,
+      "policy": "deferred"
+    },
+    {
+      "id": "regimes-029",
+      "stage": "regimes",
+      "block": 3,
+      "fixture": "newdoc-04",
+      "update": "incremental",
+      "fresh_arrival_s": 90,
+      "policy": "shared"
+    },
+    {
+      "id": "regimes-030",
+      "stage": "regimes",
+      "block": 3,
+      "fixture": "newdoc-04",
+      "update": "incremental",
+      "fresh_arrival_s": 90,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "regimes-031",
+      "stage": "regimes",
+      "block": 3,
+      "fixture": "newdoc-04",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 0,
+      "policy": "deferred"
+    },
+    {
+      "id": "regimes-032",
+      "stage": "regimes",
+      "block": 3,
+      "fixture": "newdoc-04",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 0,
+      "policy": "shared"
+    },
+    {
+      "id": "regimes-033",
+      "stage": "regimes",
+      "block": 3,
+      "fixture": "newdoc-04",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 0,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "regimes-034",
+      "stage": "regimes",
+      "block": 3,
+      "fixture": "newdoc-04",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 90,
+      "policy": "deferred"
+    },
+    {
+      "id": "regimes-035",
+      "stage": "regimes",
+      "block": 3,
+      "fixture": "newdoc-04",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 90,
+      "policy": "shared"
+    },
+    {
+      "id": "regimes-036",
+      "stage": "regimes",
+      "block": 3,
+      "fixture": "newdoc-04",
+      "update": "full-rebuild",
+      "fresh_arrival_s": 90,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "prediction-check-001",
+      "stage": "prediction-check",
+      "block": 1,
+      "fixture": "newdoc-06",
+      "update": "incremental",
+      "fresh_arrival_s": 30,
+      "policy": "shared"
+    },
+    {
+      "id": "prediction-check-002",
+      "stage": "prediction-check",
+      "block": 1,
+      "fixture": "newdoc-06",
+      "update": "incremental",
+      "fresh_arrival_s": 30,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "prediction-check-003",
+      "stage": "prediction-check",
+      "block": 1,
+      "fixture": "newdoc-06",
+      "update": "incremental",
+      "fresh_arrival_s": 60,
+      "policy": "shared"
+    },
+    {
+      "id": "prediction-check-004",
+      "stage": "prediction-check",
+      "block": 1,
+      "fixture": "newdoc-06",
+      "update": "incremental",
+      "fresh_arrival_s": 60,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "prediction-check-005",
+      "stage": "prediction-check",
+      "block": 2,
+      "fixture": "newdoc-08",
+      "update": "incremental",
+      "fresh_arrival_s": 30,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "prediction-check-006",
+      "stage": "prediction-check",
+      "block": 2,
+      "fixture": "newdoc-08",
+      "update": "incremental",
+      "fresh_arrival_s": 30,
+      "policy": "shared"
+    },
+    {
+      "id": "prediction-check-007",
+      "stage": "prediction-check",
+      "block": 2,
+      "fixture": "newdoc-08",
+      "update": "incremental",
+      "fresh_arrival_s": 60,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "prediction-check-008",
+      "stage": "prediction-check",
+      "block": 2,
+      "fixture": "newdoc-08",
+      "update": "incremental",
+      "fresh_arrival_s": 60,
+      "policy": "shared"
+    },
+    {
+      "id": "prediction-check-009",
+      "stage": "prediction-check",
+      "block": 3,
+      "fixture": "newdoc-10",
+      "update": "incremental",
+      "fresh_arrival_s": 30,
+      "policy": "shared"
+    },
+    {
+      "id": "prediction-check-010",
+      "stage": "prediction-check",
+      "block": 3,
+      "fixture": "newdoc-10",
+      "update": "incremental",
+      "fresh_arrival_s": 30,
+      "policy": "partition-2-2"
+    },
+    {
+      "id": "prediction-check-011",
+      "stage": "prediction-check",
+      "block": 3,
+      "fixture": "newdoc-10",
+      "update": "incremental",
+      "fresh_arrival_s": 60,
+      "policy": "shared"
+    },
+    {
+      "id": "prediction-check-012",
+      "stage": "prediction-check",
+      "block": 3,
+      "fixture": "newdoc-10",
+      "update": "incremental",
+      "fresh_arrival_s": 60,
+      "policy": "partition-2-2"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "dataset": "CoQA training",
+  "source_ids": [
+    "3ve8ayvf8mx6kfmvw6qjlcy49lyf8o",
+    "3c6fju71tqtai3a34zjc6pn9dxjuy4",
+    "3q5zz9zevofeiit6qudaz07rkqq58z",
+    "3zazr5xv01ie1z38eu0vqqa5csaczz",
+    "31lvtdxbl7ay2cbnhqzh76ytw9drlm",
+    "3zr9aiqjub9e4ak3hlhl1tvv1xy04j",
+    "3tayzsbpll8425psm9hhik4gcb5s2m",
+    "3uwn2hhpuy50rrel8sf1a87eoh7snb",
+    "3copxfw7xbc26tdqjyjrnblz6rcpkh",
+    "3efvcay5l39mph8rfwh40aqw343j88",
+    "3lj7ur74rhdhp6cairjjc5r8a2j4nx",
+    "3w2lolrxlbfni6t5wqngs6le78akrc",
+    "36nemu28xfdngqaugwa2uilzoskmwm",
+    "35gmh2sv3ehhzt9f8cv90g34dzqeow",
+    "3jw0ylfxrtgjl248kygp3gnqn7oww4",
+    "3ftyuglfsulqzdpx72oqlslswtcd5r",
+    "3x87c8jfv6bluordok7ie22jshoqs3",
+    "3txd01zld4hukwwjfsv5q0j2ixa4ul",
+    "36tfcyns44agdce9z4qb4wrahjpxh2"
+  ],
+  "corpus_sha256": "2340c3279d6352a5fc52863c3f34c249164d9b6973a8a607d0598067c5fde0bd"
+}

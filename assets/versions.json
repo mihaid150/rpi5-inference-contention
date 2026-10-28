@@ -1,0 +1,19 @@
+{
+  "runtime_revision": "838374375cb8c467c33c263be4801c19d1089763",
+  "qwen_revision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+  "minilm_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "model_sha256": "8123a526b3c9b9eeda6cb1dd3af78bd1de0da9af2cef8259f52c3e0a8cd3cebd",
+  "model_bytes": 8787386464,
+  "f16_sha256": "fec629165083c146cd0987e049388794e70c8acf25dc1ff0057e91a496b09d8a",
+  "imatrix_sha256": "043b54e48aaea482abb4fd6d49a4a398e5fcb9e130c306799d82f084b42a7cba",
+  "calibration_sha256": "2340c3279d6352a5fc52863c3f34c249164d9b6973a8a607d0598067c5fde0bd",
+  "official_evaluator_sha256": "710840ce2c2c61716334c056777032f24660b83eb9869a451036e6a24d8103c4",
+  "minilm_files": {
+    "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+    "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+    "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+    "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+    "model.safetensors": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+    "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41"
+  }
+}

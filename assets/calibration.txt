@@ -1,0 +1,746 @@
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER XI Peter Rabbit and Jerry Muskrat Are Puzzled. 
+
+Jerry Muskrat was more and more sure that his big cousin, Paddy the Beaver, didn't know quite so much as he might about house-building. Jerry would have liked to offer some suggestions, but he didn't quite dare. You see, he was very anxious not to displease his big cousin. But he felt that he simply had got to speak his mind to someone, so he swam across to where he had seen Peter Rabbit almost every night since Paddy began to build. Sure enough, Peter was there, sitting up very straight and staring with big round eyes at the platform of mud and sticks out in the water where Paddy the Beaver was at work. 
+
+"Well, Peter, what do you think of it?" asked Jerry 
+
+"What is it?" asked Peter innocently. "Is it another dam?" 
+
+Jerry threw back his head and laughed and laughed. 
+
+Peter looked at him suspiciously. "I don't see anything to laugh at," said he. 
+
+"Why, it's a house, you stupid. It's Paddy's new house," replied Jerry, wiping the tears of laughter from his eyes. 
+
+"I'm not stupid!" retorted Peter. "How was I to know that that pile of mud and sticks is meant for a house? It certainly doesn't look it. Where is the door?" 
+
+"To tell you the truth, I don't think it is much of a house myself," replied Jerry. "It has got a door, all right. In fact it has got three. You can't see them because they are under water, and there is a passage from each right up through that platform of mud and sticks, which is the foundation of the house. It really is a very fine foundation, Peter; it really is. But what I can't understand is what Paddy is thinking of by building that great pile of mud right in the middle. When he gets his walls built, where will his bedroom be? There won't be any room at all. It won't be a house at all--just a big useless pile of sticks and mud. 
+
+Question: Who was laughing a bunch?<|im_end|>
+<|im_start|>assistant
+Jerry<|im_end|>
+<|im_start|>user
+Question: Who was annoyed by it?<|im_end|>
+<|im_start|>assistant
+Peter<|im_end|>
+<|im_start|>user
+Question: What were they talking of at that moment?<|im_end|>
+<|im_start|>assistant
+Paddy's new house<|im_end|>
+<|im_start|>user
+Question: What did the annoyed boy this is was at first?<|im_end|>
+<|im_start|>assistant
+Another dam<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER VIII 
+
+A SCENE IN THE GYMNASIUM 
+
+Lew Flapp spoke in such a loud, overbearing voice that a crowd began to collect in the corner where the punching apparatus was located. 
+
+"What's up?" asked more than one cadet. 
+
+"Lew Flapp and Dick Rover are going to try to beat each other at punching the bag," was the report. 
+
+"Rover will have to do his best then. Flapp is a prime one at bag punching. It's about the only thing he can do real well." 
+
+"This isn't a fair contest," put in another student. "Flapp took lessons from a man who used to do bag-punching on the vaudeville stage." 
+
+"If that's so I wouldn't try to beat him, if I was Dick Rover." 
+
+Dick heard some of this talk but said nothing. He was soon ready for the trial, and stepping up to the punching bag he began to undo the top strap. 
+
+"That bag is all right," blustered Lew Flapp. 
+
+"Yes--for you," answered Dick. "But you must remember, I am not quite so tall. I must have it an inch lower." 
+
+"It seems to me you are mighty particular." 
+
+"I have a right to be. When you do your punching you can raise the bag as high as you please." 
+
+"That's the talk," came from several standing near. 
+
+By this time Larry was on the floor again, and he came up to learn what Dick was doing. 
+
+"Dick, they tell me he is the best bag-puncher here," whispered Larry. 
+
+"I can't help it." 
+
+Question: What is the title?<|im_end|>
+<|im_start|>assistant
+A SCENE IN THE GYMNASIUM<|im_end|>
+<|im_start|>user
+Question: Who was being overly vocal?<|im_end|>
+<|im_start|>assistant
+Lew Flapp<|im_end|>
+<|im_start|>user
+Question: What did it cause to form<|im_end|>
+<|im_start|>assistant
+a crowd<|im_end|>
+<|im_start|>user
+Question: What was about to happen?<|im_end|>
+<|im_start|>assistant
+"Lew Flapp and Dick Rover are competing<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER XXV 
+
+WINNING THE CONTESTS 
+
+Powell was again the first to throw the hammer and this time it went two feet beyond his first mark. 
+
+"Good for you, Songbird!" said Tom. "I wish you had made it a yard." 
+
+Jackson came up with a scowling face. He did his best, but this time fell behind Powell by four inches. 
+
+"You ought to have stuck to the other hammer, Jackson," laughed the youth who composed songs. 
+
+"Don't you throw that up to me!" whispered Jackson fiercely. "If you do I'll hammer you for it." 
+
+"Is that meant for a pun, Jackson?" 
+
+"No, it ain't. I won't stand being slurred. I'll pound you good." 
+
+"With the hammer?" 
+
+"No, with my fists." 
+
+"Really? Well, you'll have to spell able first." Tom came next, as before, and now the hammer flew out four feet and nine inches beyond his first mark. 
+
+"That shows what the other hammer can do," said Major Larry. 
+
+Larson was as much out of sorts as Jackson, but nevertheless he resolved to do his best to win the contest. Up went the hammer with a mighty swing and circled through the air. But the throw was behind that of Tom by fourteen inches. 
+
+"Hurrah! Tom Rover wins!" was the cry, and many rushed forward to congratulate him, while Larson and Jackson retired as quickly as they could and in great disgust. 
+
+The next contest was a dash of two hundred yards and was won by a boy named Bird. 
+
+"He's a bird!" sang out Tom loudly, and at this the crowd laughed heartily. 
+
+Question: Who fell behind Powell by four inches?<|im_end|>
+<|im_start|>assistant
+Jackson<|im_end|>
+<|im_start|>user
+Question: Who threw the hammer first?<|im_end|>
+<|im_start|>assistant
+Powell<|im_end|>
+<|im_start|>user
+Question: Who came next?<|im_end|>
+<|im_start|>assistant
+Jackson<|im_end|>
+<|im_start|>user
+Question: What is the name of the chapter?<|im_end|>
+<|im_start|>assistant
+WINNING THE CONTESTS<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER XXVIII. 
+
+A MEETING. 
+
+About a week after the dissolution of the Crooked Creek Company, Harry was riding over from Hetertown, and had nearly reached the creek on his way home, when he met George Purvis. 
+
+This was their first meeting since their fight, for George had been away on a visit to some relatives in Richmond. 
+
+When Harry saw George riding slowly toward him, he felt very much embarrassed, and very much annoyed because he was embarrassed. 
+
+How should he meet George? What should he say; or should he say anything? 
+
+He did not want to appear anxious to "make up" with him, nor did he want to seem as if he bore malice toward him. If he only knew how George felt about it! 
+
+As it was, he wished he had stopped somewhere on the road. He had thought of stopping at the mill--why had he not? That would just have given George time to pass. 
+
+Both boys appeared to be riding as slowly as their horses would consent to go, and yet when they met, Harry had not half made up his mind what he would say, or how he should say it, or whether it would be better or not to say anything. 
+
+"Hello, George!" said he, quite unpremeditatedly. 
+
+"Hello!" said George, reining in his horse "Where are you going?" 
+
+"Going home," said Harry, also stopping in the road. 
+
+Thus the quarrel came to an end. 
+
+"So you've sold the telegraph?" said George. 
+
+"Yes," said Harry. "And I think we made a pretty good bargain. I didn't think we'd do so well when we started." 
+
+Question: what company disolved<|im_end|>
+<|im_start|>assistant
+the Crooked Creek Company<|im_end|>
+<|im_start|>user
+Question: who did harry meet<|im_end|>
+<|im_start|>assistant
+George Purvis.<|im_end|>
+<|im_start|>user
+Question: did they have a fight<|im_end|>
+<|im_start|>assistant
+Yes.<|im_end|>
+<|im_start|>user
+Question: who said hello first<|im_end|>
+<|im_start|>assistant
+Harry<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER XXXVI 
+
+THE CHARLATAN UNMASKED 
+
+There seemed for the next few minutes to be a somewhat singular abstention from any desire to interfere with the two people who stood in the centre of the little group, hand-in-hand. Saton, after his first speech, and after Lois had given him her hands, had turned a little defiantly toward Rochester, who remained, however, unmoved, his elbow resting upon the broad mantelpiece, his face almost expressionless. Vandermere, too, stood on one side and held his peace, though the effort with which he did so was a visible one. Lady Mary looked anxiously towards them. Pauline had shrunk back, as though something in the situation terrified her. 
+
+Even Saton himself felt that it was the silence before the storm. The courage which he had summoned up to meet a storm of disapproval, began to ebb slowly away in the face of this unnatural silence. It was clear that the onus of further speech was to rest with him. 
+
+Still retaining Lois' hand, he turned toward Rochester. 
+
+"You have forbidden me to enter your house, or to hold any communication with your ward until she was of age, Mr. Rochester," he said. "One of your conditions I have obeyed. With regard to the other, I have done as I thought fit. However, to-day she is her own mistress. She has consented to be my wife. I do not need to ask for your consent or approval. If you are not willing that she should be married from your roof, I can take her at once to the Comtesse, who is prepared to receive her." 
+
+Question: Who felt there was a silence before the storm?<|im_end|>
+<|im_start|>assistant
+Even Saton<|im_end|>
+<|im_start|>user
+Question: Who stood in the centre of the little group?<|im_end|>
+<|im_start|>assistant
+Saton and Lois<|im_end|>
+<|im_start|>user
+Question: Whose elbow was on the mantelpiece?<|im_end|>
+<|im_start|>assistant
+Rochester<|im_end|>
+<|im_start|>user
+Question: Who looked anxiously at them?<|im_end|>
+<|im_start|>assistant
+Mary<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER X. 
+
+THE VISIT TO MARY ERSKINE'S. 
+
+Malleville and Phonny arrived at Mary Erskine's about an hour after Beechnut left them. They met with no special adventures by the way, except that when they reached the great pine-tree, Phonny proposed to climb up, for the purpose of examining a small bunch which he saw upon one of the branches, which he thought was a bird's nest. It was the same pine-tree that marked the place at which a road branched off into the woods, where Mary Bell had lost her way, several years before. Malleville was very unwilling to have Phonny climb up upon such a high tree, but Phonny himself was very desirous to make the attempt. There was a log fence at the foot of the tree, and the distance was not very great from the uppermost log of the fence, to the lowermost branch of the tree. So Phonny thought that he could get up without any difficulty. 
+
+Malleville was afraid to have him try, and she said that if he did, he would be acting just as foolish as the boy that Beechnut had told them about, who nipped his own nose; and that she should not stop to see him do any such foolishness. So she walked along as fast as she could go. 
+
+Phonny unfortunately was rendered only the more determined to climb the tree by Malleville's opposition. He accordingly mounted up to the top of the fence, and thence reaching the lower branches of the tree he succeeded at length, by dint of much scrambling and struggling, in lifting himself up among them. He climbed out to the limb where he had seen the appearances of a bird's nest, but found to his disappointment that there was no bird's nest there. The bunch was only a little tuft of twigs growing out together. 
+
+Question: What is so special about the pine-tree?<|im_end|>
+<|im_start|>assistant
+It contained a possible bird's nest.<|im_end|>
+<|im_start|>user
+Question: What was the bird's nest?<|im_end|>
+<|im_start|>assistant
+Just a little tuft of twigs growing out together.<|im_end|>
+<|im_start|>user
+Question: Who found the nest?<|im_end|>
+<|im_start|>assistant
+Phonny<|im_end|>
+<|im_start|>user
+Question: Was anyone with Phonny?<|im_end|>
+<|im_start|>assistant
+Yes<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER XXX 
+
+FERN Mullins rushed into the house on a Saturday morning early in September and shrieked at Carol, "School starts next Tuesday. I've got to have one more spree before I'm arrested. Let's get up a picnic down the lake for this afternoon. Won't you come, Mrs. Kennicott, and the doctor? Cy Bogart wants to go--he's a brat but he's lively." 
+
+"I don't think the doctor can go," sedately. "He said something about having to make a country call this afternoon. But I'd love to." 
+
+"That's dandy! Who can we get?" 
+
+"Mrs. Dyer might be chaperon. She's been so nice. And maybe Dave, if he could get away from the store." 
+
+"How about Erik Valborg? I think he's got lots more style than these town boys. You like him all right, don't you?" 
+
+So the picnic of Carol, Fern, Erik, Cy Bogart, and the Dyers was not only moral but inevitable. 
+
+They drove to the birch grove on the south shore of Lake Minniemashie. Dave Dyer was his most clownish self. He yelped, jigged, wore Carol's hat, dropped an ant down Fern's back, and when they went swimming (the women modestly changing in the car with the side curtains up, the men undressing behind the bushes, constantly repeating, "Gee, hope we don't run into poison ivy"), Dave splashed water on them and dived to clutch his wife's ankle. He infected the others. Erik gave an imitation of the Greek dancers he had seen in vaudeville, and when they sat down to picnic supper spread on a lap-robe on the grass, Cy climbed a tree to throw acorns at them. 
+
+Question: what was being planned?<|im_end|>
+<|im_start|>assistant
+a picnic<|im_end|>
+<|im_start|>user
+Question: who all was invited?<|im_end|>
+<|im_start|>assistant
+Carol, Fern, Erik, Cy Bogart, and the Dyers<|im_end|>
+<|im_start|>user
+Question: what did Cy climb?<|im_end|>
+<|im_start|>assistant
+a tree<|im_end|>
+<|im_start|>user
+Question: what did he throw from it?<|im_end|>
+<|im_start|>assistant
+acorns<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER XXXI. 
+
+NELLIE ARDELL'S TROUBLES. 
+
+On the following morning Jerry went to work at the bindery as if nothing had happened. When he went in, Dick Lanning glared at our hero and stopped as if to speak, but changed his mind and walked off without saying a word. 
+
+During the day the young oarsman became much better acquainted with his work and began to like it. 
+
+That night, on leaving the bindery by the side entrance, which opened on a narrow lane, our hero saw Dick Lanning and several of his friends waiting for him. 
+
+He attempted to pass but Lenning put out his foot, and had Jerry not stopped he would have been tripped up. 
+
+"Let me pass," said he, sharply, but instead of complying, Lenning took a stand in front of him and hit the youth on the shoulder. 
+
+"I said I'd git square," he hissed, savagely. "If yer ain't afraid, stand up and fight." 
+
+"I'm not afraid," replied Jerry, and pushed him up against the wall. 
+
+Without delay a rough-and-tumble fight ensued. 
+
+"Give it to him, Dick!" 
+
+"Do the hayseed up!" 
+
+"Knock him into the middle of next week!" 
+
+These and a dozen other cries arose on the air, and the crowd kept increasing until fully a hundred spectators surrounded the pair. 
+
+Dick Lanning had caught Jerry unfairly, but the youth soon managed to shake him off, and, hauling back, gave him a clean blow on the end of his unusually long nose, which caused the blood to spurt from that organ in a stream. 
+
+Question: Are the two men in this passage friends?<|im_end|>
+<|im_start|>assistant
+no<|im_end|>
+<|im_start|>user
+Question: Who is the 'villain' in this scenario?<|im_end|>
+<|im_start|>assistant
+Dick Lanning<|im_end|>
+<|im_start|>user
+Question: And the hero?<|im_end|>
+<|im_start|>assistant
+Jerry<|im_end|>
+<|im_start|>user
+Question: Where do they work at?<|im_end|>
+<|im_start|>assistant
+the bindery<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER XI: Free. 
+
+It was late at night before Blois was reached, and having alighted at the Aigle d'Or they engaged a private room. 
+
+"Even the Duke of Chateaurouge will be satisfied," Ronald said, "that his schemes have failed, and that no more can be done just at present. It will be a bitter blow to him when those scoundrels, on their return to Paris, report their utter failure, for he must have considered it impossible that we could escape from the toils he had laid for us. I only wish that we had clear evidence that he is the author of these attempts. If so, I would go straight with Marshal Saxe and lay an accusation against him before the king; but however certain we may feel about it, we have really nothing to connect him with the affair, and it would be madness to accuse a king's favourite unless one could prove absolutely the truth of what one says. However, I hope some day that I shall get even with him. It will not be my fault if I do not." 
+
+That night Ronald and his mother debated what would be the best way to proceed in the morning, and finally they agreed that Malcolm should present himself at the prison with the order of release, and that they should remain at the hotel, to which Malcolm should bring Colonel Leslie, after breaking to him the news that his wife and son were both awaiting him. The shock, in any case, of sudden liberty, would be a severe one, and the meeting with his attached comrade would act as a preparation for that with his wife. 
+
+Question: What is the title of this chapter?<|im_end|>
+<|im_start|>assistant
+Free<|im_end|>
+<|im_start|>user
+Question: Which chapter is it?<|im_end|>
+<|im_start|>assistant
+XI<|im_end|>
+<|im_start|>user
+Question: Where did they go?<|im_end|>
+<|im_start|>assistant
+Blois<|im_end|>
+<|im_start|>user
+Question: Where did they stay?<|im_end|>
+<|im_start|>assistant
+the Aigle d'Or<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER XVI. THE SUPREME SACRIFICE 
+
+THROUGH the balance of the day and all during the long night Billy Byrne swung along his lonely way, retracing the familiar steps of the journey that had brought Barbara Harding and himself to the little island in the turbulent river. 
+
+Just before dawn he came to the edge of the clearing behind the dwelling of the late Oda Yorimoto. Somewhere within the silent village he was sure that the two prisoners lay. 
+
+During the long march he had thrashed over again and again all that the success of his rash venture would mean to him. Of all those who might conceivably stand between him and the woman he loved--the woman who had just acknowledged that she loved him--these two men were the most to be feared. 
+
+Billy Byrne did not for a moment believe that Anthony Harding would look with favor upon the Grand Avenue mucker as a prospective son-in-law. And then there was Mallory! He was sure that Barbara had loved this man, and now should he be restored to her as from the grave there seemed little doubt but that the old love would be aroused in the girl's breast. The truth of the matter was that Billy Byrne could not conceive the truth of the testimony of his own ears--even now he scarce dared believe that the wonderful Miss Harding loved him--him, the despised mucker! 
+
+But the depth of the man's love for the girl, and the genuineness of his new-found character were proven beyond question by the relentless severity with which he put away every thought of himself and the consequences to him in the matter he had undertaken. 
+
+Question: how long did the main character travel?<|im_end|>
+<|im_start|>assistant
+THROUGH the balance of the day and all during the long night<|im_end|>
+<|im_start|>user
+Question: what is the main character's first name?<|im_end|>
+<|im_start|>assistant
+Billy<|im_end|>
+<|im_start|>user
+Question: what is his last name?<|im_end|>
+<|im_start|>assistant
+Byrne<|im_end|>
+<|im_start|>user
+Question: what was his profession?<|im_end|>
+<|im_start|>assistant
+Grand Avenue mucker<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER XV 
+
+For some time after the conclusion of the race, Bashti stood talking with his head men, Agno among them. Lenerengo was similarly engaged with several old cronies. As Jerry lay off to one side where she had forgotten him, the wild-dog he had bullied on the _Arangi_ came up and sniffed at him. At first he sniffed at a distance, ready for instant flight. Then he drew cautiously closer. Jerry watched him with smouldering eyes. At the moment wild-dog's nose touched him, he uttered a warning growl. Wild-dog sprang back and whirled away in headlong flight for a score of yards before he learned that he was not pursued. 
+
+Again he came back cautiously, as it was the instinct in him to stalk wild game, crouching so close to the ground that almost his belly touched. He lifted and dropped his feet with the lithe softness of a cat, and from time to time glanced to right and to left as if in apprehension of some flank attack. A noisy outburst of boys' laughter in the distance caused him to crouch suddenly down, his claws thrust into the ground for purchase, his muscles tense springs for the leap he knew not in what direction, from the danger he knew not what that might threaten him. Then he identified the noise, know that no harm impended, and resumed his stealthy advance on the Irish terrier. 
+
+What might have happened there is no telling, for at that moment Bashti's eyes chanced to rest on the golden puppy for the first time since the capture of the _Arangi_. In the rush of events Bashti had forgotten the puppy. 
+
+Question: What had been bullied?<|im_end|>
+<|im_start|>assistant
+A wild-dog<|im_end|>
+<|im_start|>user
+Question: Who bullied it?<|im_end|>
+<|im_start|>assistant
+Jerry<|im_end|>
+<|im_start|>user
+Question: What breed was he?<|im_end|>
+<|im_start|>assistant
+Irish terrier.<|im_end|>
+<|im_start|>user
+Question: Did the wild dog approach?<|im_end|>
+<|im_start|>assistant
+Yes.<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER XXII 
+
+Northward, along the leeward coast of Malaita, the _Ariel_ worked her leisurely way, threading the colour-riotous lagoon that lay between the shore-reefs and outer-reefs, daring passages so narrow and coral-patched that Captain Winters averred each day added a thousand grey hairs to his head, and dropping anchor off every walled inlet of the outer reef and every mangrove swamp of the mainland that looked promising of cannibal life. For Harley and Villa Kennan were in no hurry. So long as the way was interesting, they dared not how long it proved from anywhere to anywhere. 
+
+During this time Jerry learned a new name for himself--or, rather, an entire series of names for himself. This was because of an aversion on Harley Kennan's part against renaming a named thing. 
+
+"A name he must have had," he argued to Villa. "Haggin must have named him before he sailed on the _Arangi_. Therefore, nameless he must be until we get back to Tulagi and find out his real name." 
+
+"What's in a name?" Villa had begun to tease. 
+
+"Everything," her husband retorted. "Think of yourself, shipwrecked, called by your rescuers 'Mrs. Riggs,' or 'Mademoiselle de Maupin,' or just plain 'Topsy.' And think of me being called 'Benedict Arnold,' or ' Judas,' or . . . or . . . 'Haman.' No, keep him nameless, until we find out his original name." 
+
+"Must call him something," she objected. "Can't think of him without thinking something." 
+
+"Then call him many names, but never the same name twice. Call him 'Dog' to-day, and 'Mister Dog' to-morrow, and the next day something else." 
+
+Question: What worked her way northward?<|im_end|>
+<|im_start|>assistant
+The _Ariel_<|im_end|>
+<|im_start|>user
+Question: What lay between the shore-reefs and outer-reefs?<|im_end|>
+<|im_start|>assistant
+Lagoon<|im_end|>
+<|im_start|>user
+Question: Were the passages wide?<|im_end|>
+<|im_start|>assistant
+No<|im_end|>
+<|im_start|>user
+Question: Who was the Captain?<|im_end|>
+<|im_start|>assistant
+Winters<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER VIII. 
+
+HOSTAGE. 
+
+The revolution of Todos Santos had to all appearances been effected as peacefully as the gentle Liberator of Quinquinambo could have wished. Two pronunciamientos, rudely printed and posted in the Plaza, and saluted by the fickle garrison of one hundred men, who had, however, immediately reappointed their old commander as Generalissimo under the new regime, seemed to leave nothing to be desired. A surging mob of vacant and wondering peons, bearing a singular resemblance to the wild cattle and horses which intermingled with them in blind and unceasing movement across the Plaza and up the hilly street, and seemingly as incapable of self-government, were alternately dispersed and stampeded or allowed to gather again as occasion required. Some of these heterogeneous bands were afterwards found--the revolution accomplished--gazing stupidly on the sea, or ruminating in bovine wantonness on the glacis before the Presidio. 
+
+Eleanor Keene, who with her countrywomen had been hurried to the refuge of the Mission, was more disturbed and excited at the prospect of meeting Hurlstone again than by any terror of the insurrection. But Hurlstone was not there, and Father Esteban received her with a coldness she could not attribute entirely to her countrymen's supposed sympathy with the insurgents. When Richard Keene, who would not leave his sister until he had seen her safe under the Mission walls, ventured at her suggestion to ask after the American recluse, Father Esteban replied dryly that, being a Christian gentleman, Hurlstone was the only one who had the boldness to seek out the American filibuster Perkins, on his own ship, and remonstrate with him for his unholy crusade. For the old priest had already become aware of Hurlstone's blunder, and he hated Eleanor as the primary cause of the trouble. But for her, Diego would be still with him in this emergency. 
+
+Question: What was the revolution<|im_end|>
+<|im_start|>assistant
+Todos Santos<|im_end|>
+<|im_start|>user
+Question: What did the mob resemble><|im_end|>
+<|im_start|>assistant
+wild cattle and horses<|im_end|>
+<|im_start|>user
+Question: Where did Eleanor go?<|im_end|>
+<|im_start|>assistant
+refuge of the Mission<|im_end|>
+<|im_start|>user
+Question: How was she received?<|im_end|>
+<|im_start|>assistant
+with a coldness<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER III 
+
+TOM'S JOKE 
+
+"What did you do to him?" asked Sam, quickly. 
+
+"Put an advertisement of pills on his back and some other ads. in his text books," answered Tom. "Say, he looks some mad; doesn't he?" 
+
+"I should say yes," came from Stanley. 
+
+William Philander was approaching with long strides. In one hand he held the poster Tom had fastened on his back, and he was shaking his other fist wrathfully. 
+
+"Tom Rover, you've--er--insulted me!" he gasped as he came up. "You've humiliated me before the whole class! I'll--I'll----" The dudish student was so full of wrath he could not speak. 
+
+"Take a cough drop and clear your throat Billy," suggested Tom, coolly. "Don't get so excited, you might drop dead from heart disease." 
+
+"How dare you put that--er--that advertisement of Gumley's Red Pills on my back?" stormed the stylishly-dressed one. 
+
+"'Gumley's Red Pills for Red-Blooded People,'" quoted Spud, from the poster. "Say, they are fine, Willie. Didn't you ever take 'em?" 
+
+"No, and I don't want to. I want Tom Ro----" 
+
+"Say, if you haven't taken any of Gumley's pills you don't know what you've missed," went on Spud, with a wink at the others. "Why, there was a man over in Rottenberg who was flat on his back with half a dozen fatal diseases. The doctors gave him just three days to live,--three days, think of it! His wife nearly cried her eyes out. Then along came this Gumley man with a trunk full of his Red Pills for Red-Blooded People. He didn't exactly know if the dying man was red-blooded or not, but he took a chance and gave the fellow sixteen pills, four after breakfast, four after dinner, four after supper and four on retiring, and the next day, what do you think happened? That man got up and went to work, and he's been at his Job ever since." 
+
+Question: who played a prank?<|im_end|>
+<|im_start|>assistant
+Tom<|im_end|>
+<|im_start|>user
+Question: on who?<|im_end|>
+<|im_start|>assistant
+William<|im_end|>
+<|im_start|>user
+Question: who asks him about it?<|im_end|>
+<|im_start|>assistant
+Sam<|im_end|>
+<|im_start|>user
+Question: what did Sam ask?<|im_end|>
+<|im_start|>assistant
+What did you do to him?<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER XXIII 
+
+A SLIDE DOWN THE MOUNTAIN SIDE 
+
+"My gracious, Dick! It sure is snowing some now!" 
+
+"Yes, and it is getting colder every minute." 
+
+"If we don't get out of the mountains putty quick we'll be snowed in," came from Jack Wumble. 
+
+"Did you calkerlate to git back to Dawson afore winter sot in?" inquired Ike Furner, curiously. 
+
+"Why of course!" cried Sam. 
+
+"I don't see how you are goin' to make it." 
+
+"Oh, we must get back," said Dick. "If only we could find Tom," he added, with a sigh. 
+
+It was fully an hour after they had left the campfire at the entrance to the cave of the mountain. They had walked to the chasm where they thought Tom might have had a tumble and crossed and recrossed it several times. But they had found no traces of the missing Rover boy. 
+
+"If only we knew whether he went down in that opening!" said Sam, for at least the tenth time. "Dick, do you suppose we can climb down into it?" 
+
+"Not without a rope, Sam. The sides are too steep and slippery." 
+
+Time and again they called down. But no answer came back. If Tom was down there he was either unconscious or dead. 
+
+And now it had begun to snow harder than ever. The air was so full of the white flakes that they could not see ten feet in any direction. It was a typical Alaskan snowstorm. There was a sweep to the wind that found the very marrow of their bones. 
+
+Question: Who says it's getting cold?<|im_end|>
+<|im_start|>assistant
+Dick<|im_end|>
+<|im_start|>user
+Question: Is it snowing?<|im_end|>
+<|im_start|>assistant
+yes<|im_end|>
+<|im_start|>user
+Question: What will happen if they stay?<|im_end|>
+<|im_start|>assistant
+they will be snowed in<|im_end|>
+<|im_start|>user
+Question: Who says this?<|im_end|>
+<|im_start|>assistant
+Wumble<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER VI 
+
+About five o'clock that afternoon Ephraim was sitting in his shirt-sleeves by the window of his room, and Cynthia was reading aloud to him an article (about the war, of course) from a Washington paper, which his friend, Mr. Beard, had sent him. There was a knock at the door, and Cynthia opened it to discover a colored hall-boy with a roll in his hand. 
+
+"Mistah Ephum Prescott?" he said. 
+
+"Yes," answered Ephraim, "that's me." 
+
+Cynthia shut the door and gave him the roll, but Ephraim took it as though he were afraid of its contents. 
+
+"Guess it's some of them war records from Amasy," he said. 
+
+"Oh, Cousin Eph," exclaimed Cynthia, excitedly, "why don't you open it? If you don't I will." 
+
+"Guess you'd better, Cynthy," and he held it out to her with a trembling hand. 
+
+Cynthia did open it, and drew out a large document with seals and printing and signatures. 
+
+"Cousin Eph," she cried, holding it under his nose, "Cousin Eph, you're postmaster of Brampton!" 
+
+Ephraim looked at the paper, but his eyes swam, and he could only make out a dancing, bronze seal. 
+
+"I want to know!" he exclaimed. "Fetch Jethro." 
+
+But Cynthia had already flown on that errand. Curiously enough, she ran into Jethro in the hall immediately outside of Ephraim's door. Ephraim got to his feet; it was very difficult for him to realize that his troubles were ended, that he was to earn his living at last. He looked at Jethro, and his eyes filled with tears. "I guess I can't thank you as I'd ought to, Jethro," he said, "leastways, not now." 
+
+Question: What did Cynthia;s name get shortened to?<|im_end|>
+<|im_start|>assistant
+Cynthy<|im_end|>
+<|im_start|>user
+Question: who did she go to find?<|im_end|>
+<|im_start|>assistant
+Jethro<|im_end|>
+<|im_start|>user
+Question: did she walk sedately?<|im_end|>
+<|im_start|>assistant
+no<|im_end|>
+<|im_start|>user
+Question: Did Ephram have a jacket on?<|im_end|>
+<|im_start|>assistant
+no<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER XXIV 
+
+THE DOCTOR'S MISSION 
+
+The letter which Phoebe brought was a long and cordial one, in which Dora begged that Miriam would come and make her a visit of a few days. She said, moreover, that her brother was intending to call on Mr. Haverley and urge him to come to their house as frequently as he could during his sister's visit. Dora said that she would enjoy having Miriam with her so very, very much; and although the life at the dear old farm must be always charming, she believed that Miriam would like a little change, and she would do everything that she could to make the days pass pleasantly. 
+
+There could not have been a more cordial invitation, but its acceptance was considered soberly and without enthusiasm. 
+
+During the past fortnight, there had been no intercourse between the Bannister and Haverley families. Dora, it is true, had written, but her letters had not been called for, and Ralph had not been to her house to inquire about the dog. The reason for this was that, turning over the matter in his mind for a day or two, he thought it well to mention it to Miriam in a casual way, for he perceived that it would be very unwise for him to go to Dora's house without informing his sister and giving her his reasons for the visit. To his surprise, Miriam strenuously opposed his going to the Bannister house on any pretence until Mr. Bannister had called upon him, and showed so much earnest feeling on the subject that he relinquished his intention. He could see for himself that it would not be the proper thing to do; and so he waited, with more impatience on rainy days than others, for Mr. Herbert Bannister to call upon him. 
+
+Question: What did Dora said that she would enjoy?<|im_end|>
+<|im_start|>assistant
+having Miriam with her so very, very much;<|im_end|>
+<|im_start|>user
+Question: Will this be good for Dora as well?<|im_end|>
+<|im_start|>assistant
+No<|im_end|>
+<|im_start|>user
+Question: What is the name of the chapter?<|im_end|>
+<|im_start|>assistant
+THE DOCTOR'S MISSION<|im_end|>
+<|im_start|>user
+Question: And what was the number?<|im_end|>
+<|im_start|>assistant
+XXIV<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER FIFTY FIVE. 
+
+WAITING. 
+
+The lengthening sunny days went on without bringing either what Romola most desired or what she most dreaded. They brought no sign from Baldassarre, and, in spite of special watch on the part of the Government, no revelation of the suspected conspiracy. But they brought other things which touched her closely, and bridged the phantom-crowded space of anxiety with active sympathy in immediate trial. They brought the spreading Plague and the Excommunication of Savonarola. 
+
+Both these events tended to arrest her incipient alienation from the Frate, and to rivet again her attachment to the man who had opened to her the new life of duty, and who seemed now to be worsted in the fight for principle against profligacy. For Romola could not carry from day to day into the abodes of pestilence and misery the sublime excitement of a gladness that, since such anguish existed, she too existed to make some of the anguish less bitter, without remembering that she owed this transcendent moral life to Fra Girolamo. She could not witness the silencing and excommunication of a man whose distinction from the great mass of the clergy lay, not in any heretical belief, not in his superstitions, but in the energy with which he sought to make the Christian life a reality, without feeling herself drawn strongly to his side. 
+
+Far on in the hot days of June the Excommunication, for some weeks arrived from Rome, was solemnly published in the Duomo. Romola went to witness the scene, that the resistance it inspired might invigorate that sympathy with Savonarola which was one source of her strength. It was in memorable contrast with the scene she had been accustomed to witness there. 
+
+Question: Who was excommunicated?<|im_end|>
+<|im_start|>assistant
+Fra Girolamo<|im_end|>
+<|im_start|>user
+Question: Was he a heretic?<|im_end|>
+<|im_start|>assistant
+no<|im_end|>
+<|im_start|>user
+Question: Was he superstitious?<|im_end|>
+<|im_start|>assistant
+no<|im_end|>
+<|im_start|>user
+Question: Why was he excommunicated then?<|im_end|>
+<|im_start|>assistant
+unknown<|im_end|>
+
+
+<|im_start|>system
+Answer the question using the story and conversation. Give a short answer only.<|im_end|>
+<|im_start|>user
+Story:
+CHAPTER LXXI. 
+
+SHEWING WHAT HUGH STANBURY THOUGHT ABOUT THE DUTY OF MAN. 
+
+In the conference which took place between Sir Marmaduke and his wife after the interview between him and Nora, it was his idea that nothing further should be done at all. "I don't suppose the man will come here if he be told not," said Sir Marmaduke, "and if he does, Nora of course will not see him." He then suggested that Nora would of course go back with them to the Mandarins, and that when once there she would not be able to see Stanbury any more. "There must be no correspondence or anything of that sort, and so the thing will die away." But Lady Rowley declared that this would not quite suffice. Mr. Stanbury had made his offer in due form, and must be held to be entitled to an answer. Sir Marmaduke, therefore, wrote the following letter to the "penny-a-liner," mitigating the asperity of his language in compliance with his wife's counsels. 
+
+Manchester Street, April 20th, 186--. 
+
+MY DEAR SIR,-- 
+
+Lady Rowley has told me of your proposal to my daughter Nora; and she has told me also what she learned from you as to your circumstances in life. I need hardly point out to you that no father would be justified in giving his daughter to a gentleman upon so small an income, and upon an income so very insecure. 
+
+I am obliged to refuse my consent, and I must therefore ask you to abstain from visiting and from communicating with my daughter. 
+
+Question: Who did Sir Marmaduke have a conference with?<|im_end|>
+<|im_start|>assistant
+his wife<|im_end|>
+<|im_start|>user
+Question: Was this before or after his other interview?<|im_end|>
+<|im_start|>assistant
+after<|im_end|>
+<|im_start|>user
+Question: Who was that one with?<|im_end|>
+<|im_start|>assistant
+Nora<|im_end|>
+<|im_start|>user
+Question: Who would Nora be forbidden to see?<|im_end|>
+<|im_start|>assistant
+Stanbury<|im_end|>
+

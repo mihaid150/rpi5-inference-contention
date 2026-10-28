@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.cache/
+workspace/
+results/
+models/
+*.gguf
+*.safetensors
+*.log
