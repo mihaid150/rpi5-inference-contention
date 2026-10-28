@@ -8,6 +8,8 @@ Validation performed on 28 October 2026:
   preservation of v1, sampler thread exit, fixed schedules and the predictor.
 - Tests simulate the full sequential controller and confirm that E2 failure
   prevents E3, preserves E1, and produces no successful completion marker.
+- A fresh single-branch clone passes all 20 tests and has a clean Git status.
+  The branch contains 44 tracked files and an independent root commit.
 - All Python modules compile. Project Python code has no comments or docstrings.
 - Docker and Kubernetes deployment dry runs generate bounded, read-only-input
   deployments without starting experiments.
