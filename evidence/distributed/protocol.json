@@ -1,0 +1,60 @@
+{
+  "config": {
+    "schema": 1,
+    "output": "results/research-v2/release-three-blocks-20261019",
+    "binary_dir": "build/research-v2/release-arm64",
+    "cycles": 3,
+    "quality_documents": 3,
+    "end_to_end_repetitions": 3,
+    "index_cache_mib": 64,
+    "block3_arms": [
+      "q4_defer",
+      "q4_concurrent",
+      "q3_static",
+      "adaptive_retained",
+      "adaptive_rebuild",
+      "spare_node"
+    ],
+    "notes": "Development pilot. No 90% quality gate. Block 1 stops downstream work if median measured PSS saving is not positive. Node available-memory changes are descriptive, not causal proof. CoQA corpus indexing may not create material memory pressure."
+  },
+  "hashes": {
+    "scripts/research_v2_three_blocks.py": "70316f85f2f817cc3c78d859da3874c971bef7b114eea28ee8ceab1620b57f4b",
+    "scripts/research_v2_release_route.py": "ea72821e1964efc2d92b81a5bca4932e46af32aeb3707aa9ab02088524c39e40",
+    "scripts/research_v2_document_index.py": "2f3ae0eb187a6f11d1ab7c6354ad8eb4d99e0437697344cfbb3cbbfde41348a4",
+    "scripts/research_v2_conversation_schedule.py": "9a7a5b545901dd92bc6204ee3aac91878b82a65c530786bf9c476ce8b0ebb2bf",
+    "scripts/research_v2_full_kl.py": "150a1eff7d8293bfd7b56dd7df2bac0c197447639f1e5f146f39fb7b3c013de8",
+    "experiments/research-v2/route_worker.cpp": "ce9bb23330d395ba0dc4c9cc6b779694ccc89e8f64dfe18667f1b6245669d525",
+    "experiments/research-v2/mapped_shard.hpp": "f3503941d24e77554ffa33ba4059858932b708078cb7a756f21dc5db11e2e514",
+    "results/research-v2/14b-extension-20261015-r2/cohort.json": "b4778896926f6ea46e09fb164b703494b91d9a708f7c37d9dd3fd4db7975347b",
+    "data/precision-transition/c-coqa-source/coqa-dev-v1.0.json": "dfa367a9733ce53222918d0231d9b3bedc2b8ee831a2845f62dfc70701f2540a",
+    "data/precision-transition/c-coqa-source/evaluate-v1.0.py": "d42f70d686abc724a9169947a487f4509087ee69804277cc73950682cb700b4d",
+    "models/research-v2/official-14B-Q4/tokenizer/config.json": "0f2085dbbe2ee251bd6a6a0797d84a6ce34436044d629aa3cba793b43d311a9e",
+    "models/research-v2/official-14B-Q4/tokenizer/generation_config.json": "ea35dfb6fc5051b01114f9b995820d55dab01ed33ee490f6378b442af82c09f9",
+    "models/research-v2/official-14B-Q4/tokenizer/tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "models/research-v2/official-14B-Q4/tokenizer/tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "models/research-v2/official-14B-Q4/tokenizer/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "binary_hashes": {
+    "qwen-release-worker": "1a3540c75885f38e014c59bab0caafc9532a37f1c7a73fc89cde8db852e6a577",
+    "libggml-base.so.0.11.1": "09d31f36e1a31316e27d4fe4204fd1051db777405c39383e7911f4cd1114a1b5",
+    "libggml-cpu.so": "124a71c09437f87c59f7793da83f8d2ff6fd4c9dc2a06aa7301da2ccbbeac17e",
+    "libgomp.so.1": "dccfa17b026da5f28c7f61e2c1d67f0d6b324c5b904b70ee1b60b633b58b32e6",
+    "test-qwen-math": "c6c5999c87ece712c9e2ad95c39f487d6dfb8aac6837335e4600013135210fc4",
+    "libllama.so.0.0.0": "60bb5c5dbad1af0526288e0f753d4a44f0c680cab0e8b48a4b4973ef581c3a55",
+    "libggml-cpu.so.0.11.1": "124a71c09437f87c59f7793da83f8d2ff6fd4c9dc2a06aa7301da2ccbbeac17e",
+    "qwen-parity": "1aebd10dc2430045f3f14c54fa79a40e08e01016eb28cf835ef7fe949c5573d2",
+    "test-attention-parity-v2": "cb8d5e8187e3aed7b383eb89d22ece6b6ad2fc0784802dba4bc5819da71ab80b",
+    "libllama.so.0": "60bb5c5dbad1af0526288e0f753d4a44f0c680cab0e8b48a4b4973ef581c3a55",
+    "libgcc_s.so.1": "c39939ec474dd03d9a8aa657d85fa71a8f879a3159bf1a5d19dff3b4788dfba2",
+    "libggml.so": "f4da8fe46a5d3f0537d9f9f40f828f7a5258ca35de45112a6485689ec582acb3",
+    "libggml-cpu.so.0": "124a71c09437f87c59f7793da83f8d2ff6fd4c9dc2a06aa7301da2ccbbeac17e",
+    "libggml.so.0.11.1": "f4da8fe46a5d3f0537d9f9f40f828f7a5258ca35de45112a6485689ec582acb3",
+    "libggml.so.0": "f4da8fe46a5d3f0537d9f9f40f828f7a5258ca35de45112a6485689ec582acb3",
+    "libllama.so": "60bb5c5dbad1af0526288e0f753d4a44f0c680cab0e8b48a4b4973ef581c3a55",
+    "qwen-route-worker": "7ffe6304c75b8fef99f114e5fc5c540271a53c9ae83ee32eb346960a6b8559b5",
+    "libggml-base.so": "09d31f36e1a31316e27d4fe4204fd1051db777405c39383e7911f4cd1114a1b5",
+    "libstdc++.so.6": "f8253f7e1334b5c55ab50cc44d576e83dee7dd6fcb53bdc9ca63d74198a93640",
+    "libggml-base.so.0": "09d31f36e1a31316e27d4fe4204fd1051db777405c39383e7911f4cd1114a1b5",
+    "test-qwen-attention": "3557a3979b881dfd9a721294ece3da5dabdfb0056258f42f97464b5ed0701a4b"
+  }
+}

@@ -1,0 +1,527 @@
+[
+  {
+    "stage": "e1",
+    "cell": "diagnosis-001",
+    "path": "evidence/affinity/e1/diagnosis-001-samples.jsonl.gz",
+    "raw_sha256": "aa12f896e73d6617ef902b4040aa7e57288e1a0b3337c87c7bd13b99107d6a66",
+    "rows": 10
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-002",
+    "path": "evidence/affinity/e1/diagnosis-002-samples.jsonl.gz",
+    "raw_sha256": "835ac7547df4b1804725f9d223650a95c0727f1b2c856bfee0bea33237aa548d",
+    "rows": 141
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-003",
+    "path": "evidence/affinity/e1/diagnosis-003-samples.jsonl.gz",
+    "raw_sha256": "d572815a89f7e16e74ab74da92ed512a894f6e52b9ea543de08c9a2759497525",
+    "rows": 148
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-004",
+    "path": "evidence/affinity/e1/diagnosis-004-samples.jsonl.gz",
+    "raw_sha256": "6e267810d2e7bdccd42e8bca66080072c34d49c5fc2dd24059e430c2f14db2ce",
+    "rows": 193
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-005",
+    "path": "evidence/affinity/e1/diagnosis-005-samples.jsonl.gz",
+    "raw_sha256": "e376d4a037aecbab626fe96f0e8edfe89d6aabc86f5d04ec26b0e665225cd874",
+    "rows": 157
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-006",
+    "path": "evidence/affinity/e1/diagnosis-006-samples.jsonl.gz",
+    "raw_sha256": "a73a5c4027afbdcf9e307450198f0c19845323cc85f948c1e0518998bb4273de",
+    "rows": 327
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-007",
+    "path": "evidence/affinity/e1/diagnosis-007-samples.jsonl.gz",
+    "raw_sha256": "9564e05c95b58273af15654c4f14fead15b87051da7113c5396ece5cbe502f25",
+    "rows": 338
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-008",
+    "path": "evidence/affinity/e1/diagnosis-008-samples.jsonl.gz",
+    "raw_sha256": "5675ed58143113f28f89dad9d3545f9e4a12547d6d7aa798038f4de7e4ece0e6",
+    "rows": 488
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-009",
+    "path": "evidence/affinity/e1/diagnosis-009-samples.jsonl.gz",
+    "raw_sha256": "f88f1aa8185a58a59e29aea168986f0636bcb2aa82fd210b271698eac6507a81",
+    "rows": 376
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-010",
+    "path": "evidence/affinity/e1/diagnosis-010-samples.jsonl.gz",
+    "raw_sha256": "f85b72c8c9443a4061f01d7f5a55eafa74e025cbddf8cb62a0d8f62e32cc0542",
+    "rows": 10
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-011",
+    "path": "evidence/affinity/e1/diagnosis-011-samples.jsonl.gz",
+    "raw_sha256": "276bb0178b3c2a908699a77a0dbaf6864b219cb8ff2692ad53b8c40fe6525e6d",
+    "rows": 151
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-012",
+    "path": "evidence/affinity/e1/diagnosis-012-samples.jsonl.gz",
+    "raw_sha256": "8365bbf5553732427845b90962ce5468e521fbf0f3a4eae5943b9b193f54920c",
+    "rows": 193
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-013",
+    "path": "evidence/affinity/e1/diagnosis-013-samples.jsonl.gz",
+    "raw_sha256": "4068ff90f0b151f6ac939acd548931c4a2bfe46cf260b41812de63529e780490",
+    "rows": 158
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-014",
+    "path": "evidence/affinity/e1/diagnosis-014-samples.jsonl.gz",
+    "raw_sha256": "6c8daadd773a20d76bdc0b0ebb2668fd8adf661f4d02469680744eb49a8163e2",
+    "rows": 144
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-015",
+    "path": "evidence/affinity/e1/diagnosis-015-samples.jsonl.gz",
+    "raw_sha256": "a95b9a927379d9710823d7c834892e6fc417cf55d2dabf07b701824c0547f2e6",
+    "rows": 334
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-016",
+    "path": "evidence/affinity/e1/diagnosis-016-samples.jsonl.gz",
+    "raw_sha256": "34cf1f3c872a70a991b138b08dfbe006544b16844c7c7434c9ce15072fa7e11c",
+    "rows": 488
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-017",
+    "path": "evidence/affinity/e1/diagnosis-017-samples.jsonl.gz",
+    "raw_sha256": "758021a0a3ef3e06479ce4e2481240c12ec7b6a1563929f001c734c597a63717",
+    "rows": 375
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-018",
+    "path": "evidence/affinity/e1/diagnosis-018-samples.jsonl.gz",
+    "raw_sha256": "945478576868959966203ad2fcfe5285c2b8fbe7840a17d31afefc7fb1cb78f1",
+    "rows": 329
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-019",
+    "path": "evidence/affinity/e1/diagnosis-019-samples.jsonl.gz",
+    "raw_sha256": "6deaeadba358c075a8fc29f2142243cb051f736afc27812126631a89ac1b9531",
+    "rows": 10
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-020",
+    "path": "evidence/affinity/e1/diagnosis-020-samples.jsonl.gz",
+    "raw_sha256": "638bea916c3fe7b301033f18225832ba8266aa11d68759f29de23c586fa76a51",
+    "rows": 194
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-021",
+    "path": "evidence/affinity/e1/diagnosis-021-samples.jsonl.gz",
+    "raw_sha256": "caa5c45c3fa4aa45479594ccd58c7fa0822aa382761c9dd956217b7bb3f0c9a8",
+    "rows": 157
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-022",
+    "path": "evidence/affinity/e1/diagnosis-022-samples.jsonl.gz",
+    "raw_sha256": "ecafa898f799dd761ca2f7ffc405e0fcda4519feb8b4c3bcc3dec753f156e51b",
+    "rows": 143
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-023",
+    "path": "evidence/affinity/e1/diagnosis-023-samples.jsonl.gz",
+    "raw_sha256": "698abc91e847117c73832873c938a8581efc335a6248c9e6d7b8f66cebf88afc",
+    "rows": 153
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-024",
+    "path": "evidence/affinity/e1/diagnosis-024-samples.jsonl.gz",
+    "raw_sha256": "0a62d126bffcc2e1a39aad781df685a36861fd69e466b4f7558c9950b4664038",
+    "rows": 494
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-025",
+    "path": "evidence/affinity/e1/diagnosis-025-samples.jsonl.gz",
+    "raw_sha256": "5d958c9c509946ba0380c2476c4a84000fc8da165ebf245bd16ab2f56e045bc4",
+    "rows": 376
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-026",
+    "path": "evidence/affinity/e1/diagnosis-026-samples.jsonl.gz",
+    "raw_sha256": "b49bb001faed14119fe0c724f84317112033d29858c0f0574f7e7dc2fef48afa",
+    "rows": 339
+  },
+  {
+    "stage": "e1",
+    "cell": "diagnosis-027",
+    "path": "evidence/affinity/e1/diagnosis-027-samples.jsonl.gz",
+    "raw_sha256": "9eeffde1d6d6dfdca648732226247bccaefc71c8b891be04801351b3405ba84e",
+    "rows": 339
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-001",
+    "path": "evidence/affinity/e2/regimes-001-samples.jsonl.gz",
+    "raw_sha256": "a41056e8c537b40327c5bb9b9ea7c7694707ebc6af3090264fc3037561e443e7",
+    "rows": 571
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-002",
+    "path": "evidence/affinity/e2/regimes-002-samples.jsonl.gz",
+    "raw_sha256": "a6cbb5891627bae4b084f323e22ff805dacbfd855d58cc68d0e483a5419cb0a1",
+    "rows": 818
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-003",
+    "path": "evidence/affinity/e2/regimes-003-samples.jsonl.gz",
+    "raw_sha256": "49ef02183f9b7455158058d149365b4e180943812efde52967c5f2d4727236c0",
+    "rows": 565
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-004",
+    "path": "evidence/affinity/e2/regimes-004-samples.jsonl.gz",
+    "raw_sha256": "3ccb8cfae6588bd71ce8b645c70c55bac62c9a4c16df82cdaf2f8ebb4150aaa9",
+    "rows": 572
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-005",
+    "path": "evidence/affinity/e2/regimes-005-samples.jsonl.gz",
+    "raw_sha256": "cd4229cb8ff97ab43cc3f329dfb7656bc7d9f945640e5aee9e05cf92c2cbc523",
+    "rows": 817
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-006",
+    "path": "evidence/affinity/e2/regimes-006-samples.jsonl.gz",
+    "raw_sha256": "5b125ccf2e2885269ed966d56c1e0b115f875c2dffe22baeaeb086599970c98c",
+    "rows": 571
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-007",
+    "path": "evidence/affinity/e2/regimes-007-samples.jsonl.gz",
+    "raw_sha256": "624463171cf857f1408a3d305676d87c51659cc72e77ad05ba7971d51360ceb4",
+    "rows": 589
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-008",
+    "path": "evidence/affinity/e2/regimes-008-samples.jsonl.gz",
+    "raw_sha256": "178ce150a5eaab53b31e0bddf16230a940cefcdae6f71edde953dfcb80dc548a",
+    "rows": 836
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-009",
+    "path": "evidence/affinity/e2/regimes-009-samples.jsonl.gz",
+    "raw_sha256": "cb461d5f0cd36cc2ec414405a64b61e5aa118110f09d00f2aa8c80e9a9f1fa8f",
+    "rows": 603
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-010",
+    "path": "evidence/affinity/e2/regimes-010-samples.jsonl.gz",
+    "raw_sha256": "1a87fbd843acf994ff150c9fe717358f513daffa15f06adc0cbe4090e69c52f7",
+    "rows": 589
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-011",
+    "path": "evidence/affinity/e2/regimes-011-samples.jsonl.gz",
+    "raw_sha256": "f6e6bd18e9f3ad4177f5ffbc08f6910641063dac3b1d51d0381e1e686a867723",
+    "rows": 840
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-012",
+    "path": "evidence/affinity/e2/regimes-012-samples.jsonl.gz",
+    "raw_sha256": "bf06a97d3a568cafe02215aacb4da0b525fc10692e0b798165878bf803902421",
+    "rows": 618
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-013",
+    "path": "evidence/affinity/e2/regimes-013-samples.jsonl.gz",
+    "raw_sha256": "6504a9874824c3a79a887dc3763173953d61e4a4db72e5993f5041dd363baf7f",
+    "rows": 713
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-014",
+    "path": "evidence/affinity/e2/regimes-014-samples.jsonl.gz",
+    "raw_sha256": "c0fb5fbf53f58e3dcc0300c389bfd6ffaef08472a02e98dd1cbe896ac2d20c11",
+    "rows": 513
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-015",
+    "path": "evidence/affinity/e2/regimes-015-samples.jsonl.gz",
+    "raw_sha256": "31f01dde9d16aaa7b8ce7f1d3448e0c52fdbfcbce882efa47258ff57980fafdd",
+    "rows": 503
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-016",
+    "path": "evidence/affinity/e2/regimes-016-samples.jsonl.gz",
+    "raw_sha256": "7b11f4ca871d1ceb2740ce49f514bdfcbd80e4a76aac6067e0fb4365ecba3fc8",
+    "rows": 718
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-017",
+    "path": "evidence/affinity/e2/regimes-017-samples.jsonl.gz",
+    "raw_sha256": "8d72cced901a6c2627752066aad0add7b8f7ebce658e5829bd283eaa98e83aef",
+    "rows": 512
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-018",
+    "path": "evidence/affinity/e2/regimes-018-samples.jsonl.gz",
+    "raw_sha256": "b618dbcf4579e1dac6e0fc1c9f9297961735446038faa52863da3ddb36372513",
+    "rows": 500
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-019",
+    "path": "evidence/affinity/e2/regimes-019-samples.jsonl.gz",
+    "raw_sha256": "53e148d0e717e5144e853224f06f480e7d94d8e8708481d44da8d4a66c143cf2",
+    "rows": 728
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-020",
+    "path": "evidence/affinity/e2/regimes-020-samples.jsonl.gz",
+    "raw_sha256": "ab686feda8e12a7f3d2335d6cad99baf92d7fcbc4e015939b412b4671b85f104",
+    "rows": 520
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-021",
+    "path": "evidence/affinity/e2/regimes-021-samples.jsonl.gz",
+    "raw_sha256": "27de7ed38898c6ad7429f1bf20340fa15869bcda7a3766b5de6817d68532cc15",
+    "rows": 510
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-022",
+    "path": "evidence/affinity/e2/regimes-022-samples.jsonl.gz",
+    "raw_sha256": "5a623adcdd533f6023c313e2b15bd66b9a0bff8f907f05c86ab4061c98db3890",
+    "rows": 731
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-023",
+    "path": "evidence/affinity/e2/regimes-023-samples.jsonl.gz",
+    "raw_sha256": "3737c39421742b7d044853a5f1f01f6a1c79c10029a8cf68ab141239df5cad0f",
+    "rows": 508
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-024",
+    "path": "evidence/affinity/e2/regimes-024-samples.jsonl.gz",
+    "raw_sha256": "7c29208c986eb496b13aa6ff4a832c533ea2ce97b569c0156316c85f363c5a21",
+    "rows": 512
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-025",
+    "path": "evidence/affinity/e2/regimes-025-samples.jsonl.gz",
+    "raw_sha256": "38b0d06eb7178b3c2820dae6510a26cfcb08dd9b9572dd75892b39c6167d1747",
+    "rows": 566
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-026",
+    "path": "evidence/affinity/e2/regimes-026-samples.jsonl.gz",
+    "raw_sha256": "8767d49be33f298558885c5ae002fde153a6315f1777a90eaaaed798eca7a165",
+    "rows": 559
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-027",
+    "path": "evidence/affinity/e2/regimes-027-samples.jsonl.gz",
+    "raw_sha256": "a0ef560e9a81f565fd40b4be38e200f3c21618ff290b50b5e2ecebfd6989a633",
+    "rows": 820
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-028",
+    "path": "evidence/affinity/e2/regimes-028-samples.jsonl.gz",
+    "raw_sha256": "39bf177d39ca0d950f99a530c95f509a9fb19127fe71f27fab19a84715143ee2",
+    "rows": 564
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-029",
+    "path": "evidence/affinity/e2/regimes-029-samples.jsonl.gz",
+    "raw_sha256": "85fe5c662c5fa0f03185bddd0c7ed120a42548333b54280864df9835bcc90989",
+    "rows": 563
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-030",
+    "path": "evidence/affinity/e2/regimes-030-samples.jsonl.gz",
+    "raw_sha256": "ee60f9c4eaab192eae470d0bf2b2ebb88f91db356222a675f1c2e197f963465c",
+    "rows": 818
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-031",
+    "path": "evidence/affinity/e2/regimes-031-samples.jsonl.gz",
+    "raw_sha256": "1c2ab0ab34c988b14b5cf3bfd6f87c290b5f3c78bdd71465a7838a7b7999071b",
+    "rows": 605
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-032",
+    "path": "evidence/affinity/e2/regimes-032-samples.jsonl.gz",
+    "raw_sha256": "35bccadbcce3760155985892a03bb065147ce1cc9cd109bdde957223443ce899",
+    "rows": 595
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-033",
+    "path": "evidence/affinity/e2/regimes-033-samples.jsonl.gz",
+    "raw_sha256": "918b72a342db4810b2b492184015e65732e88bde157d86be4958c048a1477c64",
+    "rows": 832
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-034",
+    "path": "evidence/affinity/e2/regimes-034-samples.jsonl.gz",
+    "raw_sha256": "9790763cc2c9e1a51b1c1601afabe31e2aa2afea09f47d2e7ceacc311563555a",
+    "rows": 601
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-035",
+    "path": "evidence/affinity/e2/regimes-035-samples.jsonl.gz",
+    "raw_sha256": "64ddafd249529fe1225709eed184010b5d530ed2e98b6436d915956dd077569d",
+    "rows": 598
+  },
+  {
+    "stage": "e2",
+    "cell": "regimes-036",
+    "path": "evidence/affinity/e2/regimes-036-samples.jsonl.gz",
+    "raw_sha256": "1fe171509d226abc8e29ec3cccb02fcf7fce341bc038480f41c4c06935fef35d",
+    "rows": 843
+  },
+  {
+    "stage": "e3",
+    "cell": "prediction-check-001",
+    "path": "evidence/affinity/e3/prediction-check-001-samples.jsonl.gz",
+    "raw_sha256": "57b186fcd0bf4a41d3d29464d8f85625e6489097fa703f376ef3cf95ed2c992b",
+    "rows": 531
+  },
+  {
+    "stage": "e3",
+    "cell": "prediction-check-002",
+    "path": "evidence/affinity/e3/prediction-check-002-samples.jsonl.gz",
+    "raw_sha256": "73bf4afae4ea493ce251cdfd0417f71f1a6c8b7d514060346339508465763db5",
+    "rows": 749
+  },
+  {
+    "stage": "e3",
+    "cell": "prediction-check-003",
+    "path": "evidence/affinity/e3/prediction-check-003-samples.jsonl.gz",
+    "raw_sha256": "cc62508b3fc6b9ad4a347b2dda07597d66bda3ae5d4af8b527df6ade2823f7f8",
+    "rows": 520
+  },
+  {
+    "stage": "e3",
+    "cell": "prediction-check-004",
+    "path": "evidence/affinity/e3/prediction-check-004-samples.jsonl.gz",
+    "raw_sha256": "8abfa61076cb772da1ccdbb76d55289d26eb94149d24cc406e915bda1997c171",
+    "rows": 755
+  },
+  {
+    "stage": "e3",
+    "cell": "prediction-check-005",
+    "path": "evidence/affinity/e3/prediction-check-005-samples.jsonl.gz",
+    "raw_sha256": "e339efe2ab7e1dbbc86740395f330a968a5ff659efb2ea9d2d4e13c9bc13cadb",
+    "rows": 754
+  },
+  {
+    "stage": "e3",
+    "cell": "prediction-check-006",
+    "path": "evidence/affinity/e3/prediction-check-006-samples.jsonl.gz",
+    "raw_sha256": "57d1b209b1f84259598e1fa37069e9ff105d1070dc97bc16e8df429b1fdd693a",
+    "rows": 535
+  },
+  {
+    "stage": "e3",
+    "cell": "prediction-check-007",
+    "path": "evidence/affinity/e3/prediction-check-007-samples.jsonl.gz",
+    "raw_sha256": "53869309b60018c143c8f841ef65130356a578805441b43f259c7e38b72cd6d9",
+    "rows": 748
+  },
+  {
+    "stage": "e3",
+    "cell": "prediction-check-008",
+    "path": "evidence/affinity/e3/prediction-check-008-samples.jsonl.gz",
+    "raw_sha256": "e74cdede68f7248af45e2e8beb0d4583faae48eb5ee1f79d1a8f37ea709256d0",
+    "rows": 524
+  },
+  {
+    "stage": "e3",
+    "cell": "prediction-check-009",
+    "path": "evidence/affinity/e3/prediction-check-009-samples.jsonl.gz",
+    "raw_sha256": "9003031876d23de3b0cb78c502c6271949ff045c88d176b3bcbab5600a56fea4",
+    "rows": 575
+  },
+  {
+    "stage": "e3",
+    "cell": "prediction-check-010",
+    "path": "evidence/affinity/e3/prediction-check-010-samples.jsonl.gz",
+    "raw_sha256": "9cd7f63c1588d7be84bf7def63abeb6fb7a6efdbe72e7aae1174c241994e59d7",
+    "rows": 861
+  },
+  {
+    "stage": "e3",
+    "cell": "prediction-check-011",
+    "path": "evidence/affinity/e3/prediction-check-011-samples.jsonl.gz",
+    "raw_sha256": "cd7282f217a704ab99e3d850ec2367f33a22f73e79f9dccf3cd332161bc3da76",
+    "rows": 575
+  },
+  {
+    "stage": "e3",
+    "cell": "prediction-check-012",
+    "path": "evidence/affinity/e3/prediction-check-012-samples.jsonl.gz",
+    "raw_sha256": "83232f95ae7b2ad212c7f6dd9c1ead82b7979ec3ac54c0113f41af288ff8721d",
+    "rows": 862
+  }
+]

@@ -1,0 +1,684 @@
+{
+  "scope": "single real revision development screening",
+  "shared_container": true,
+  "memory_limit_is_safety_cap_not_natural_device_budget": true,
+  "file_cache_ownership_not_reassigned": false,
+  "memory_conflict_demonstrated": false,
+  "adaptive_qualified": false,
+  "accounting_preflight": {
+    "copy": {
+      "sha256": "8123a526b3c9b9eeda6cb1dd3af78bd1de0da9af2cef8259f52c3e0a8cd3cebd",
+      "bytes": 8787386464,
+      "inode": 642978,
+      "source_inode": 262880
+    },
+    "before": {
+      "memory.current": "1143832576\n",
+      "memory.peak": "2141483008\n",
+      "memory.max": "12884901888\n",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+      "memory.stat": "anon 63946752\nfile 1040400384\nkernel 82337792\nkernel_stack 81920\npagetables 217088\nsec_pagetables 0\npercpu 384\nsock 0\nvmalloc 12288\nshmem 0\nzswap 0\nzswapped 0\nfile_mapped 4853760\nfile_dirty 211177472\nfile_writeback 0\nswapcached 0\nanon_thp 0\nfile_thp 0\nshmem_thp 0\ninactive_anon 0\nactive_anon 20615168\ninactive_file 1040404480\nactive_file 0\nunevictable 0\nslab_reclaimable 81596664\nslab_unreclaimable 180576\nslab 81777240\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 2495\nworkingset_activate_anon 0\nworkingset_activate_file 0\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 0\npgsteal 0\npswpin 0\npswpout 0\npgscan_kswapd 0\npgscan_direct 0\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 0\npgsteal_direct 0\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 248066\npgmajfault 0\npgrefill 0\npgactivate 0\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 0\nthp_collapse_alloc 0\nthp_swpout 0\nthp_swpout_fallback 0\n",
+      "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1755\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1755\n",
+      "cpu.stat": "usage_usec 60705264\nuser_usec 53489692\nsystem_usec 7215571\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 670\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+      "cpu.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=139612\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=139573\n",
+      "io.stat": "259:0 rbytes=10235904 wbytes=1418399744 rios=747 wios=53787 dbytes=0 dios=0\n",
+      "node_meminfo": "MemTotal:       16351168 kB\nMemFree:         8497356 kB\nMemAvailable:   15355472 kB\nBuffers:          144592 kB\nCached:          6481288 kB\nSwapCached:            0 kB\nActive:          1037264 kB\nInactive:        5911036 kB\nActive(anon):     276856 kB\nInactive(anon):    47400 kB\nActive(file):     760408 kB\nInactive(file):  5863636 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:            210380 kB\nWriteback:             0 kB\nAnonPages:        322648 kB\nMapped:           290216 kB\nShmem:              1896 kB\nKReclaimable:     482480 kB\nSlab:             624712 kB\nSReclaimable:     482480 kB\nSUnreclaim:       142232 kB\nKernelStack:        3892 kB\nPageTables:         5432 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    1284112 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       24928 kB\nVmallocChunk:          0 kB\nPercpu:             8416 kB\nAnonHugePages:    102400 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nCmaTotal:          65536 kB\nCmaFree:           28712 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+      "at": 6922095.15507805
+    },
+    "after": {
+      "memory.current": "12285550592\n",
+      "memory.peak": "12543373312\n",
+      "memory.max": "12884901888\n",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+      "memory.stat": "anon 20746240\nfile 12001247232\nkernel 262995968\nkernel_stack 98304\npagetables 221184\nsec_pagetables 0\npercpu 384\nsock 0\nvmalloc 12288\nshmem 0\nzswap 0\nzswapped 0\nfile_mapped 4526080\nfile_dirty 73728\nfile_writeback 0\nswapcached 0\nanon_thp 0\nfile_thp 7589593088\nshmem_thp 0\ninactive_anon 0\nactive_anon 20746240\ninactive_file 11996151808\nactive_file 5062656\nunevictable 0\nslab_reclaimable 262473128\nslab_unreclaimable 176208\nslab 262649336\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 874138\nworkingset_activate_anon 0\nworkingset_activate_file 0\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 776254\npgsteal 775242\npswpin 0\npswpout 0\npgscan_kswapd 776254\npgscan_direct 0\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 775242\npgsteal_direct 0\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 252138\npgmajfault 0\npgrefill 3779\npgactivate 1012\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 0\nthp_collapse_alloc 0\nthp_swpout 0\nthp_swpout_fallback 0\n",
+      "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=43193\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=43193\n",
+      "cpu.stat": "usage_usec 75519584\nuser_usec 61144747\nsystem_usec 14374837\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 1046\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+      "cpu.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=221374\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=221336\n",
+      "io.stat": "259:0 rbytes=5358489600 wbytes=10411589632 rios=41561 wios=122457 dbytes=0 dios=0\n",
+      "node_meminfo": "MemTotal:       16351168 kB\nMemFree:          778732 kB\nMemAvailable:   15518232 kB\nBuffers:          115888 kB\nCached:         14240732 kB\nSwapCached:            0 kB\nActive:           784580 kB\nInactive:       13895280 kB\nActive(anon):     277924 kB\nInactive(anon):    47176 kB\nActive(file):     506656 kB\nInactive(file): 13848104 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              1956 kB\nWriteback:            60 kB\nAnonPages:        323336 kB\nMapped:           289904 kB\nShmem:              1896 kB\nKReclaimable:     633148 kB\nSlab:             791256 kB\nSReclaimable:     633148 kB\nSUnreclaim:       158108 kB\nKernelStack:        3904 kB\nPageTables:         5508 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    1284112 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       24928 kB\nVmallocChunk:          0 kB\nPercpu:             8416 kB\nAnonHugePages:    106496 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   7411712 kB\nFilePmdMapped:         0 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+      "at": 6922132.823978177
+    },
+    "copy_cache_diagnostic": {
+      "file_charge_delta_bytes": 10960846848,
+      "model_bytes": 8787386464,
+      "minimum_fraction": 0.9,
+      "passed": true
+    },
+    "gate": {
+      "model_rss_bytes": 8781422592,
+      "model_bytes": 8787386464,
+      "file_charge_bytes": 11458441216,
+      "minimum_fraction": 0.9,
+      "measurement_phase": "after_prefill",
+      "passed": true
+    }
+  },
+  "accounting_method": "new inode written and read inside same container; original untouched",
+  "encoder_identity": {
+    "files": {
+      "config.json": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+      "model.safetensors": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+      "tokenizer.json": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+      "tokenizer_config.json": "acb92769e8195aabd29b7b2137a9e6d6e25c476a4f15aa4355c233426c61576b",
+      "special_tokens_map.json": "303df45a03609e4ead04bc3dc1536d0ab19b5358db685b6f3da123d05ec200e3",
+      "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+    },
+    "pooling": "masked-mean-l2",
+    "max_tokens": 256,
+    "dtype": "float32",
+    "device": "cpu",
+    "threads": 2,
+    "torch": "2.11.0+cpu",
+    "transformers": "5.7.0"
+  },
+  "cases": [
+    {
+      "batch": 1,
+      "concurrent": false,
+      "update": {
+        "version": "v2",
+        "encoder_id": "d444c217c5f0e5d18cf5f4464982f13a6752696c074a28386970e4d830666e80",
+        "documents": 2,
+        "chunks": 268,
+        "embedded_unique_chunks": 81,
+        "chunk_words": 200,
+        "stride_words": 160,
+        "chunking": {
+          "method": "markdown-paragraph-heading-v1",
+          "max_tokens": 256,
+          "tokenizer_id": "d444c217c5f0e5d18cf5f4464982f13a6752696c074a28386970e4d830666e80",
+          "oversized": "recursive-whitespace-then-character",
+          "overlap": 0
+        },
+        "chunk_locator": "ordinal",
+        "embedding_s": 6.069461151957512,
+        "corpus_sha256": "54391c87ff82c3c6bce2972ea99a009088ddfc353fbd0979297d6b488142fb0b",
+        "publish_total_s": 6.152161417528987
+      },
+      "update_start": 6922153.109600274,
+      "update_end": 6922159.26678317,
+      "decode": {
+        "tokens": 0,
+        "error": null
+      },
+      "before": {
+        "memory.current": "12836278272\n",
+        "memory.peak": "12838125568\n",
+        "memory.max": "12884901888\n",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+        "memory.stat": "anon 285687808\nfile 12284899328\nkernel 264982528\nkernel_stack 245760\npagetables 1413120\nsec_pagetables 0\npercpu 384\nsock 0\nvmalloc 12288\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 170041344\nfile_dirty 339968\nfile_writeback 0\nswapcached 0\nanon_thp 12582912\nfile_thp 7589593088\nshmem_thp 0\ninactive_anon 0\nactive_anon 285691904\ninactive_file 12177522688\nactive_file 107352064\nunevictable 0\nslab_reclaimable 262863536\nslab_unreclaimable 443952\nslab 263307488\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 919886\nworkingset_activate_anon 0\nworkingset_activate_file 24623\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 776254\npgsteal 775242\npswpin 0\npswpout 0\npgscan_kswapd 776254\npgscan_direct 0\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 775242\npgsteal_direct 0\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 320094\npgmajfault 826\npgrefill 3779\npgactivate 1012\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 6\nthp_collapse_alloc 0\nthp_swpout 0\nthp_swpout_fallback 0\n",
+        "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=43193\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=43193\n",
+        "cpu.stat": "usage_usec 120969039\nuser_usec 104078562\nsystem_usec 16890477\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 1249\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+        "cpu.pressure": "some avg10=0.83 avg60=0.23 avg300=0.05 total=482922\nfull avg10=0.08 avg60=0.02 avg300=0.00 total=369611\n",
+        "io.stat": "259:0 rbytes=5640077312 wbytes=10415194112 rios=47068 wios=122501 dbytes=0 dios=0\n",
+        "node_meminfo": "MemTotal:       16351168 kB\nMemFree:          225828 kB\nMemAvailable:   15245956 kB\nBuffers:          116960 kB\nCached:         14520184 kB\nSwapCached:            0 kB\nActive:          1145796 kB\nInactive:       14072504 kB\nActive(anon):     535832 kB\nInactive(anon):    47176 kB\nActive(file):     609964 kB\nInactive(file): 14025328 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               396 kB\nWriteback:             0 kB\nAnonPages:        581204 kB\nMapped:           455872 kB\nShmem:              1900 kB\nKReclaimable:     633244 kB\nSlab:             791236 kB\nSReclaimable:     633244 kB\nSUnreclaim:       157992 kB\nKernelStack:        4048 kB\nPageTables:         6672 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    1905896 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       25088 kB\nVmallocChunk:          0 kB\nPercpu:             8416 kB\nAnonHugePages:    114688 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   7411712 kB\nFilePmdMapped:         0 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+        "at": 6922153.081104005
+      },
+      "after": {
+        "memory.current": "12838567936\n",
+        "memory.peak": "12839448576\n",
+        "memory.max": "12884901888\n",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+        "memory.stat": "anon 287272960\nfile 12285747200\nkernel 265023488\nkernel_stack 245760\npagetables 1417216\nsec_pagetables 0\npercpu 384\nsock 0\nvmalloc 12288\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 172138496\nfile_dirty 430080\nfile_writeback 0\nswapcached 0\nanon_thp 12582912\nfile_thp 7589593088\nshmem_thp 0\ninactive_anon 0\nactive_anon 287277056\ninactive_file 12178382848\nactive_file 107352064\nunevictable 0\nslab_reclaimable 262885936\nslab_unreclaimable 461176\nslab 263347112\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 919886\nworkingset_activate_anon 0\nworkingset_activate_file 24623\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 776254\npgsteal 775242\npswpin 0\npswpout 0\npgscan_kswapd 776254\npgscan_direct 0\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 775242\npgsteal_direct 0\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 320507\npgmajfault 826\npgrefill 3779\npgactivate 1012\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 6\nthp_collapse_alloc 0\nthp_swpout 0\nthp_swpout_fallback 0\n",
+        "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=43193\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=43193\n",
+        "cpu.stat": "usage_usec 138155074\nuser_usec 120447965\nsystem_usec 17707109\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 1311\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0\n",
+        "cpu.pressure": "some avg10=0.91 avg60=0.31 avg300=0.07 total=580113\nfull avg10=0.22 avg60=0.05 avg300=0.01 total=426544\n",
+        "io.stat": "259:0 rbytes=5640077312 wbytes=10416885760 rios=47068 wios=122528 dbytes=0 dios=0\n",
+        "node_meminfo": "MemTotal:       16351168 kB\nMemFree:          236212 kB\nMemAvailable:   15257228 kB\nBuffers:          116960 kB\nCached:         14521048 kB\nSwapCached:            0 kB\nActive:          1145644 kB\nInactive:       14073380 kB\nActive(anon):     535680 kB\nInactive(anon):    47176 kB\nActive(file):     609964 kB\nInactive(file): 14026204 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              1304 kB\nWriteback:             0 kB\nAnonPages:        581012 kB\nMapped:           457920 kB\nShmem:              1900 kB\nKReclaimable:     633256 kB\nSlab:             791244 kB\nSReclaimable:     633256 kB\nSUnreclaim:       157988 kB\nKernelStack:        4092 kB\nPageTables:         6676 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    1907668 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       25088 kB\nVmallocChunk:          0 kB\nPercpu:             8416 kB\nAnonHugePages:    114688 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   7411712 kB\nFilePmdMapped:         0 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+        "at": 6922159.267554093
+      },
+      "processes_before": {
+        "encoder": {
+          "pid": 51,
+          "smaps_rollup": "00400000-ffffe9de5000 ---p 00000000 00:00 0                              [rollup]\nRss:              459336 kB\nPss:              458756 kB\nPss_Dirty:        278892 kB\nPss_Anon:         278888 kB\nPss_File:         179864 kB\nPss_Shmem:             4 kB\nShared_Clean:       1156 kB\nShared_Dirty:          0 kB\nPrivate_Clean:    179288 kB\nPrivate_Dirty:    278892 kB\nReferenced:       453364 kB\nAnonymous:        278888 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:     12288 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tpython\nUmask:\t0022\nState:\tR (running)\nTgid:\t51\nNgid:\t0\nPid:\t51\nPPid:\t1\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t51\nNSpid:\t51\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 2600404 kB\nVmSize:\t 2600372 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t  459336 kB\nVmRSS:\t  459336 kB\nRssAnon:\t  278888 kB\nRssFile:\t  180444 kB\nRssShmem:\t       4 kB\nVmData:\t 1852772 kB\nVmStk:\t     132 kB\nVmExe:\t       4 kB\nVmLib:\t  213560 kB\nVmPTE:\t    1328 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t14\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000201001000\nSigCgt:\t0000000100000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t44892\nnonvoluntary_ctxt_switches:\t8107\n",
+          "cgroup": "0::/\n",
+          "model_mappings": []
+        }
+      },
+      "processes_after": {
+        "encoder": {
+          "pid": 51,
+          "smaps_rollup": "00400000-ffffe9de5000 ---p 00000000 00:00 0                              [rollup]\nRss:              462932 kB\nPss:              462352 kB\nPss_Dirty:        280440 kB\nPss_Anon:         280436 kB\nPss_File:         181912 kB\nPss_Shmem:             4 kB\nShared_Clean:       1156 kB\nShared_Dirty:          0 kB\nPrivate_Clean:    181336 kB\nPrivate_Dirty:    280440 kB\nReferenced:       457108 kB\nAnonymous:        280436 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:     12288 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tpython\nUmask:\t0022\nState:\tR (running)\nTgid:\t51\nNgid:\t0\nPid:\t51\nPPid:\t1\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t51\nNSpid:\t51\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 2602176 kB\nVmSize:\t 2602144 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t  462932 kB\nVmRSS:\t  462932 kB\nRssAnon:\t  280436 kB\nRssFile:\t  182492 kB\nRssShmem:\t       4 kB\nVmData:\t 1854544 kB\nVmStk:\t     132 kB\nVmExe:\t       4 kB\nVmLib:\t  213560 kB\nVmPTE:\t    1332 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t14\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000201001000\nSigCgt:\t0000000100000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t45103\nnonvoluntary_ctxt_switches:\t9200\n",
+          "cgroup": "0::/\n",
+          "model_mappings": []
+        }
+      },
+      "decode_active_at_update_end": false
+    },
+    {
+      "batch": 1,
+      "concurrent": true,
+      "update": {
+        "version": "v2",
+        "encoder_id": "d444c217c5f0e5d18cf5f4464982f13a6752696c074a28386970e4d830666e80",
+        "documents": 2,
+        "chunks": 268,
+        "embedded_unique_chunks": 81,
+        "chunk_words": 200,
+        "stride_words": 160,
+        "chunking": {
+          "method": "markdown-paragraph-heading-v1",
+          "max_tokens": 256,
+          "tokenizer_id": "d444c217c5f0e5d18cf5f4464982f13a6752696c074a28386970e4d830666e80",
+          "oversized": "recursive-whitespace-then-character",
+          "overlap": 0
+        },
+        "chunk_locator": "ordinal",
+        "embedding_s": 19.479308849200606,
+        "corpus_sha256": "54391c87ff82c3c6bce2972ea99a009088ddfc353fbd0979297d6b488142fb0b",
+        "publish_total_s": 19.784802623093128
+      },
+      "update_start": 6922478.100600097,
+      "update_end": 6922497.907359036,
+      "decode": {
+        "tokens": 39,
+        "error": null
+      },
+      "before": {
+        "memory.current": "12883611648\n",
+        "memory.peak": "12884901888\n",
+        "memory.max": "12884901888\n",
+        "memory.events": "low 0\nhigh 0\nmax 64\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+        "memory.stat": "anon 1147416576\nfile 11501166592\nkernel 234496000\nkernel_stack 327680\npagetables 8192000\nsec_pagetables 0\npercpu 480\nsock 0\nvmalloc 12288\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 8951939072\nfile_dirty 118784\nfile_writeback 0\nswapcached 0\nanon_thp 12582912\nfile_thp 6241124352\nshmem_thp 0\ninactive_anon 0\nactive_anon 1147396096\ninactive_file 7798616064\nactive_file 3702530048\nunevictable 0\nslab_reclaimable 225418240\nslab_unreclaimable 514344\nslab 225932584\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 1540447\nworkingset_activate_anon 0\nworkingset_activate_file 643680\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 1848174\npgsteal 1589086\npswpin 0\npswpout 0\npgscan_kswapd 795710\npgscan_direct 1052464\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 794698\npgsteal_direct 794388\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 545950\npgmajfault 837\npgrefill 3795\npgactivate 2993\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 6\nthp_collapse_alloc 0\nthp_swpout 0\nthp_swpout_fallback 0\n",
+        "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=156088\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=156088\n",
+        "cpu.stat": "usage_usec 1342548332\nuser_usec 1319443290\nsystem_usec 23105041\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 4497\nnr_throttled 203\nthrottled_usec 91294\nnr_bursts 0\nburst_usec 0\n",
+        "cpu.pressure": "some avg10=2.02 avg60=1.96 avg300=1.31 total=8428553\nfull avg10=0.18 avg60=0.29 avg300=0.19 total=3465248\n",
+        "io.stat": "259:0 rbytes=8182644736 wbytes=10425442304 rios=66476 wios=122633 dbytes=0 dios=0\n",
+        "node_meminfo": "MemTotal:       16351168 kB\nMemFree:          256352 kB\nMemAvailable:   14400400 kB\nBuffers:          116100 kB\nCached:         13678520 kB\nSwapCached:            0 kB\nActive:          5497624 kB\nInactive:        9718716 kB\nActive(anon):    1376392 kB\nInactive(anon):    47176 kB\nActive(file):    4121232 kB\nInactive(file):  9671540 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               128 kB\nWriteback:             0 kB\nAnonPages:       1421420 kB\nMapped:          9035372 kB\nShmem:              1900 kB\nKReclaimable:     599684 kB\nSlab:             754232 kB\nSReclaimable:     599684 kB\nSUnreclaim:       154548 kB\nKernelStack:        4048 kB\nPageTables:        13288 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    2868432 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       25056 kB\nVmallocChunk:          0 kB\nPercpu:             8384 kB\nAnonHugePages:    114688 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   6094848 kB\nFilePmdMapped:   6094848 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+        "at": 6922477.892953302
+      },
+      "after": {
+        "memory.current": "12877602816\n",
+        "memory.peak": "12884901888\n",
+        "memory.max": "12884901888\n",
+        "memory.events": "low 0\nhigh 0\nmax 67\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+        "memory.stat": "anon 1146941440\nfile 11493494784\nkernel 234532864\nkernel_stack 327680\npagetables 8196096\nsec_pagetables 0\npercpu 480\nsock 0\nvmalloc 12288\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 8952238080\nfile_dirty 413696\nfile_writeback 0\nswapcached 0\nanon_thp 4194304\nfile_thp 6241124352\nshmem_thp 0\ninactive_anon 0\nactive_anon 1148895232\ninactive_file 7778172928\nactive_file 3715317760\nunevictable 0\nslab_reclaimable 225456536\nslab_unreclaimable 521256\nslab 225977792\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 1540497\nworkingset_activate_anon 0\nworkingset_activate_file 643730\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 1853425\npgsteal 1591265\npswpin 0\npswpout 0\npgscan_kswapd 795710\npgscan_direct 1057715\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 794698\npgsteal_direct 796567\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 600542\npgmajfault 839\npgrefill 3795\npgactivate 2993\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 132\nthp_collapse_alloc 0\nthp_swpout 0\nthp_swpout_fallback 0\n",
+        "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=156222\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=156222\n",
+        "cpu.stat": "usage_usec 1417344846\nuser_usec 1391410909\nsystem_usec 25933937\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 4697\nnr_throttled 203\nthrottled_usec 91294\nnr_bursts 0\nburst_usec 0\n",
+        "cpu.pressure": "some avg10=42.33 avg60=14.42 avg300=4.24 total=18403998\nfull avg10=1.43 avg60=0.59 avg300=0.27 total=3827202\n",
+        "io.stat": "259:0 rbytes=8182849536 wbytes=10427133952 rios=66482 wios=122660 dbytes=0 dios=0\n",
+        "node_meminfo": "MemTotal:       16351168 kB\nMemFree:          271556 kB\nMemAvailable:   14408244 kB\nBuffers:          116100 kB\nCached:         13671144 kB\nSwapCached:            0 kB\nActive:          5512308 kB\nInactive:        9698868 kB\nActive(anon):    1378588 kB\nInactive(anon):    47176 kB\nActive(file):    4133720 kB\nInactive(file):  9651692 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              1768 kB\nWriteback:             0 kB\nAnonPages:       1421600 kB\nMapped:          9035700 kB\nShmem:              1900 kB\nKReclaimable:     599684 kB\nSlab:             754232 kB\nSReclaimable:     599684 kB\nSUnreclaim:       154548 kB\nKernelStack:        4096 kB\nPageTables:        13296 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    2884816 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       25136 kB\nVmallocChunk:          0 kB\nPercpu:             8384 kB\nAnonHugePages:    106496 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   6094848 kB\nFilePmdMapped:   6094848 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+        "at": 6922497.908030811
+      },
+      "processes_before": {
+        "encoder": {
+          "pid": 51,
+          "smaps_rollup": "00400000-ffffe9de5000 ---p 00000000 00:00 0                              [rollup]\nRss:              464316 kB\nPss:              462518 kB\nPss_Dirty:        283416 kB\nPss_Anon:         283412 kB\nPss_File:         179102 kB\nPss_Shmem:             4 kB\nShared_Clean:       3208 kB\nShared_Dirty:          0 kB\nPrivate_Clean:    177692 kB\nPrivate_Dirty:    283416 kB\nReferenced:       450812 kB\nAnonymous:        283412 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:     12288 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tpython\nUmask:\t0022\nState:\tR (running)\nTgid:\t51\nNgid:\t0\nPid:\t51\nPPid:\t1\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t51\nNSpid:\t51\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 2670488 kB\nVmSize:\t 2670488 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t  464316 kB\nVmRSS:\t  464316 kB\nRssAnon:\t  283412 kB\nRssFile:\t  180900 kB\nRssShmem:\t       4 kB\nVmData:\t 1857484 kB\nVmStk:\t     132 kB\nVmExe:\t       4 kB\nVmLib:\t  213560 kB\nVmPTE:\t    1340 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t15\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000201001000\nSigCgt:\t0000000100000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t45817\nnonvoluntary_ctxt_switches:\t11647\n",
+          "cgroup": "0::/\n",
+          "model_mappings": []
+        },
+        "q4": {
+          "pid": 33885,
+          "smaps_rollup": "aaaaab7d0000-fffff55d4000 ---p 00000000 00:00 0                          [rollup]\nRss:             9419068 kB\nPss:             9417270 kB\nPss_Dirty:        837008 kB\nPss_Anon:         837008 kB\nPss_File:        8580262 kB\nPss_Shmem:             0 kB\nShared_Clean:       3208 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8578852 kB\nPrivate_Dirty:    837008 kB\nReferenced:      9419068 kB\nAnonymous:        837008 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tu3-microbatch2-\nUmask:\t0022\nState:\tR (running)\nTgid:\t33885\nNgid:\t0\nPid:\t33885\nPPid:\t51\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t33885\nNSpid:\t33885\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 9543236 kB\nVmSize:\t 9543236 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t 9419068 kB\nVmRSS:\t 9419068 kB\nRssAnon:\t  837008 kB\nRssFile:\t 8582060 kB\nRssShmem:\t       0 kB\nVmData:\t  957692 kB\nVmStk:\t     132 kB\nVmExe:\t      12 kB\nVmLib:\t    8684 kB\nVmPTE:\t    6604 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t4\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000200000000\nSigCgt:\t0000000100000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t20630\nnonvoluntary_ctxt_switches:\t53606\n",
+          "cgroup": "0::/\n",
+          "model_mappings": [
+            "fffd943b1000-ffff9fa4f000 r--s 005b1000 103:02 642978                    /output/accounted-Q4.gguf\nSize:            8575608 kB\nKernelPageSize:        4 kB\nMMUPageSize:           4 kB\nRss:             8575608 kB\nPss:             8575608 kB\nPss_Dirty:             0 kB\nShared_Clean:          0 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8575608 kB\nPrivate_Dirty:         0 kB\nReferenced:      8575608 kB\nAnonymous:             0 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\nTHPeligible:           0\nVmFlags: rd mr me ms "
+          ]
+        }
+      },
+      "processes_after": {
+        "encoder": {
+          "pid": 51,
+          "smaps_rollup": "00400000-ffffe9de5000 ---p 00000000 00:00 0                              [rollup]\nRss:              464144 kB\nPss:              462346 kB\nPss_Dirty:        282952 kB\nPss_Anon:         282948 kB\nPss_File:         179394 kB\nPss_Shmem:             4 kB\nShared_Clean:       3208 kB\nShared_Dirty:          0 kB\nPrivate_Clean:    177984 kB\nPrivate_Dirty:    282952 kB\nReferenced:       455920 kB\nAnonymous:        282948 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:      4096 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tpython\nUmask:\t0022\nState:\tR (running)\nTgid:\t51\nNgid:\t0\nPid:\t51\nPPid:\t1\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t51\nNSpid:\t51\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 2687032 kB\nVmSize:\t 2687000 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t  466160 kB\nVmRSS:\t  464144 kB\nRssAnon:\t  282948 kB\nRssFile:\t  181192 kB\nRssShmem:\t       4 kB\nVmData:\t 1876768 kB\nVmStk:\t     132 kB\nVmExe:\t       4 kB\nVmLib:\t  213560 kB\nVmPTE:\t    1344 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t15\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000201001000\nSigCgt:\t0000000100000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t51940\nnonvoluntary_ctxt_switches:\t16893\n",
+          "cgroup": "0::/\n",
+          "model_mappings": []
+        },
+        "q4": {
+          "pid": 33885,
+          "smaps_rollup": "aaaaab7d0000-fffff55d4000 ---p 00000000 00:00 0                          [rollup]\nRss:             9419068 kB\nPss:             9417270 kB\nPss_Dirty:        837008 kB\nPss_Anon:         837008 kB\nPss_File:        8580262 kB\nPss_Shmem:             0 kB\nShared_Clean:       3208 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8578852 kB\nPrivate_Dirty:    837008 kB\nReferenced:      9419068 kB\nAnonymous:        837008 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tu3-microbatch2-\nUmask:\t0022\nState:\tR (running)\nTgid:\t33885\nNgid:\t0\nPid:\t33885\nPPid:\t51\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t33885\nNSpid:\t33885\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 9543236 kB\nVmSize:\t 9543236 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t 9419068 kB\nVmRSS:\t 9419068 kB\nRssAnon:\t  837008 kB\nRssFile:\t 8582060 kB\nRssShmem:\t       0 kB\nVmData:\t  957692 kB\nVmStk:\t     132 kB\nVmExe:\t      12 kB\nVmLib:\t    8684 kB\nVmPTE:\t    6604 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t4\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000200000000\nSigCgt:\t0000000100000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t28403\nnonvoluntary_ctxt_switches:\t59830\n",
+          "cgroup": "0::/\n",
+          "model_mappings": [
+            "fffd943b1000-ffff9fa4f000 r--s 005b1000 103:02 642978                    /output/accounted-Q4.gguf\nSize:            8575608 kB\nKernelPageSize:        4 kB\nMMUPageSize:           4 kB\nRss:             8575608 kB\nPss:             8575608 kB\nPss_Dirty:             0 kB\nShared_Clean:          0 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8575608 kB\nPrivate_Dirty:         0 kB\nReferenced:      8575608 kB\nAnonymous:             0 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\nTHPeligible:           0\nVmFlags: rd mr me ms "
+          ]
+        }
+      },
+      "decode_active_at_update_end": true
+    },
+    {
+      "batch": 4,
+      "concurrent": false,
+      "update": {
+        "version": "v2",
+        "encoder_id": "d444c217c5f0e5d18cf5f4464982f13a6752696c074a28386970e4d830666e80",
+        "documents": 2,
+        "chunks": 268,
+        "embedded_unique_chunks": 81,
+        "chunk_words": 200,
+        "stride_words": 160,
+        "chunking": {
+          "method": "markdown-paragraph-heading-v1",
+          "max_tokens": 256,
+          "tokenizer_id": "d444c217c5f0e5d18cf5f4464982f13a6752696c074a28386970e4d830666e80",
+          "oversized": "recursive-whitespace-then-character",
+          "overlap": 0
+        },
+        "chunk_locator": "ordinal",
+        "embedding_s": 3.5255318051204085,
+        "corpus_sha256": "54391c87ff82c3c6bce2972ea99a009088ddfc353fbd0979297d6b488142fb0b",
+        "publish_total_s": 3.6388706993311644
+      },
+      "update_start": 6922541.997564766,
+      "update_end": 6922545.64121639,
+      "decode": {
+        "tokens": 0,
+        "error": null
+      },
+      "before": {
+        "memory.current": "12033138688\n",
+        "memory.peak": "12884901888\n",
+        "memory.max": "12884901888\n",
+        "memory.events": "low 0\nhigh 0\nmax 67\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+        "memory.stat": "anon 301199360\nfile 11497148416\nkernel 227639296\nkernel_stack 212992\npagetables 1449984\nsec_pagetables 0\npercpu 384\nsock 0\nvmalloc 12288\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 171958272\nfile_dirty 155648\nfile_writeback 0\nswapcached 0\nanon_thp 2097152\nfile_thp 6241124352\nshmem_thp 0\ninactive_anon 0\nactive_anon 307613696\ninactive_file 7780569088\nactive_file 3716571136\nunevictable 0\nslab_reclaimable 225530872\nslab_unreclaimable 436384\nslab 225967256\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 1540803\nworkingset_activate_anon 0\nworkingset_activate_file 644036\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 1853425\npgsteal 1591265\npswpin 0\npswpout 0\npgscan_kswapd 795710\npgscan_direct 1057715\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 794698\npgsteal_direct 796567\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 723089\npgmajfault 853\npgrefill 3795\npgactivate 2993\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 431\nthp_collapse_alloc 0\nthp_swpout 0\nthp_swpout_fallback 0\n",
+        "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=156222\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=156222\n",
+        "cpu.stat": "usage_usec 1579181546\nuser_usec 1551174186\nsystem_usec 28007360\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 5138\nnr_throttled 213\nthrottled_usec 94715\nnr_bursts 0\nburst_usec 0\n",
+        "cpu.pressure": "some avg10=2.76 avg60=9.06 avg300=4.29 total=19940285\nfull avg10=0.65 avg60=0.78 avg300=0.37 total=4426829\n",
+        "io.stat": "259:0 rbytes=8184102912 wbytes=10431668224 rios=66502 wios=122718 dbytes=0 dios=0\n",
+        "node_meminfo": "MemTotal:       16351168 kB\nMemFree:         1069628 kB\nMemAvailable:   15209804 kB\nBuffers:          116100 kB\nCached:         13674636 kB\nSwapCached:            0 kB\nActive:          4691088 kB\nInactive:        9701132 kB\nActive(anon):     556144 kB\nInactive(anon):    47176 kB\nActive(file):    4134944 kB\nInactive(file):  9653956 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              1084 kB\nWriteback:             0 kB\nAnonPages:        594796 kB\nMapped:           457976 kB\nShmem:              1900 kB\nKReclaimable:     599684 kB\nSlab:             754232 kB\nSReclaimable:     599684 kB\nSUnreclaim:       154548 kB\nKernelStack:        3984 kB\nPageTables:         6708 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    1919104 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       24992 kB\nVmallocChunk:          0 kB\nPercpu:             8384 kB\nAnonHugePages:    104448 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   6094848 kB\nFilePmdMapped:         0 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+        "at": 6922541.966786451
+      },
+      "after": {
+        "memory.current": "12027277312\n",
+        "memory.peak": "12884901888\n",
+        "memory.max": "12884901888\n",
+        "memory.events": "low 0\nhigh 0\nmax 67\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+        "memory.stat": "anon 299098112\nfile 11497963520\nkernel 227696640\nkernel_stack 245760\npagetables 1441792\nsec_pagetables 0\npercpu 384\nsock 0\nvmalloc 12288\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 171958272\nfile_dirty 208896\nfile_writeback 0\nswapcached 0\nanon_thp 2097152\nfile_thp 6241124352\nshmem_thp 0\ninactive_anon 0\nactive_anon 300892160\ninactive_file 7781384192\nactive_file 3716571136\nunevictable 0\nslab_reclaimable 225550248\nslab_unreclaimable 436984\nslab 225987232\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 1540803\nworkingset_activate_anon 0\nworkingset_activate_file 644036\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 1853425\npgsteal 1591265\npswpin 0\npswpout 0\npgscan_kswapd 795710\npgscan_direct 1057715\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 794698\npgsteal_direct 796567\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 745583\npgmajfault 853\npgrefill 3795\npgactivate 2993\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 456\nthp_collapse_alloc 0\nthp_swpout 0\nthp_swpout_fallback 0\n",
+        "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=156222\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=156222\n",
+        "cpu.stat": "usage_usec 1590429413\nuser_usec 1562049846\nsystem_usec 28379566\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 5175\nnr_throttled 213\nthrottled_usec 94715\nnr_bursts 0\nburst_usec 0\n",
+        "cpu.pressure": "some avg10=2.18 avg60=8.54 avg300=4.24 total=19989148\nfull avg10=0.43 avg60=0.73 avg300=0.36 total=4449204\n",
+        "io.stat": "259:0 rbytes=8184102912 wbytes=10433368064 rios=66502 wios=122745 dbytes=0 dios=0\n",
+        "node_meminfo": "MemTotal:       16351168 kB\nMemFree:         1012468 kB\nMemAvailable:   15153484 kB\nBuffers:          116100 kB\nCached:         13675476 kB\nSwapCached:            0 kB\nActive:          4685036 kB\nInactive:        9701972 kB\nActive(anon):     550092 kB\nInactive(anon):    47176 kB\nActive(file):    4134944 kB\nInactive(file):  9654796 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              1152 kB\nWriteback:             0 kB\nAnonPages:        593256 kB\nMapped:           457976 kB\nShmem:              1900 kB\nKReclaimable:     599684 kB\nSlab:             754232 kB\nSReclaimable:     599684 kB\nSUnreclaim:       154548 kB\nKernelStack:        4016 kB\nPageTables:         6700 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    1919848 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       25056 kB\nVmallocChunk:          0 kB\nPercpu:             8384 kB\nAnonHugePages:    104448 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   6094848 kB\nFilePmdMapped:         0 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+        "at": 6922545.642027794
+      },
+      "processes_before": {
+        "encoder": {
+          "pid": 51,
+          "smaps_rollup": "00400000-ffffe9de5000 ---p 00000000 00:00 0                              [rollup]\nRss:              476356 kB\nPss:              475776 kB\nPss_Dirty:        294040 kB\nPss_Anon:         294036 kB\nPss_File:         181736 kB\nPss_Shmem:             4 kB\nShared_Clean:       1156 kB\nShared_Dirty:          0 kB\nPrivate_Clean:    181160 kB\nPrivate_Dirty:    294040 kB\nReferenced:       468724 kB\nAnonymous:        294036 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:      2048 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tpython\nUmask:\t0022\nState:\tR (running)\nTgid:\t51\nNgid:\t0\nPid:\t51\nPPid:\t1\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t51\nNSpid:\t51\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 2687032 kB\nVmSize:\t 2679180 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t  481612 kB\nVmRSS:\t  476356 kB\nRssAnon:\t  294036 kB\nRssFile:\t  182316 kB\nRssShmem:\t       4 kB\nVmData:\t 1869716 kB\nVmStk:\t     132 kB\nVmExe:\t       4 kB\nVmLib:\t  213560 kB\nVmPTE:\t    1364 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t12\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000201001000\nSigCgt:\t0000000100000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t52520\nnonvoluntary_ctxt_switches:\t18483\n",
+          "cgroup": "0::/\n",
+          "model_mappings": []
+        }
+      },
+      "processes_after": {
+        "encoder": {
+          "pid": 51,
+          "smaps_rollup": "00400000-ffffe9de5000 ---p 00000000 00:00 0                              [rollup]\nRss:              474304 kB\nPss:              473724 kB\nPss_Dirty:        291988 kB\nPss_Anon:         291984 kB\nPss_File:         181736 kB\nPss_Shmem:             4 kB\nShared_Clean:       1156 kB\nShared_Dirty:          0 kB\nPrivate_Clean:    181160 kB\nPrivate_Dirty:    291988 kB\nReferenced:       466800 kB\nAnonymous:        291984 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:      2048 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tpython\nUmask:\t0022\nState:\tR (running)\nTgid:\t51\nNgid:\t0\nPid:\t51\nPPid:\t1\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t51\nNSpid:\t51\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 2687032 kB\nVmSize:\t 2679924 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t  481612 kB\nVmRSS:\t  474304 kB\nRssAnon:\t  291984 kB\nRssFile:\t  182316 kB\nRssShmem:\t       4 kB\nVmData:\t 1870540 kB\nVmStk:\t     132 kB\nVmExe:\t       4 kB\nVmLib:\t  213560 kB\nVmPTE:\t    1356 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t14\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000201001000\nSigCgt:\t0000000100000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t52713\nnonvoluntary_ctxt_switches:\t19025\n",
+          "cgroup": "0::/\n",
+          "model_mappings": []
+        }
+      },
+      "decode_active_at_update_end": false
+    },
+    {
+      "batch": 4,
+      "concurrent": true,
+      "update": {
+        "version": "v2",
+        "encoder_id": "d444c217c5f0e5d18cf5f4464982f13a6752696c074a28386970e4d830666e80",
+        "documents": 2,
+        "chunks": 268,
+        "embedded_unique_chunks": 81,
+        "chunk_words": 200,
+        "stride_words": 160,
+        "chunking": {
+          "method": "markdown-paragraph-heading-v1",
+          "max_tokens": 256,
+          "tokenizer_id": "d444c217c5f0e5d18cf5f4464982f13a6752696c074a28386970e4d830666e80",
+          "oversized": "recursive-whitespace-then-character",
+          "overlap": 0
+        },
+        "chunk_locator": "ordinal",
+        "embedding_s": 11.447957815602422,
+        "corpus_sha256": "54391c87ff82c3c6bce2972ea99a009088ddfc353fbd0979297d6b488142fb0b",
+        "publish_total_s": 11.766029294580221
+      },
+      "update_start": 6922854.122114724,
+      "update_end": 6922865.903743973,
+      "decode": {
+        "tokens": 39,
+        "error": null
+      },
+      "before": {
+        "memory.current": "12884602880\n",
+        "memory.peak": "12884901888\n",
+        "memory.max": "12884901888\n",
+        "memory.events": "low 0\nhigh 0\nmax 67\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+        "memory.stat": "anon 1162055680\nfile 11481407488\nkernel 234745856\nkernel_stack 278528\npagetables 8220672\nsec_pagetables 0\npercpu 480\nsock 0\nvmalloc 12288\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 8953389056\nfile_dirty 196608\nfile_writeback 0\nswapcached 0\nanon_thp 2097152\nfile_thp 6241124352\nshmem_thp 0\ninactive_anon 0\nactive_anon 1168220160\ninactive_file 7739645952\nactive_file 3741736960\nunevictable 0\nslab_reclaimable 225728616\nslab_unreclaimable 489896\nslab 226218512\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 1540803\nworkingset_activate_anon 0\nworkingset_activate_file 644036\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 1865127\npgsteal 1596823\npswpin 0\npswpout 0\npgscan_kswapd 795710\npgscan_direct 1069417\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 794698\npgsteal_direct 802125\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 1082497\npgmajfault 853\npgrefill 3795\npgactivate 9137\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 741\nthp_collapse_alloc 0\nthp_swpout 0\nthp_swpout_fallback 0\n",
+        "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=157006\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=157006\n",
+        "cpu.stat": "usage_usec 2782917787\nuser_usec 2750033901\nsystem_usec 32883886\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 8257\nnr_throttled 391\nthrottled_usec 166121\nnr_bursts 0\nburst_usec 0\n",
+        "cpu.pressure": "some avg10=1.68 avg60=2.03 avg300=2.76 total=27777008\nfull avg10=0.03 avg60=0.23 avg300=0.31 total=7408746\n",
+        "io.stat": "259:0 rbytes=8184102912 wbytes=10441510912 rios=66502 wios=122843 dbytes=0 dios=0\n",
+        "node_meminfo": "MemTotal:       16351168 kB\nMemFree:          254920 kB\nMemAvailable:   14381060 kB\nBuffers:          116108 kB\nCached:         13660604 kB\nSwapCached:            0 kB\nActive:          5558668 kB\nInactive:        9661148 kB\nActive(anon):    1397776 kB\nInactive(anon):    47176 kB\nActive(file):    4160892 kB\nInactive(file):  9613972 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              2068 kB\nWriteback:             0 kB\nAnonPages:       1436696 kB\nMapped:          9036920 kB\nShmem:              1900 kB\nKReclaimable:     599684 kB\nSlab:             754228 kB\nSReclaimable:     599684 kB\nSUnreclaim:       154544 kB\nKernelStack:        4016 kB\nPageTables:        13320 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    2880376 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       25040 kB\nVmallocChunk:          0 kB\nPercpu:             8384 kB\nAnonHugePages:    104448 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   6094848 kB\nFilePmdMapped:   6094848 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+        "at": 6922853.918814855
+      },
+      "after": {
+        "memory.current": "12864143360\n",
+        "memory.peak": "12884901888\n",
+        "memory.max": "12884901888\n",
+        "memory.events": "low 0\nhigh 0\nmax 67\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+        "memory.stat": "anon 1149517824\nfile 11477409792\nkernel 234848256\nkernel_stack 327680\npagetables 8200192\nsec_pagetables 0\npercpu 480\nsock 0\nvmalloc 12288\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 8953389056\nfile_dirty 380928\nfile_writeback 0\nswapcached 0\nanon_thp 2097152\nfile_thp 6241124352\nshmem_thp 0\ninactive_anon 0\nactive_anon 1151434752\ninactive_file 7727280128\nactive_file 3750125568\nunevictable 0\nslab_reclaimable 225765424\nslab_unreclaimable 529504\nslab 226294928\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 1540803\nworkingset_activate_anon 0\nworkingset_activate_file 644036\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 1868379\npgsteal 1598027\npswpin 0\npswpout 0\npgscan_kswapd 795710\npgscan_direct 1072669\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 794698\npgsteal_direct 803329\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 1231112\npgmajfault 853\npgrefill 3795\npgactivate 11185\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 1056\nthp_collapse_alloc 0\nthp_swpout 0\nthp_swpout_fallback 0\n",
+        "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=157172\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=157172\n",
+        "cpu.stat": "usage_usec 2827255438\nuser_usec 2792411607\nsystem_usec 34843831\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 8377\nnr_throttled 391\nthrottled_usec 166121\nnr_bursts 0\nburst_usec 0\n",
+        "cpu.pressure": "some avg10=36.20 avg60=10.48 avg300=4.60 total=34307462\nfull avg10=0.95 avg60=0.45 avg300=0.36 total=7653032\n",
+        "io.stat": "259:0 rbytes=8184102912 wbytes=10443210752 rios=66502 wios=122870 dbytes=0 dios=0\n",
+        "node_meminfo": "MemTotal:       16351168 kB\nMemFree:          280156 kB\nMemAvailable:   14402492 kB\nBuffers:          116108 kB\nCached:         13656784 kB\nSwapCached:            0 kB\nActive:          5550256 kB\nInactive:        9649152 kB\nActive(anon):    1381172 kB\nInactive(anon):    47176 kB\nActive(file):    4169084 kB\nInactive(file):  9601976 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              1924 kB\nWriteback:            20 kB\nAnonPages:       1424564 kB\nMapped:          9036952 kB\nShmem:              1900 kB\nKReclaimable:     599684 kB\nSlab:             754228 kB\nSReclaimable:     599684 kB\nSUnreclaim:       154544 kB\nKernelStack:        4064 kB\nPageTables:        13300 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    2888568 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       25104 kB\nVmallocChunk:          0 kB\nPercpu:             8384 kB\nAnonHugePages:    104448 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   6094848 kB\nFilePmdMapped:   6094848 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+        "at": 6922865.908875174
+      },
+      "processes_before": {
+        "encoder": {
+          "pid": 51,
+          "smaps_rollup": "00400000-ffffe9de5000 ---p 00000000 00:00 0                              [rollup]\nRss:              480048 kB\nPss:              478252 kB\nPss_Dirty:        297732 kB\nPss_Anon:         297728 kB\nPss_File:         180520 kB\nPss_Shmem:             4 kB\nShared_Clean:       3208 kB\nShared_Dirty:          0 kB\nPrivate_Clean:    179108 kB\nPrivate_Dirty:    297732 kB\nReferenced:       472784 kB\nAnonymous:        297728 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:      2048 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tpython\nUmask:\t0022\nState:\tR (running)\nTgid:\t51\nNgid:\t0\nPid:\t51\nPPid:\t1\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t51\nNSpid:\t51\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 2687032 kB\nVmSize:\t 2682496 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t  484720 kB\nVmRSS:\t  480048 kB\nRssAnon:\t  297728 kB\nRssFile:\t  182316 kB\nRssShmem:\t       4 kB\nVmData:\t 1873296 kB\nVmStk:\t     132 kB\nVmExe:\t       4 kB\nVmLib:\t  213560 kB\nVmPTE:\t    1372 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t13\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000201001000\nSigCgt:\t0000000100000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t53364\nnonvoluntary_ctxt_switches:\t20622\n",
+          "cgroup": "0::/\n",
+          "model_mappings": []
+        },
+        "q4": {
+          "pid": 48394,
+          "smaps_rollup": "aaaacbbb0000-ffffc5559000 ---p 00000000 00:00 0                          [rollup]\nRss:             9419052 kB\nPss:             9417264 kB\nPss_Dirty:        837008 kB\nPss_Anon:         837008 kB\nPss_File:        8580256 kB\nPss_Shmem:             0 kB\nShared_Clean:       3192 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8578852 kB\nPrivate_Dirty:    837008 kB\nReferenced:      9419052 kB\nAnonymous:        837008 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tu3-microbatch2-\nUmask:\t0022\nState:\tR (running)\nTgid:\t48394\nNgid:\t0\nPid:\t48394\nPPid:\t51\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t48394\nNSpid:\t48394\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 9543236 kB\nVmSize:\t 9543236 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t 9419052 kB\nVmRSS:\t 9419052 kB\nRssAnon:\t  837008 kB\nRssFile:\t 8582044 kB\nRssShmem:\t       0 kB\nVmData:\t  957692 kB\nVmStk:\t     132 kB\nVmExe:\t      12 kB\nVmLib:\t    8684 kB\nVmPTE:\t    6600 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t4\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000200000000\nSigCgt:\t0000000100000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t11115\nnonvoluntary_ctxt_switches:\t53924\n",
+          "cgroup": "0::/\n",
+          "model_mappings": [
+            "fffdabdb1000-ffffb744f000 r--s 005b1000 103:02 642978                    /output/accounted-Q4.gguf\nSize:            8575608 kB\nKernelPageSize:        4 kB\nMMUPageSize:           4 kB\nRss:             8575608 kB\nPss:             8575608 kB\nPss_Dirty:             0 kB\nShared_Clean:          0 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8575608 kB\nPrivate_Dirty:         0 kB\nReferenced:      8575608 kB\nAnonymous:             0 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\nTHPeligible:           0\nVmFlags: rd mr me ms "
+          ]
+        }
+      },
+      "processes_after": {
+        "encoder": {
+          "pid": 51,
+          "smaps_rollup": "00400000-ffffe9de5000 ---p 00000000 00:00 0                              [rollup]\nRss:              467784 kB\nPss:              465988 kB\nPss_Dirty:        285468 kB\nPss_Anon:         285464 kB\nPss_File:         180520 kB\nPss_Shmem:             4 kB\nShared_Clean:       3208 kB\nShared_Dirty:          0 kB\nPrivate_Clean:    179108 kB\nPrivate_Dirty:    285468 kB\nReferenced:       460708 kB\nAnonymous:        285464 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:      2048 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tpython\nUmask:\t0022\nState:\tR (running)\nTgid:\t51\nNgid:\t0\nPid:\t51\nPPid:\t1\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t51\nNSpid:\t51\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 2690784 kB\nVmSize:\t 2690752 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t  484720 kB\nVmRSS:\t  467784 kB\nRssAnon:\t  285464 kB\nRssFile:\t  182316 kB\nRssShmem:\t       4 kB\nVmData:\t 1881524 kB\nVmStk:\t     132 kB\nVmExe:\t       4 kB\nVmLib:\t  213560 kB\nVmPTE:\t    1352 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t15\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000201001000\nSigCgt:\t0000000100000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t55346\nnonvoluntary_ctxt_switches:\t23732\n",
+          "cgroup": "0::/\n",
+          "model_mappings": []
+        },
+        "q4": {
+          "pid": 48394,
+          "smaps_rollup": "aaaacbbb0000-ffffc5559000 ---p 00000000 00:00 0                          [rollup]\nRss:             9419052 kB\nPss:             9417264 kB\nPss_Dirty:        837008 kB\nPss_Anon:         837008 kB\nPss_File:        8580256 kB\nPss_Shmem:             0 kB\nShared_Clean:       3192 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8578852 kB\nPrivate_Dirty:    837008 kB\nReferenced:      9419052 kB\nAnonymous:        837008 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tu3-microbatch2-\nUmask:\t0022\nState:\tR (running)\nTgid:\t48394\nNgid:\t0\nPid:\t48394\nPPid:\t51\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t48394\nNSpid:\t48394\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 9543236 kB\nVmSize:\t 9543236 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t 9419052 kB\nVmRSS:\t 9419052 kB\nRssAnon:\t  837008 kB\nRssFile:\t 8582044 kB\nRssShmem:\t       0 kB\nVmData:\t  957692 kB\nVmStk:\t     132 kB\nVmExe:\t      12 kB\nVmLib:\t    8684 kB\nVmPTE:\t    6600 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t4\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000200000000\nSigCgt:\t0000000100000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t15670\nnonvoluntary_ctxt_switches:\t57028\n",
+          "cgroup": "0::/\n",
+          "model_mappings": [
+            "fffdabdb1000-ffffb744f000 r--s 005b1000 103:02 642978                    /output/accounted-Q4.gguf\nSize:            8575608 kB\nKernelPageSize:        4 kB\nMMUPageSize:           4 kB\nRss:             8575608 kB\nPss:             8575608 kB\nPss_Dirty:             0 kB\nShared_Clean:          0 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8575608 kB\nPrivate_Dirty:         0 kB\nReferenced:      8575608 kB\nAnonymous:             0 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\nTHPeligible:           0\nVmFlags: rd mr me ms "
+          ]
+        }
+      },
+      "decode_active_at_update_end": true
+    },
+    {
+      "batch": 8,
+      "concurrent": false,
+      "update": {
+        "version": "v2",
+        "encoder_id": "d444c217c5f0e5d18cf5f4464982f13a6752696c074a28386970e4d830666e80",
+        "documents": 2,
+        "chunks": 268,
+        "embedded_unique_chunks": 81,
+        "chunk_words": 200,
+        "stride_words": 160,
+        "chunking": {
+          "method": "markdown-paragraph-heading-v1",
+          "max_tokens": 256,
+          "tokenizer_id": "d444c217c5f0e5d18cf5f4464982f13a6752696c074a28386970e4d830666e80",
+          "oversized": "recursive-whitespace-then-character",
+          "overlap": 0
+        },
+        "chunk_locator": "ordinal",
+        "embedding_s": 4.079183239489794,
+        "corpus_sha256": "54391c87ff82c3c6bce2972ea99a009088ddfc353fbd0979297d6b488142fb0b",
+        "publish_total_s": 4.193884241394699
+      },
+      "update_start": 6922919.676495133,
+      "update_end": 6922923.874746522,
+      "decode": {
+        "tokens": 0,
+        "error": null
+      },
+      "before": {
+        "memory.current": "12040163328\n",
+        "memory.peak": "12884901888\n",
+        "memory.max": "12884901888\n",
+        "memory.events": "low 0\nhigh 0\nmax 67\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+        "memory.stat": "anon 323825664\nfile 11479957504\nkernel 227991552\nkernel_stack 212992\npagetables 1495040\nsec_pagetables 0\npercpu 384\nsock 0\nvmalloc 12288\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 171958272\nfile_dirty 266240\nfile_writeback 0\nswapcached 0\nanon_thp 20971520\nfile_thp 6241124352\nshmem_thp 0\ninactive_anon 0\nactive_anon 331489280\ninactive_file 7729823744\nactive_file 3750125568\nunevictable 0\nslab_reclaimable 225842784\nslab_unreclaimable 419544\nslab 226262328\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 1540803\nworkingset_activate_anon 0\nworkingset_activate_file 644036\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 1868379\npgsteal 1598027\npswpin 0\npswpout 0\npgscan_kswapd 795710\npgscan_direct 1072669\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 794698\npgsteal_direct 803329\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 1435548\npgmajfault 853\npgrefill 3795\npgactivate 11185\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 1955\nthp_collapse_alloc 4\nthp_swpout 0\nthp_swpout_fallback 0\n",
+        "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=157172\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=157172\n",
+        "cpu.stat": "usage_usec 3025100402\nuser_usec 2987725442\nsystem_usec 37374959\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 8915\nnr_throttled 400\nthrottled_usec 170295\nnr_bursts 0\nburst_usec 0\n",
+        "cpu.pressure": "some avg10=2.95 avg60=6.56 avg300=4.55 total=36224337\nfull avg10=0.90 avg60=0.75 avg300=0.47 total=8358284\n",
+        "io.stat": "259:0 rbytes=8184102912 wbytes=10447790080 rios=66502 wios=122928 dbytes=0 dios=0\n",
+        "node_meminfo": "MemTotal:       16351168 kB\nMemFree:         1031376 kB\nMemAvailable:   15156160 kB\nBuffers:          116108 kB\nCached:         13659236 kB\nSwapCached:            0 kB\nActive:          4749128 kB\nInactive:        9651600 kB\nActive(anon):     580044 kB\nInactive(anon):    47176 kB\nActive(file):    4169084 kB\nInactive(file):  9604424 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              1780 kB\nWriteback:             0 kB\nAnonPages:        617616 kB\nMapped:           458228 kB\nShmem:              1900 kB\nKReclaimable:     599684 kB\nSlab:             754228 kB\nSReclaimable:     599684 kB\nSUnreclaim:       154544 kB\nKernelStack:        3952 kB\nPageTables:         6752 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    1922404 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       24992 kB\nVmallocChunk:          0 kB\nPercpu:             8384 kB\nAnonHugePages:    122880 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   6094848 kB\nFilePmdMapped:         0 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+        "at": 6922919.646584336
+      },
+      "after": {
+        "memory.current": "12034031616\n",
+        "memory.peak": "12884901888\n",
+        "memory.max": "12884901888\n",
+        "memory.events": "low 0\nhigh 0\nmax 67\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+        "memory.stat": "anon 315400192\nfile 11480776704\nkernel 228057088\nkernel_stack 245760\npagetables 1478656\nsec_pagetables 0\npercpu 384\nsock 0\nvmalloc 12288\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 171958272\nfile_dirty 323584\nfile_writeback 0\nswapcached 0\nanon_thp 16777216\nfile_thp 6241124352\nshmem_thp 0\ninactive_anon 0\nactive_anon 324579328\ninactive_file 7730647040\nactive_file 3750125568\nunevictable 0\nslab_reclaimable 225863392\nslab_unreclaimable 437184\nslab 226300576\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 1540803\nworkingset_activate_anon 0\nworkingset_activate_file 644036\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 1868379\npgsteal 1598027\npswpin 0\npswpout 0\npgscan_kswapd 795710\npgscan_direct 1072669\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 794698\npgsteal_direct 803329\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 1511203\npgmajfault 853\npgrefill 3795\npgactivate 11185\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 2203\nthp_collapse_alloc 4\nthp_swpout 0\nthp_swpout_fallback 0\n",
+        "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=157172\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=157172\n",
+        "cpu.stat": "usage_usec 3038206635\nuser_usec 3000193240\nsystem_usec 38013394\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 8957\nnr_throttled 400\nthrottled_usec 170295\nnr_bursts 0\nburst_usec 0\n",
+        "cpu.pressure": "some avg10=2.31 avg60=6.21 avg300=4.50 total=36309203\nfull avg10=0.60 avg60=0.70 avg300=0.46 total=8408760\n",
+        "io.stat": "259:0 rbytes=8184102912 wbytes=10449481728 rios=66502 wios=122955 dbytes=0 dios=0\n",
+        "node_meminfo": "MemTotal:       16351168 kB\nMemFree:         1036060 kB\nMemAvailable:   15161684 kB\nBuffers:          116108 kB\nCached:         13660072 kB\nSwapCached:            0 kB\nActive:          4742692 kB\nInactive:        9652440 kB\nActive(anon):     573608 kB\nInactive(anon):    47176 kB\nActive(file):    4169084 kB\nInactive(file):  9605264 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               456 kB\nWriteback:             0 kB\nAnonPages:        609700 kB\nMapped:           458228 kB\nShmem:              1900 kB\nKReclaimable:     599684 kB\nSlab:             754228 kB\nSReclaimable:     599684 kB\nSUnreclaim:       154544 kB\nKernelStack:        3984 kB\nPageTables:         6736 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    1922404 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       25024 kB\nVmallocChunk:          0 kB\nPercpu:             8384 kB\nAnonHugePages:    118784 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   6094848 kB\nFilePmdMapped:         0 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+        "at": 6922923.875619055
+      },
+      "processes_before": {
+        "encoder": {
+          "pid": 51,
+          "smaps_rollup": "00400000-ffffe9de5000 ---p 00000000 00:00 0                              [rollup]\nRss:              498452 kB\nPss:              497872 kB\nPss_Dirty:        316136 kB\nPss_Anon:         316132 kB\nPss_File:         181736 kB\nPss_Shmem:             4 kB\nShared_Clean:       1156 kB\nShared_Dirty:          0 kB\nPrivate_Clean:    181160 kB\nPrivate_Dirty:    316136 kB\nReferenced:       491528 kB\nAnonymous:        316132 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:     20480 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tpython\nUmask:\t0022\nState:\tR (running)\nTgid:\t51\nNgid:\t0\nPid:\t51\nPPid:\t1\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t51\nNSpid:\t51\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 2690784 kB\nVmSize:\t 2682480 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t  506380 kB\nVmRSS:\t  498452 kB\nRssAnon:\t  316132 kB\nRssFile:\t  182316 kB\nRssShmem:\t       4 kB\nVmData:\t 1873376 kB\nVmStk:\t     132 kB\nVmExe:\t       4 kB\nVmLib:\t  213560 kB\nVmPTE:\t    1408 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t12\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000201001000\nSigCgt:\t0000000100000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t55933\nnonvoluntary_ctxt_switches:\t26017\n",
+          "cgroup": "0::/\n",
+          "model_mappings": []
+        }
+      },
+      "processes_after": {
+        "encoder": {
+          "pid": 51,
+          "smaps_rollup": "00400000-ffffe9de5000 ---p 00000000 00:00 0                              [rollup]\nRss:              490224 kB\nPss:              489644 kB\nPss_Dirty:        307908 kB\nPss_Anon:         307904 kB\nPss_File:         181736 kB\nPss_Shmem:             4 kB\nShared_Clean:       1156 kB\nShared_Dirty:          0 kB\nPrivate_Clean:    181160 kB\nPrivate_Dirty:    307908 kB\nReferenced:       483324 kB\nAnonymous:        307904 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:     16384 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tpython\nUmask:\t0022\nState:\tR (running)\nTgid:\t51\nNgid:\t0\nPid:\t51\nPPid:\t1\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t51\nNSpid:\t51\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 2690784 kB\nVmSize:\t 2682480 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t  506380 kB\nVmRSS:\t  490224 kB\nRssAnon:\t  307904 kB\nRssFile:\t  182316 kB\nRssShmem:\t       4 kB\nVmData:\t 1873376 kB\nVmStk:\t     132 kB\nVmExe:\t       4 kB\nVmLib:\t  213560 kB\nVmPTE:\t    1392 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t14\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000201001000\nSigCgt:\t0000000100000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t56173\nnonvoluntary_ctxt_switches:\t26664\n",
+          "cgroup": "0::/\n",
+          "model_mappings": []
+        }
+      },
+      "decode_active_at_update_end": false
+    },
+    {
+      "batch": 8,
+      "concurrent": true,
+      "update": {
+        "version": "v2",
+        "encoder_id": "d444c217c5f0e5d18cf5f4464982f13a6752696c074a28386970e4d830666e80",
+        "documents": 2,
+        "chunks": 268,
+        "embedded_unique_chunks": 81,
+        "chunk_words": 200,
+        "stride_words": 160,
+        "chunking": {
+          "method": "markdown-paragraph-heading-v1",
+          "max_tokens": 256,
+          "tokenizer_id": "d444c217c5f0e5d18cf5f4464982f13a6752696c074a28386970e4d830666e80",
+          "oversized": "recursive-whitespace-then-character",
+          "overlap": 0
+        },
+        "chunk_locator": "ordinal",
+        "embedding_s": 11.741532756015658,
+        "corpus_sha256": "54391c87ff82c3c6bce2972ea99a009088ddfc353fbd0979297d6b488142fb0b",
+        "publish_total_s": 12.07406588923186
+      },
+      "update_start": 6923236.467863456,
+      "update_end": 6923248.567154198,
+      "decode": {
+        "tokens": 39,
+        "error": null
+      },
+      "before": {
+        "memory.current": "12884414464\n",
+        "memory.peak": "12884901888\n",
+        "memory.max": "12884901888\n",
+        "memory.events": "low 0\nhigh 0\nmax 67\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+        "memory.stat": "anon 1183944704\nfile 11458441216\nkernel 235110400\nkernel_stack 278528\npagetables 8261632\nsec_pagetables 0\npercpu 480\nsock 0\nvmalloc 12288\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 8953389056\nfile_dirty 393216\nfile_writeback 0\nswapcached 0\nanon_thp 20971520\nfile_thp 6241124352\nshmem_thp 0\ninactive_anon 0\nactive_anon 1190371328\ninactive_file 7674744832\nactive_file 3783680000\nunevictable 0\nslab_reclaimable 226047040\nslab_unreclaimable 489624\nslab 226536664\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 1540803\nworkingset_activate_anon 0\nworkingset_activate_file 644036\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 1883555\npgsteal 1605011\npswpin 0\npswpout 0\npgscan_kswapd 795710\npgscan_direct 1087845\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 794698\npgsteal_direct 810313\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 1935513\npgmajfault 853\npgrefill 3795\npgactivate 19377\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 3077\nthp_collapse_alloc 4\nthp_swpout 0\nthp_swpout_fallback 0\n",
+        "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=157803\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=157803\n",
+        "cpu.stat": "usage_usec 4242359564\nuser_usec 4199235060\nsystem_usec 43124503\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 12081\nnr_throttled 573\nthrottled_usec 246247\nnr_bursts 0\nburst_usec 0\n",
+        "cpu.pressure": "some avg10=1.79 avg60=1.96 avg300=2.91 total=44952950\nfull avg10=0.27 avg60=0.28 avg300=0.35 total=11573087\n",
+        "io.stat": "259:0 rbytes=8184102912 wbytes=10457653248 rios=66502 wios=123052 dbytes=0 dios=0\n",
+        "node_meminfo": "MemTotal:       16351168 kB\nMemFree:          195344 kB\nMemAvailable:   14360780 kB\nBuffers:          116228 kB\nCached:         13699776 kB\nSwapCached:            0 kB\nActive:          5676628 kB\nInactive:        9604728 kB\nActive(anon):    1420012 kB\nInactive(anon):    47176 kB\nActive(file):    4256616 kB\nInactive(file):  9557552 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               412 kB\nWriteback:             0 kB\nAnonPages:       1458632 kB\nMapped:          9037116 kB\nShmem:              1900 kB\nKReclaimable:     599676 kB\nSlab:             754220 kB\nSReclaimable:     599676 kB\nSUnreclaim:       154544 kB\nKernelStack:        4032 kB\nPageTables:        13368 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    2882416 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       25056 kB\nVmallocChunk:          0 kB\nPercpu:             8384 kB\nAnonHugePages:    122880 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   6094848 kB\nFilePmdMapped:   6094848 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+        "at": 6923236.262923493
+      },
+      "after": {
+        "memory.current": "12866031616\n",
+        "memory.peak": "12884901888\n",
+        "memory.max": "12884901888\n",
+        "memory.events": "low 0\nhigh 0\nmax 68\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+        "memory.stat": "anon 1173999616\nfile 11448991744\nkernel 235200512\nkernel_stack 327680\npagetables 8245248\nsec_pagetables 0\npercpu 480\nsock 0\nvmalloc 12288\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 8953323520\nfile_dirty 139264\nfile_writeback 0\nswapcached 0\nanon_thp 14680064\nfile_thp 6241124352\nshmem_thp 0\ninactive_anon 0\nactive_anon 1181536256\ninactive_file 7663206400\nactive_file 3785777152\nunevictable 0\nslab_reclaimable 226071112\nslab_unreclaimable 520400\nslab 226591512\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 1540803\nworkingset_activate_anon 0\nworkingset_activate_file 644036\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 1886602\npgsteal 1607546\npswpin 0\npswpout 0\npgscan_kswapd 795710\npgscan_direct 1090892\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 794698\npgsteal_direct 812848\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 2057535\npgmajfault 853\npgrefill 3795\npgactivate 19889\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 3526\nthp_collapse_alloc 4\nthp_swpout 0\nthp_swpout_fallback 0\n",
+        "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=158210\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=158209\n",
+        "cpu.stat": "usage_usec 4288212933\nuser_usec 4243310911\nsystem_usec 44902021\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 12204\nnr_throttled 573\nthrottled_usec 246247\nnr_bursts 0\nburst_usec 0\n",
+        "cpu.pressure": "some avg10=38.27 avg60=10.82 avg300=4.82 total=52137716\nfull avg10=1.68 avg60=0.57 avg300=0.41 total=11856307\n",
+        "io.stat": "259:0 rbytes=8184102912 wbytes=10459787264 rios=66502 wios=123084 dbytes=0 dios=0\n",
+        "node_meminfo": "MemTotal:       16351168 kB\nMemFree:          215760 kB\nMemAvailable:   14372056 kB\nBuffers:          116228 kB\nCached:         13690632 kB\nSwapCached:            0 kB\nActive:          5670292 kB\nInactive:        9593540 kB\nActive(anon):    1411628 kB\nInactive(anon):    47176 kB\nActive(file):    4258664 kB\nInactive(file):  9546364 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              1772 kB\nWriteback:             4 kB\nAnonPages:       1449260 kB\nMapped:          9037128 kB\nShmem:              1900 kB\nKReclaimable:     599676 kB\nSlab:             754220 kB\nSReclaimable:     599676 kB\nSUnreclaim:       154544 kB\nKernelStack:        4140 kB\nPageTables:        13356 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    2882416 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       25120 kB\nVmallocChunk:          0 kB\nPercpu:             8384 kB\nAnonHugePages:    116736 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   6094848 kB\nFilePmdMapped:   6094848 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+        "at": 6923248.572699544
+      },
+      "processes_before": {
+        "encoder": {
+          "pid": 51,
+          "smaps_rollup": "00400000-ffffe9de5000 ---p 00000000 00:00 0                              [rollup]\nRss:              501412 kB\nPss:              499615 kB\nPss_Dirty:        319096 kB\nPss_Anon:         319092 kB\nPss_File:         180519 kB\nPss_Shmem:             4 kB\nShared_Clean:       3208 kB\nShared_Dirty:          0 kB\nPrivate_Clean:    179108 kB\nPrivate_Dirty:    319096 kB\nReferenced:       494592 kB\nAnonymous:        319092 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:     20480 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tpython\nUmask:\t0022\nState:\tR (running)\nTgid:\t51\nNgid:\t0\nPid:\t51\nPPid:\t1\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t51\nNSpid:\t51\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 2690784 kB\nVmSize:\t 2684536 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t  514440 kB\nVmRSS:\t  501412 kB\nRssAnon:\t  319092 kB\nRssFile:\t  182316 kB\nRssShmem:\t       4 kB\nVmData:\t 1875488 kB\nVmStk:\t     132 kB\nVmExe:\t       4 kB\nVmLib:\t  213560 kB\nVmPTE:\t    1412 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t13\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000201001000\nSigCgt:\t0000000100000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t56759\nnonvoluntary_ctxt_switches:\t28817\n",
+          "cgroup": "0::/\n",
+          "model_mappings": []
+        },
+        "q4": {
+          "pid": 54319,
+          "smaps_rollup": "aaaade4b0000-ffffe4c97000 ---p 00000000 00:00 0                          [rollup]\nRss:             9419056 kB\nPss:             9417263 kB\nPss_Dirty:        837004 kB\nPss_Anon:         837004 kB\nPss_File:        8580259 kB\nPss_Shmem:             0 kB\nShared_Clean:       3200 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8578852 kB\nPrivate_Dirty:    837004 kB\nReferenced:      9419056 kB\nAnonymous:        837004 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tu3-microbatch2-\nUmask:\t0022\nState:\tR (running)\nTgid:\t54319\nNgid:\t0\nPid:\t54319\nPPid:\t51\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t54319\nNSpid:\t54319\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 9543236 kB\nVmSize:\t 9543236 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t 9419056 kB\nVmRSS:\t 9419056 kB\nRssAnon:\t  837004 kB\nRssFile:\t 8582052 kB\nRssShmem:\t       0 kB\nVmData:\t  957692 kB\nVmStk:\t     132 kB\nVmExe:\t      12 kB\nVmLib:\t    8684 kB\nVmPTE:\t    6600 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t4\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000200000000\nSigCgt:\t0000000100000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t11974\nnonvoluntary_ctxt_switches:\t54798\n",
+          "cgroup": "0::/\n",
+          "model_mappings": [
+            "fffd9f5b1000-ffffaac4f000 r--s 005b1000 103:02 642978                    /output/accounted-Q4.gguf\nSize:            8575608 kB\nKernelPageSize:        4 kB\nMMUPageSize:           4 kB\nRss:             8575608 kB\nPss:             8575608 kB\nPss_Dirty:             0 kB\nShared_Clean:          0 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8575608 kB\nPrivate_Dirty:         0 kB\nReferenced:      8575608 kB\nAnonymous:             0 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\nTHPeligible:           0\nVmFlags: rd mr me ms "
+          ]
+        }
+      },
+      "processes_after": {
+        "encoder": {
+          "pid": 51,
+          "smaps_rollup": "00400000-ffffe9de5000 ---p 00000000 00:00 0                              [rollup]\nRss:              491632 kB\nPss:              489835 kB\nPss_Dirty:        309380 kB\nPss_Anon:         309376 kB\nPss_File:         180455 kB\nPss_Shmem:             4 kB\nShared_Clean:       3208 kB\nShared_Dirty:          0 kB\nPrivate_Clean:    179044 kB\nPrivate_Dirty:    309380 kB\nReferenced:       484844 kB\nAnonymous:        309376 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:     14336 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:         0 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tpython\nUmask:\t0022\nState:\tR (running)\nTgid:\t51\nNgid:\t0\nPid:\t51\nPPid:\t1\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t51\nNSpid:\t51\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 2690784 kB\nVmSize:\t 2684536 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t  514440 kB\nVmRSS:\t  491632 kB\nRssAnon:\t  309376 kB\nRssFile:\t  182252 kB\nRssShmem:\t       4 kB\nVmData:\t 1875524 kB\nVmStk:\t     132 kB\nVmExe:\t       4 kB\nVmLib:\t  213560 kB\nVmPTE:\t    1396 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t15\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000201001000\nSigCgt:\t0000000100000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t57884\nnonvoluntary_ctxt_switches:\t31629\n",
+          "cgroup": "0::/\n",
+          "model_mappings": []
+        },
+        "q4": {
+          "pid": 54319,
+          "smaps_rollup": "aaaade4b0000-ffffe4c97000 ---p 00000000 00:00 0                          [rollup]\nRss:             9419056 kB\nPss:             9417263 kB\nPss_Dirty:        837004 kB\nPss_Anon:         837004 kB\nPss_File:        8580259 kB\nPss_Shmem:             0 kB\nShared_Clean:       3200 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8578852 kB\nPrivate_Dirty:    837004 kB\nReferenced:      9419056 kB\nAnonymous:        837004 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+          "status": "Name:\tu3-microbatch2-\nUmask:\t0022\nState:\tR (running)\nTgid:\t54319\nNgid:\t0\nPid:\t54319\nPPid:\t51\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t54319\nNSpid:\t54319\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 9543236 kB\nVmSize:\t 9543236 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t 9419056 kB\nVmRSS:\t 9419056 kB\nRssAnon:\t  837004 kB\nRssFile:\t 8582052 kB\nRssShmem:\t       0 kB\nVmData:\t  957692 kB\nVmStk:\t     132 kB\nVmExe:\t      12 kB\nVmLib:\t    8684 kB\nVmPTE:\t    6600 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t4\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000200000000\nSigCgt:\t0000000100000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t16317\nnonvoluntary_ctxt_switches:\t58158\n",
+          "cgroup": "0::/\n",
+          "model_mappings": [
+            "fffd9f5b1000-ffffaac4f000 r--s 005b1000 103:02 642978                    /output/accounted-Q4.gguf\nSize:            8575608 kB\nKernelPageSize:        4 kB\nMMUPageSize:           4 kB\nRss:             8575608 kB\nPss:             8575608 kB\nPss_Dirty:             0 kB\nShared_Clean:          0 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8575608 kB\nPrivate_Dirty:         0 kB\nReferenced:      8575608 kB\nAnonymous:             0 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\nTHPeligible:           0\nVmFlags: rd mr me ms "
+          ]
+        }
+      },
+      "decode_active_at_update_end": true
+    }
+  ],
+  "accounting_checks": [
+    {
+      "batch": 1,
+      "gate": {
+        "model_rss_bytes": 8781422592,
+        "model_bytes": 8787386464,
+        "file_charge_bytes": 11501166592,
+        "minimum_fraction": 0.9,
+        "measurement_phase": "after_prefill",
+        "passed": true
+      },
+      "snapshot": {
+        "memory.current": "12883349504\n",
+        "memory.peak": "12884901888\n",
+        "memory.max": "12884901888\n",
+        "memory.events": "low 0\nhigh 0\nmax 64\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+        "memory.stat": "anon 1147392000\nfile 11501166592\nkernel 234442752\nkernel_stack 311296\npagetables 8187904\nsec_pagetables 0\npercpu 480\nsock 0\nvmalloc 12288\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 8951939072\nfile_dirty 114688\nfile_writeback 0\nswapcached 0\nanon_thp 12582912\nfile_thp 6241124352\nshmem_thp 0\ninactive_anon 0\nactive_anon 1147396096\ninactive_file 7798616064\nactive_file 3702530048\nunevictable 0\nslab_reclaimable 225413760\nslab_unreclaimable 501464\nslab 225915224\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 1540447\nworkingset_activate_anon 0\nworkingset_activate_file 643680\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 1848174\npgsteal 1589086\npswpin 0\npswpout 0\npgscan_kswapd 795710\npgscan_direct 1052464\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 794698\npgsteal_direct 794388\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 545944\npgmajfault 837\npgrefill 3795\npgactivate 2993\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 6\nthp_collapse_alloc 0\nthp_swpout 0\nthp_swpout_fallback 0\n",
+        "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=156088\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=156088\n",
+        "cpu.stat": "usage_usec 1342546755\nuser_usec 1319442721\nsystem_usec 23104033\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 4497\nnr_throttled 203\nthrottled_usec 91294\nnr_bursts 0\nburst_usec 0\n",
+        "cpu.pressure": "some avg10=2.02 avg60=1.96 avg300=1.31 total=8428543\nfull avg10=0.18 avg60=0.29 avg300=0.19 total=3465238\n",
+        "io.stat": "259:0 rbytes=8182644736 wbytes=10425442304 rios=66476 wios=122633 dbytes=0 dios=0\n",
+        "node_meminfo": "MemTotal:       16351168 kB\nMemFree:          256352 kB\nMemAvailable:   14400400 kB\nBuffers:          116100 kB\nCached:         13678520 kB\nSwapCached:            0 kB\nActive:          5497624 kB\nInactive:        9718716 kB\nActive(anon):    1376392 kB\nInactive(anon):    47176 kB\nActive(file):    4121232 kB\nInactive(file):  9671540 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               128 kB\nWriteback:             0 kB\nAnonPages:       1421420 kB\nMapped:          9035372 kB\nShmem:              1900 kB\nKReclaimable:     599684 kB\nSlab:             754232 kB\nSReclaimable:     599684 kB\nSUnreclaim:       154548 kB\nKernelStack:        4048 kB\nPageTables:        13288 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    2868416 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       25056 kB\nVmallocChunk:          0 kB\nPercpu:             8384 kB\nAnonHugePages:    114688 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   6094848 kB\nFilePmdMapped:   6094848 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+        "at": 6922477.891685085
+      },
+      "process": {
+        "pid": 33885,
+        "smaps_rollup": "aaaaab7d0000-fffff55d4000 ---p 00000000 00:00 0                          [rollup]\nRss:             9419068 kB\nPss:             9417270 kB\nPss_Dirty:        837008 kB\nPss_Anon:         837008 kB\nPss_File:        8580262 kB\nPss_Shmem:             0 kB\nShared_Clean:       3208 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8578852 kB\nPrivate_Dirty:    837008 kB\nReferenced:      9419068 kB\nAnonymous:        837008 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+        "status": "Name:\tu3-microbatch2-\nUmask:\t0022\nState:\tS (sleeping)\nTgid:\t33885\nNgid:\t0\nPid:\t33885\nPPid:\t51\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t33885\nNSpid:\t33885\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 9543236 kB\nVmSize:\t 9543236 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t 9419068 kB\nVmRSS:\t 9419068 kB\nRssAnon:\t  837008 kB\nRssFile:\t 8582060 kB\nRssShmem:\t       0 kB\nVmData:\t  957692 kB\nVmStk:\t     132 kB\nVmExe:\t      12 kB\nVmLib:\t    8684 kB\nVmPTE:\t    6604 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t4\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000200000000\nSigCgt:\t0000000100000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t20550\nnonvoluntary_ctxt_switches:\t53589\n",
+        "cgroup": "0::/\n",
+        "model_mappings": [
+          "fffd943b1000-ffff9fa4f000 r--s 005b1000 103:02 642978                    /output/accounted-Q4.gguf\nSize:            8575608 kB\nKernelPageSize:        4 kB\nMMUPageSize:           4 kB\nRss:             8575608 kB\nPss:             8575608 kB\nPss_Dirty:             0 kB\nShared_Clean:          0 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8575608 kB\nPrivate_Dirty:         0 kB\nReferenced:      8575608 kB\nAnonymous:             0 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\nTHPeligible:           0\nVmFlags: rd mr me ms "
+        ]
+      }
+    },
+    {
+      "batch": 4,
+      "gate": {
+        "model_rss_bytes": 8781422592,
+        "model_bytes": 8787386464,
+        "file_charge_bytes": 11481407488,
+        "minimum_fraction": 0.9,
+        "measurement_phase": "after_prefill",
+        "passed": true
+      },
+      "snapshot": {
+        "memory.current": "12884570112\n",
+        "memory.peak": "12884901888\n",
+        "memory.max": "12884901888\n",
+        "memory.events": "low 0\nhigh 0\nmax 67\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+        "memory.stat": "anon 1162055680\nfile 11481407488\nkernel 234745856\nkernel_stack 278528\npagetables 8220672\nsec_pagetables 0\npercpu 480\nsock 0\nvmalloc 12288\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 8953389056\nfile_dirty 196608\nfile_writeback 0\nswapcached 0\nanon_thp 2097152\nfile_thp 6241124352\nshmem_thp 0\ninactive_anon 0\nactive_anon 1168220160\ninactive_file 7739645952\nactive_file 3741736960\nunevictable 0\nslab_reclaimable 225728616\nslab_unreclaimable 489896\nslab 226218512\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 1540803\nworkingset_activate_anon 0\nworkingset_activate_file 644036\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 1865127\npgsteal 1596823\npswpin 0\npswpout 0\npgscan_kswapd 795710\npgscan_direct 1069417\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 794698\npgsteal_direct 802125\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 1082497\npgmajfault 853\npgrefill 3795\npgactivate 9137\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 741\nthp_collapse_alloc 0\nthp_swpout 0\nthp_swpout_fallback 0\n",
+        "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=157006\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=157006\n",
+        "cpu.stat": "usage_usec 2782916041\nuser_usec 2750033161\nsystem_usec 32882880\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 8257\nnr_throttled 391\nthrottled_usec 166121\nnr_bursts 0\nburst_usec 0\n",
+        "cpu.pressure": "some avg10=1.68 avg60=2.03 avg300=2.76 total=27777008\nfull avg10=0.03 avg60=0.23 avg300=0.31 total=7408746\n",
+        "io.stat": "259:0 rbytes=8184102912 wbytes=10441510912 rios=66502 wios=122843 dbytes=0 dios=0\n",
+        "node_meminfo": "MemTotal:       16351168 kB\nMemFree:          254920 kB\nMemAvailable:   14381060 kB\nBuffers:          116108 kB\nCached:         13660604 kB\nSwapCached:            0 kB\nActive:          5558668 kB\nInactive:        9661148 kB\nActive(anon):    1397776 kB\nInactive(anon):    47176 kB\nActive(file):    4160892 kB\nInactive(file):  9613972 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              2068 kB\nWriteback:             0 kB\nAnonPages:       1436696 kB\nMapped:          9036920 kB\nShmem:              1900 kB\nKReclaimable:     599684 kB\nSlab:             754228 kB\nSReclaimable:     599684 kB\nSUnreclaim:       154544 kB\nKernelStack:        4016 kB\nPageTables:        13320 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    2880360 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       25040 kB\nVmallocChunk:          0 kB\nPercpu:             8384 kB\nAnonHugePages:    104448 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   6094848 kB\nFilePmdMapped:   6094848 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+        "at": 6922853.917826933
+      },
+      "process": {
+        "pid": 48394,
+        "smaps_rollup": "aaaacbbb0000-ffffc5559000 ---p 00000000 00:00 0                          [rollup]\nRss:             9419052 kB\nPss:             9417264 kB\nPss_Dirty:        837008 kB\nPss_Anon:         837008 kB\nPss_File:        8580256 kB\nPss_Shmem:             0 kB\nShared_Clean:       3192 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8578852 kB\nPrivate_Dirty:    837008 kB\nReferenced:      9419052 kB\nAnonymous:        837008 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+        "status": "Name:\tu3-microbatch2-\nUmask:\t0022\nState:\tS (sleeping)\nTgid:\t48394\nNgid:\t0\nPid:\t48394\nPPid:\t51\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t48394\nNSpid:\t48394\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 9543236 kB\nVmSize:\t 9543236 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t 9419052 kB\nVmRSS:\t 9419052 kB\nRssAnon:\t  837008 kB\nRssFile:\t 8582044 kB\nRssShmem:\t       0 kB\nVmData:\t  957692 kB\nVmStk:\t     132 kB\nVmExe:\t      12 kB\nVmLib:\t    8684 kB\nVmPTE:\t    6600 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t4\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000200000000\nSigCgt:\t0000000100000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t11050\nnonvoluntary_ctxt_switches:\t53886\n",
+        "cgroup": "0::/\n",
+        "model_mappings": [
+          "fffdabdb1000-ffffb744f000 r--s 005b1000 103:02 642978                    /output/accounted-Q4.gguf\nSize:            8575608 kB\nKernelPageSize:        4 kB\nMMUPageSize:           4 kB\nRss:             8575608 kB\nPss:             8575608 kB\nPss_Dirty:             0 kB\nShared_Clean:          0 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8575608 kB\nPrivate_Dirty:         0 kB\nReferenced:      8575608 kB\nAnonymous:             0 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\nTHPeligible:           0\nVmFlags: rd mr me ms "
+        ]
+      }
+    },
+    {
+      "batch": 8,
+      "gate": {
+        "model_rss_bytes": 8781422592,
+        "model_bytes": 8787386464,
+        "file_charge_bytes": 11458441216,
+        "minimum_fraction": 0.9,
+        "measurement_phase": "after_prefill",
+        "passed": true
+      },
+      "snapshot": {
+        "memory.current": "12884414464\n",
+        "memory.peak": "12884901888\n",
+        "memory.max": "12884901888\n",
+        "memory.events": "low 0\nhigh 0\nmax 67\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+        "memory.stat": "anon 1183944704\nfile 11458441216\nkernel 235110400\nkernel_stack 278528\npagetables 8261632\nsec_pagetables 0\npercpu 480\nsock 0\nvmalloc 12288\nshmem 4096\nzswap 0\nzswapped 0\nfile_mapped 8953389056\nfile_dirty 393216\nfile_writeback 0\nswapcached 0\nanon_thp 20971520\nfile_thp 6241124352\nshmem_thp 0\ninactive_anon 0\nactive_anon 1190371328\ninactive_file 7674744832\nactive_file 3783680000\nunevictable 0\nslab_reclaimable 226047040\nslab_unreclaimable 489624\nslab 226536664\nhugetlb 0\nworkingset_refault_anon 0\nworkingset_refault_file 1540803\nworkingset_activate_anon 0\nworkingset_activate_file 644036\nworkingset_restore_anon 0\nworkingset_restore_file 0\nworkingset_nodereclaim 0\npgdemote_kswapd 0\npgdemote_direct 0\npgdemote_khugepaged 0\npgdemote_proactive 0\npgscan 1883555\npgsteal 1605011\npswpin 0\npswpout 0\npgscan_kswapd 795710\npgscan_direct 1087845\npgscan_khugepaged 0\npgscan_proactive 0\npgsteal_kswapd 794698\npgsteal_direct 810313\npgsteal_khugepaged 0\npgsteal_proactive 0\npgfault 1935513\npgmajfault 853\npgrefill 3795\npgactivate 19377\npgdeactivate 0\npglazyfree 0\npglazyfreed 0\nswpin_zero 0\nswpout_zero 0\nzswpin 0\nzswpout 0\nzswpwb 0\nthp_fault_alloc 3077\nthp_collapse_alloc 4\nthp_swpout 0\nthp_swpout_fallback 0\n",
+        "memory.pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=157803\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=157803\n",
+        "cpu.stat": "usage_usec 4242358014\nuser_usec 4199233516\nsystem_usec 43124497\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 12081\nnr_throttled 573\nthrottled_usec 246247\nnr_bursts 0\nburst_usec 0\n",
+        "cpu.pressure": "some avg10=1.79 avg60=1.96 avg300=2.91 total=44952950\nfull avg10=0.27 avg60=0.28 avg300=0.35 total=11573087\n",
+        "io.stat": "259:0 rbytes=8184102912 wbytes=10457653248 rios=66502 wios=123052 dbytes=0 dios=0\n",
+        "node_meminfo": "MemTotal:       16351168 kB\nMemFree:          195344 kB\nMemAvailable:   14360780 kB\nBuffers:          116228 kB\nCached:         13699776 kB\nSwapCached:            0 kB\nActive:          5676628 kB\nInactive:        9604728 kB\nActive(anon):    1420012 kB\nInactive(anon):    47176 kB\nActive(file):    4256616 kB\nInactive(file):  9557552 kB\nUnevictable:           0 kB\nMlocked:               0 kB\nSwapTotal:             0 kB\nSwapFree:              0 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               412 kB\nWriteback:             0 kB\nAnonPages:       1458632 kB\nMapped:          9037116 kB\nShmem:              1900 kB\nKReclaimable:     599676 kB\nSlab:             754220 kB\nSReclaimable:     599676 kB\nSUnreclaim:       154544 kB\nKernelStack:        4032 kB\nPageTables:        13368 kB\nSecPageTables:        28 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:     8175584 kB\nCommitted_AS:    2882400 kB\nVmallocTotal:   135288315904 kB\nVmallocUsed:       25056 kB\nVmallocChunk:          0 kB\nPercpu:             8384 kB\nAnonHugePages:    122880 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:   6094848 kB\nFilePmdMapped:   6094848 kB\nCmaTotal:          65536 kB\nCmaFree:               8 kB\nBalloon:               0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\n",
+        "at": 6923236.261975071
+      },
+      "process": {
+        "pid": 54319,
+        "smaps_rollup": "aaaade4b0000-ffffe4c97000 ---p 00000000 00:00 0                          [rollup]\nRss:             9419056 kB\nPss:             9417263 kB\nPss_Dirty:        837004 kB\nPss_Anon:         837004 kB\nPss_File:        8580259 kB\nPss_Shmem:             0 kB\nShared_Clean:       3200 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8578852 kB\nPrivate_Dirty:    837004 kB\nReferenced:      9419056 kB\nAnonymous:        837004 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\n",
+        "status": "Name:\tu3-microbatch2-\nUmask:\t0022\nState:\tS (sleeping)\nTgid:\t54319\nNgid:\t0\nPid:\t54319\nPPid:\t51\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t1000 \nNStgid:\t54319\nNSpid:\t54319\nNSpgid:\t1\nNSsid:\t1\nKthread:\t0\nVmPeak:\t 9543236 kB\nVmSize:\t 9543236 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t 9419056 kB\nVmRSS:\t 9419056 kB\nRssAnon:\t  837004 kB\nRssFile:\t 8582052 kB\nRssShmem:\t       0 kB\nVmData:\t  957692 kB\nVmStk:\t     132 kB\nVmExe:\t      12 kB\nVmLib:\t    8684 kB\nVmPTE:\t    6600 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffff\nThreads:\t4\nSigQ:\t0/63751\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000200000000\nSigCgt:\t0000000100000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tunknown\nCpus_allowed:\tf\nCpus_allowed_list:\t0-3\nMems_allowed:\t00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t11909\nnonvoluntary_ctxt_switches:\t54764\n",
+        "cgroup": "0::/\n",
+        "model_mappings": [
+          "fffd9f5b1000-ffffaac4f000 r--s 005b1000 103:02 642978                    /output/accounted-Q4.gguf\nSize:            8575608 kB\nKernelPageSize:        4 kB\nMMUPageSize:           4 kB\nRss:             8575608 kB\nPss:             8575608 kB\nPss_Dirty:             0 kB\nShared_Clean:          0 kB\nShared_Dirty:          0 kB\nPrivate_Clean:   8575608 kB\nPrivate_Dirty:         0 kB\nReferenced:      8575608 kB\nAnonymous:             0 kB\nKSM:                   0 kB\nLazyFree:              0 kB\nAnonHugePages:         0 kB\nShmemPmdMapped:        0 kB\nFilePmdMapped:   6094848 kB\nShared_Hugetlb:        0 kB\nPrivate_Hugetlb:       0 kB\nSwap:                  0 kB\nSwapPss:               0 kB\nLocked:                0 kB\nTHPeligible:           0\nVmFlags: rd mr me ms "
+        ]
+      }
+    }
+  ],
+  "status": "completed_screening_not_causal_proof",
+  "reason": "Raw shared cgroup counters and paired timings available. No causal precision-release comparison or validated deployment budget; do not interpret CPU contention or PSS alone as memory conflict.",
+  "temporary_model_copy_removed": true
+}

@@ -1,0 +1,4 @@
+{
+  "error": "Traceback (most recent call last):\n  File \"/poc-input/worker_e2.py\", line 174, in <module>\n    try:main()\n        ^^^^^^\n  File \"/poc-input/worker_e2.py\", line 134, in main\n    if sampling_errors:raise RuntimeError(sampling_errors)\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: ['Traceback (most recent call last):\\n  File \"/poc-input/worker_e2.py\", line 115, in sample\\n    item=dict(t=time.monotonic(),llm=process_sample(backend.proc.pid,arm[\\'cpus\\']),encoder=process_sample(child.pid,encoder_cpus),\\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/poc-input/worker.py\", line 26, in process_sample\\n    affinity=sorted(os.sched_getaffinity(int(task.name)))\\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nProcessLookupError: [Errno 3] No such process\\n']\n",
+  "time": 1793103841.5166252
+}

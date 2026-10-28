@@ -1,93 +1,93 @@
-# Shared CPU inference and document updates
+# Raspberry Pi 5 inference contention: paper artifact
 
-Reproduction package for the E1–E3 evaluation of Qwen2.5-14B-Instruct and
-MiniLM on a Raspberry Pi 5. The framework measures how document publication,
-CPU allocation and inference queuing affect answers to independently arriving
-questions. It implements fixed allocation policies, not a dynamic scheduler.
+Code, fixed inputs and recorded evidence for **From Resource Savings to Useful
+Answers: Characterizing Shared ARM Inference and Document Updates**.
+The artifact covers every experimental family reported in the main paper:
 
-The measured configuration uses a Raspberry Pi 5 with 16 GB RAM, NVMe storage,
-four Cortex-A76 cores and a 2.4 GHz maximum clock. Inference is CPU-only.
-The experiment container has a four-core CPU quota and a 12 GiB memory cap.
-Physical memory and the container cap are different quantities.
+- Four-node Qwen2.5-14B precision release, KV retention and full-prefix replay.
+- MiniLM updates overlapping autoregressive decode, with model-page accounting.
+- Native prefill batching, CPU repacking and fixed attention omission.
+- A tuned standard llama.cpp backend, separate-document QA and application episodes.
+- E1–E3 CPU allocation, independent arrivals and frozen timing predictions.
 
-## What is included
+The framework is a research evaluation, not a dynamic scheduler or a production
+assistant. It includes C++ inference workers and Python experiment control.
 
-- The tested E1, E2 and E3 workers, index publisher, retrieval code and checks.
-- The frozen 75-cell schedule and the minimal fixtures used by these stages.
-- Model, tokenizer and encoder identities, calibration input and SHA-256 checks.
-- A portable sequential runner, Docker image definition and Kubernetes deployment generator.
-- Unit tests and instructions for building, running and interpreting outputs.
+## Verify the published results without running models
 
-This branch has an independent root commit. It contains no earlier repository
-history, credentials, personal deployment configuration, model weights, binaries, raw experimental
-runs, paper build files, IDE configuration or local backups.
-
-The earlier partitioned four-node pilot, private prefill/attention prototype and
-24-question backend-selection study are outside this package. E1–E3 use the
-complete 14B model on one node and the already selected standard llama.cpp
-configuration. This package does not rerun that earlier selection process.
-
-## Quick start
-
-Read [configuration and infrastructure](docs/setup.md) first. Run the following
-on the ARM64 Raspberry Pi, as a non-root user who can access Docker. Keep the
-node free of other application workloads.
+Python 3.11 and NumPy are sufficient. No model download, GPU, cluster or deployment
+is required for this path:
 
 ```bash
 python3 -m venv .venv
-.venv/bin/pip install -r requirements-prepare.txt
-.venv/bin/python scripts/prepare_assets.py --output workspace/assets --gguf /path/to/Q4_K_M.gguf
-docker build --platform linux/arm64 -f deploy/Dockerfile -t shared-budget-evaluation:local .
-python3 scripts/launch.py --assets workspace/assets --output results/attempt-01
+.venv/bin/pip install -r requirements-test.txt
+.venv/bin/python scripts/audit_artifact.py
+.venv/bin/python -m unittest discover -s tests -v
 ```
 
-The supplied GGUF must match the recorded hash. An arbitrary Q4_K_M download
-will be rejected. If you do not have the measured model, use the
-[model preparation instructions](docs/model.md), then pass its verified GGUF
-path to `prepare_assets.py`. Weights are not bundled with Git.
+The audit verifies frozen evidence hashes, all generated main-paper tables and
+figure data, twelve full-vocabulary KL jobs, the process-versus-node memory
+observations, the earlier 81-chunk update, 37,475 saved affinity samples and the
+original seventeen-row E2 prefix preserved after its failure.
+It does not change an automatic quality failure into a pass.
 
-The runner executes E1, then E2, derives and freezes predictions from E2, then
-runs E3. It uses a new output directory and stops at the first failure.
-It never retries failed cells silently. A complete campaign can take hours.
-Use a new attempt directory after a failure; preserve the failed attempt.
+## Reproduce the experiments
 
-To monitor progress and completion:
+Start with the [artifact guide](ARTIFACT.md). It links the complete
+[claim-to-code-and-evidence map](docs/coverage.md),
+[native build instructions](docs/native.md),
+[full experiment procedure](docs/paper-experiments.md), and
+[validation record](docs/validation.md).
+
+A prepared deployment can schedule every family sequentially:
 
 ```bash
-watch -n 10 'cat results/attempt-01/status.json; tail -n 5 results/attempt-01/e*/status.json 2>/dev/null'
+.venv/bin/python scripts/run_paper.py --assets workspace/assets --precision-config workspace/precision.json --output results/paper-attempt-01 --execute
 ```
 
-A successful campaign creates `results/attempt-01/DONE` and `summary.json`.
-A stopped or failed container does not count as a successful campaign.
-`status.json` identifies failures; stage `worker.log` and backend logs retain details.
-Docker removes the container after exit; bind-mounted results remain.
+This requires four prepared ARM64 stage nodes, one Raspberry Pi 5 with 16 GB RAM
+for the single-node campaigns, accessible container images, the exact Q4/Q3 model
+family, and permissions to create the explicitly configured experiment pods.
+The command is not a substitute for setup. Without `--execute`, it only prints
+the schedule. Failed stages stop the sequence and preserve their outputs.
 
-For Kubernetes deployment, collection, stop commands and interpretation see
-[execution](docs/experiments.md). No experiment starts during image building,
-asset preparation, tests or deployment dry runs.
-
-## Tests
-
-Python 3.11 is required. The local tests use the standard library and do not
-load a model, install Torch, contact a cluster or start timed experiments.
+Monitor the whole sequence with:
 
 ```bash
-python3 -m unittest discover -s tests -v
-python3 -m compileall -q scripts tests
+watch -n 10 cat results/paper-attempt-01/status.json
 ```
 
-## Reproducibility and validation
+Success creates `results/paper-attempt-01/DONE`. Semantic review remains separate.
+The model preparation and full hardware campaign can take many hours or days.
 
-The original workers ran on ARM64. This release adapts their orchestration and
-paths for a fresh deployment; its local verification is documented in
-[validation](docs/validation.md). Publishing instructions are in
-[the branch publication guide](docs/publishing.md). Do not interpret a passing unit test as a
-newly completed 14B hardware campaign. Published timing values are observations,
-not acceptance thresholds for a different machine.
+For E1–E3 alone, use the smaller image and [existing instructions](docs/experiments.md):
 
-Direct Python dependencies and llama.cpp source are pinned. The base image digest is pinned.
-Debian packages and transitive Python dependencies can change. Record the built
-image digest and installed dependency inventory with each reproduction. Use an
-immutable image digest when sharing a deployment between machines.
+```bash
+python3 scripts/launch.py --assets workspace/assets --output results/e1-e3-attempt-01
+```
 
-Model and dataset attribution appears in [third-party notices](THIRD_PARTY.md).
+## Repository contents
+
+| Path | Purpose |
+|---|---|
+| `native/` | C++ partition, state-transition, decode and prefill workers and native tests |
+| `scripts/` | Preparation, deployment, experiment control, prediction and audit code |
+| `assets/` | Fixed prompts, article excerpts, calibration text, cohort and model identities |
+| `configs/` | Frozen E1–E3 schedule and configurable four-node deployment example |
+| `protocols/` | Original experimental design records, retained as historical evidence |
+| `evidence/` | Required frozen results, compressed logits and affinity samples |
+| `paper/` | Active manuscript source, official style, frozen reports and figure/table audit scripts |
+| `docs/` | Configuration, infrastructure, deployment, execution and interpretation |
+
+The branch has an independent root commit. It excludes unrelated repository
+history, credentials, personal environment files, model weights, compiled
+binaries, index databases, installation caches and local backups. Recorded
+reports and document snapshots retain historical paths and private-network
+addresses as evidence; these are not deployment targets used by the runner.
+
+The artifact is verified at the levels listed in `docs/validation.md`.
+A fresh full ARM64 campaign and byte-for-byte model regeneration have not been
+completed for this release. New portable orchestration must not be confused
+with a new hardware result or an independently reviewed artifact badge.
+
+[Publishing this branch](docs/publishing.md) · [Third-party attribution](THIRD_PARTY.md)

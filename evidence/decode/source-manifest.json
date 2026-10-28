@@ -1,0 +1,20 @@
+{
+  "research_u3_revision_probe.py": "4a5dffb2065e0a9b2c168c028e65721c74f4cf0c55b5849beddd9f3fbb66a430",
+  "research_u3_binary.py": "71b266f4f1b248aadc19b757d9e3895dec5074f91b3c5bc19cc209a8ad119c57",
+  "research_u3_section_checks.py": "b9bd15b35e60f5101c5737e46e3a7be609849eed1d4ed24c7119e138e342db4c",
+  "research_u3_accounted_queue.py": "11fe59fe7e98ba2d8c392905df4076901f4407a9f72326ad16ebefed21497fad",
+  "research_u3_sections.py": "69bc993380257688abed811e4e9b4ef38984bc954c2eb75fd7988c8b608f442c",
+  "research_u3_shared_profile.py": "b1282ba8218b2b43fb8423d3f041ea2429a547b5325b5a2d7dfc8403e1170081",
+  "research_u3.py": "38c259cab3ada7b345504978268d99e332b39c93f591f0dd00b55c9bb663dc98",
+  "research_u3_batch_diagnostic.py": "e2571e0d1380c87a97bf59f1924f2fe9c378af1ed7bcc052a40e84ad942f9b73",
+  "research_u3_revisions.py": "eda0abd8cb9683945713021a62246a2da932c0d635a76f65f8526538927f0ed0",
+  "research_u3_latency.py": "a9b2ee19bf6ca825c7a0b04cf869fa262592cd34fca188b78ffc6306a72fd97d",
+  "research_u3_q4_probe.py": "59848d628beb856e6f9bdbe8070dd93188b798799c628b3c68e32ab941f41527",
+  "research_u3_workload_audit.py": "d691726f0e7333acb0df943e9e64811834f9fea0c4cbb45f127508bc805bf162",
+  "research_u3_chunking.py": "0b2e03b5f0094df00681ffc02a4794ff18e03de57f42d4625c0baefaa813f5a8",
+  "research_u3_transport.py": "559422a2d9dda440126e33c7eb487ed84c34e24f4747843f436e04d3759d5a79",
+  "research_u3_qualify.py": "5b5c81a61a0738db9a20e42625c492c7c338cae74b78611b8e155338976dc638",
+  "research_u3_encoder.py": "20bfa4f0504f66a3ca79316e53b214db6a9f77154092ada822e860da92d8384a",
+  "research_u3_accounting.py": "c65eb713ba0d509a3a0af7c8058a8a7621d4c97d9ed53cd230e113faeb742729",
+  "research_u3_sequence.py": "7fd03a69f2cc7f23d36d8dec0fce9cbef73aacf11f3cebd2aed24339c82ec576"
+}

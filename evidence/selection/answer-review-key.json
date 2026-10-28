@@ -1,0 +1,1461 @@
+[
+  {
+    "review_id": "93ed5962c844afb8",
+    "fixture": "newdoc-00",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "France",
+      "citations": [
+        [
+          "SQ56ddde6b9a695914005b9628",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "e1ca6aa9aa476644",
+    "fixture": "newdoc-01",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "50ad5326b0a5ef49",
+    "fixture": "newdoc-02",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "SoCal",
+      "citations": [
+        [
+          "SQ5705e26d75f01819005e76d4",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "dc7a393a1ddc80d8",
+    "fixture": "newdoc-03",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "64bb857a7de2f95a",
+    "fixture": "newdoc-04",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "highly diversified",
+      "citations": [
+        [
+          "SQ570d2417fed7b91900d45c3d",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "515b88e72a04c6be",
+    "fixture": "newdoc-05",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 1,
+      "f1": 1,
+      "answer": "unknown",
+      "citations": [
+        [
+          "SQ5ad23fded7d075001a4288fc",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "4de3367206ccc5ca",
+    "fixture": "newdoc-06",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "Solar power",
+      "citations": [
+        [
+          "SQ57112686b654c5140001fbd3",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "f47e1ecd9d6b5999",
+    "fixture": "newdoc-07",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "Oxygen",
+      "citations": [
+        [
+          "SQ5ad21646d7d075001a4283c4",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "2eb7cfc18ef8128e",
+    "fixture": "newdoc-08",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "October 1973",
+      "citations": [
+        [
+          "SQ5725b33f6a3fe71400b8952d",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "ff3029f2aaf2f1b0",
+    "fixture": "newdoc-09",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "44fd55da7beccbec",
+    "fixture": "newdoc-10",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "Amazonia or the Amazon Jungle",
+      "citations": [
+        [
+          "SQ5725b81b271a42140099d097",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "b1ebac5c600be7a0",
+    "fixture": "newdoc-11",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "41854d884a62cfab",
+    "fixture": "newdoc-12",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "Fresno",
+      "citations": [
+        [
+          "SQ5725ce4d38643c19005acd4d",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "2d36e6c489d4c120",
+    "fixture": "newdoc-13",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "Distributed Adaptive Message Block Switching",
+      "citations": [
+        [
+          "SQ5a5504e1134fea001a0e17f8",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "3e04a0f642bde36f",
+    "fixture": "newdoc-14",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 0,
+      "f1": 0.5555555555555556,
+      "answer": "The Black Death is thought to have originated in the arid plains of Central Asia .",
+      "citations": [
+        [
+          "SQ57264684708984140094c123",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": true,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "e744b64eb0788d4a",
+    "fixture": "newdoc-15",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "1bf9349bcfb5cb7e",
+    "fixture": "newdoc-16",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "pharma",
+      "citations": [
+        [
+          "SQ5726d8bd708984140094d35b",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "0df753e830fb5f9d",
+    "fixture": "newdoc-17",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "ad4063a2a88248fd",
+    "fixture": "newdoc-18",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 0,
+      "f1": 0.2222222222222222,
+      "answer": "Construction is the process of constructing a building or infrastructure.",
+      "citations": [
+        [
+          "SQ57273a465951b619008f86ff",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": true,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "37e305220c33fd16",
+    "fixture": "newdoc-19",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "9ff615e87195c2a2",
+    "fixture": "newdoc-20",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "John Harvard",
+      "citations": [
+        [
+          "SQ5727aa413acd2414000de921",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "0702cb5616567648",
+    "fixture": "newdoc-21",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "e0d3e6c28ea503e5",
+    "fixture": "newdoc-22",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "40%",
+      "citations": [
+        [
+          "SQ5727e6cbff5b5019007d97ee",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "ef5514e80afb3212",
+    "fixture": "newdoc-23",
+    "arm": "server-512-default",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "edf848b2382514bf",
+    "fixture": "newdoc-00",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "France",
+      "citations": [
+        [
+          "SQ56ddde6b9a695914005b9628",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "c33cb4a1fb6bff63",
+    "fixture": "newdoc-01",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "6ed71d119716e820",
+    "fixture": "newdoc-02",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "SoCal",
+      "citations": [
+        [
+          "SQ5705e26d75f01819005e76d4",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "59423cb5b20a86ed",
+    "fixture": "newdoc-03",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "783adf0549a796d7",
+    "fixture": "newdoc-04",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "highly diversified",
+      "citations": [
+        [
+          "SQ570d2417fed7b91900d45c3d",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "3a240c7b1a35f551",
+    "fixture": "newdoc-05",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 1,
+      "f1": 1,
+      "answer": "unknown",
+      "citations": [
+        [
+          "SQ5ad23fded7d075001a4288fc",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "61834c5a7a94c039",
+    "fixture": "newdoc-06",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "Solar power",
+      "citations": [
+        [
+          "SQ57112686b654c5140001fbd3",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "8743f169cedb806e",
+    "fixture": "newdoc-07",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "Oxygen",
+      "citations": [
+        [
+          "SQ5ad21646d7d075001a4283c4",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "f0a018ce7594f5c3",
+    "fixture": "newdoc-08",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "October 1973",
+      "citations": [
+        [
+          "SQ5725b33f6a3fe71400b8952d",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "5dee398b565508f3",
+    "fixture": "newdoc-09",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "95e6ad9ebeddb562",
+    "fixture": "newdoc-10",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "Amazonia or the Amazon Jungle",
+      "citations": [
+        [
+          "SQ5725b81b271a42140099d097",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "9fc03d0cf44234a0",
+    "fixture": "newdoc-11",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "d7056e4e7528ee37",
+    "fixture": "newdoc-12",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "Fresno",
+      "citations": [
+        [
+          "SQ5725ce4d38643c19005acd4d",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "0db84fa46cb21899",
+    "fixture": "newdoc-13",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "Distributed Adaptive Message Block Switching",
+      "citations": [
+        [
+          "SQ5a5504e1134fea001a0e17f8",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "51236d36531a5d02",
+    "fixture": "newdoc-14",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 0,
+      "f1": 0.5555555555555556,
+      "answer": "The Black Death is thought to have originated in the arid plains of Central Asia .",
+      "citations": [
+        [
+          "SQ57264684708984140094c123",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": true,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "b990f229e194aebc",
+    "fixture": "newdoc-15",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "9a80050c09d3ac18",
+    "fixture": "newdoc-16",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "pharma",
+      "citations": [
+        [
+          "SQ5726d8bd708984140094d35b",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "152025b3071281e5",
+    "fixture": "newdoc-17",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "c75d5b036906bb58",
+    "fixture": "newdoc-18",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 0,
+      "f1": 0.2222222222222222,
+      "answer": "Construction is the process of constructing a building or infrastructure.",
+      "citations": [
+        [
+          "SQ57273a465951b619008f86ff",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": true,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "87c994ef95a11572",
+    "fixture": "newdoc-19",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "7568f6601a2f4330",
+    "fixture": "newdoc-20",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "John Harvard",
+      "citations": [
+        [
+          "SQ5727aa413acd2414000de921",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "4f0cc80250acab3d",
+    "fixture": "newdoc-21",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "6ea7edb484c57ddf",
+    "fixture": "newdoc-22",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "40%",
+      "citations": [
+        [
+          "SQ5727e6cbff5b5019007d97ee",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "6324230fa2550b18",
+    "fixture": "newdoc-23",
+    "arm": "prototype-full",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "de2532f787cbc522",
+    "fixture": "newdoc-00",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "France",
+      "citations": [
+        [
+          "SQ56ddde6b9a695914005b9628",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "7a7e81ed9066956f",
+    "fixture": "newdoc-01",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "65ca27392624b757",
+    "fixture": "newdoc-02",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "SoCal",
+      "citations": [
+        [
+          "SQ5705e26d75f01819005e76d4",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "63df55c2a87d5e8a",
+    "fixture": "newdoc-03",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "9e02fa9ef9c57f6a",
+    "fixture": "newdoc-04",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "highly diversified",
+      "citations": [
+        [
+          "SQ570d2417fed7b91900d45c3d",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "720c87054af34e00",
+    "fixture": "newdoc-05",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 1,
+      "f1": 1,
+      "answer": "unknown",
+      "citations": [
+        [
+          "SQ5ad23fded7d075001a4288fc",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "7093bb83b7e3cbdb",
+    "fixture": "newdoc-06",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "Solar power",
+      "citations": [
+        [
+          "SQ57112686b654c5140001fbd3",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "29cc3e7a4326832b",
+    "fixture": "newdoc-07",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "Oxygen",
+      "citations": [
+        [
+          "SQ5ad21646d7d075001a4283c4",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "ffdc530a6c820a34",
+    "fixture": "newdoc-08",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 0,
+      "f1": 0.4444444444444445,
+      "answer": "The 1973 oil crisis began in October 1973 .",
+      "citations": [
+        [
+          "SQ5725b33f6a3fe71400b8952d",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": true,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "b1b1015b6236619a",
+    "fixture": "newdoc-09",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 1,
+      "f1": 1,
+      "answer": "unknown",
+      "citations": [
+        [
+          "SQ5ad108f9645df0001a2d0a74",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "68ea09de87805ba0",
+    "fixture": "newdoc-10",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "Amazonia or the Amazon Jungle",
+      "citations": [
+        [
+          "SQ5725b81b271a42140099d097",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "8821ba331a7cc654",
+    "fixture": "newdoc-11",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 1,
+      "f1": 1,
+      "answer": "unknown",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "0fc995079613f73f",
+    "fixture": "newdoc-12",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "Fresno",
+      "citations": [
+        [
+          "SQ5725ce4d38643c19005acd4d",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "b36ceb213b4a026a",
+    "fixture": "newdoc-13",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "Distributed Adaptive Message Block Switching",
+      "citations": [
+        [
+          "SQ5a5504e1134fea001a0e17f8",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "9b6469dd9a410160",
+    "fixture": "newdoc-14",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 0,
+      "f1": 0.5555555555555556,
+      "answer": "The Black Death is thought to have originated in the arid plains of Central Asia .",
+      "citations": [
+        [
+          "SQ57264684708984140094c123",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": true,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "b559f7e1ea54d2c0",
+    "fixture": "newdoc-15",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "f53ff5feb6980c14",
+    "fixture": "newdoc-16",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "pharma",
+      "citations": [
+        [
+          "source_id",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "5df6066fb6e89fcf",
+    "fixture": "newdoc-17",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "24d39c8c70a8cb2b",
+    "fixture": "newdoc-18",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 0,
+      "f1": 0.2222222222222222,
+      "answer": "Construction is the process of constructing a building or infrastructure.",
+      "citations": [
+        [
+          "SQ57273a465951b619008f86ff",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": true,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "3ff9c8ce99a310ff",
+    "fixture": "newdoc-19",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 1,
+      "f1": 1,
+      "answer": "unknown",
+      "citations": [
+        [
+          "SQ5a6787d4f038b7001ab0c27a",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "4619a6555d06b1d7",
+    "fixture": "newdoc-20",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "John Harvard",
+      "citations": [
+        [
+          "SQ5727aa413acd2414000de921",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "9faa07baf6c48052",
+    "fixture": "newdoc-21",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 0,
+      "f1": 0,
+      "answer": "unknown [source_id:chunk]",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": false,
+      "source_cited": false,
+      "automatic_supported_correct": false,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "afff73a1c2fafbea",
+    "fixture": "newdoc-22",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 1,
+      "f1": 1.0,
+      "answer": "40%",
+      "citations": [
+        [
+          "SQ5727e6cbff5b5019007d97ee",
+          "0"
+        ]
+      ],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  },
+  {
+    "review_id": "481f05628b3e311b",
+    "fixture": "newdoc-23",
+    "arm": "prototype-skip4",
+    "automatic": {
+      "em": 1,
+      "f1": 1,
+      "answer": "unknown",
+      "citations": [],
+      "eos": true,
+      "exact_any_reference": true,
+      "source_cited": true,
+      "automatic_supported_correct": true,
+      "human_semantic_review": "pending",
+      "scope": "automatic lexical and citation checks; not semantic adjudication"
+    }
+  }
+]

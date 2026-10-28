@@ -1,0 +1,8 @@
+FROM shared-budget-native:local AS workers
+FROM shared-budget-evaluation:local
+COPY --from=workers /native /native
+COPY --from=workers /standard /standard
+COPY --from=workers /poc /poc
+COPY --from=workers /reference /reference
+COPY scripts /app/scripts
+ENTRYPOINT ["python", "/app/scripts/legacy_entry.py"]

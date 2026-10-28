@@ -1,0 +1,35 @@
+\subsection{Defined Experiments}
+\label{sec:budget}
+\textbf{E1: diagnosis.} We run 27 cells in three cyclic blocks with the same
+four-core budget. They include ingestion alone and two existing supported
+prompts under inference alone, shared execution, a fixed 2+2 split and a fixed
+3+1 split. Prefill and decode thread counts follow the LLM allocation. The
+encoder receives two threads in 2+2 and one in 3+1. We set affinity before
+creating threads and check it during each run. Warmup and v1 index preparation
+are outside timing. Prompt KV reuse is off. These policies change both thread
+counts and CPU placement, so they do not isolate cache or bandwidth effects.
+
+\textbf{E2: application.} We run 36 episodes with three added articles, two
+arrival offsets (0/90\,s), three policies (shared, 2+2, deferred) and two ways
+of updating the index. Incremental publication embeds 82 new chunks. A rebuild
+embeds the same complete 269-chunk v2 corpus in an empty staging index, then
+switches the active pointer atomically. The old v1 remains readable during
+the build. We do not pad the corpus to make updates slower.
+The new request arrives at its scheduled time, waits for v2, retrieves the
+top three passages and submits to the server. The old request may still occupy
+the only inference slot. We record submission, first token and engine phase
+timers. The engine does not expose the exact time a request leaves its queue.
+The old request uses the same supplied context that passed the earlier checks.
+
+\textbf{E3: timing test.} We use the next three articles, arrivals at 30/60\,s
+and the two concurrent policies, giving 12 episodes. Before running them, we
+use E2 incremental medians for each policy to predict current completion,
+publication, retrieval and new-request service time. Engine prompt and
+generation timers exclude queue waiting. The completion estimate is
+$\max\{T_c,\max(T_a,T_p)+T_r\}+T_s$, where $T_a$ is arrival, $T_r$ is retrieval
+and $T_s$ is service time. We save hashes of the parameters and predictions
+and do not fit them again. These articles have appeared in earlier model
+runs. They test timing on other cases, not semantic accuracy on unseen data.
+An infrastructure failure interrupted E2 after 17 saved episodes. We retained
+those episodes and ran the remaining 19 with the same experimental settings.
+

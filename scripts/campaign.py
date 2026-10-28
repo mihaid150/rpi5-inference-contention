@@ -39,9 +39,10 @@ def freeze(e2, plan):
 def preflight():
     if platform.machine() not in ("aarch64", "arm64"):
         raise RuntimeError("The measured deployment requires Linux ARM64")
-    from worker import environment
-
-    environment()
+    cpus = sorted(os.sched_getaffinity(0))
+    quota, period = Path("/sys/fs/cgroup/cpu.max").read_text().split()
+    if len(cpus) != 4 or quota == "max" or int(quota) != 4 * int(period):
+        raise RuntimeError("Exactly four allowed CPUs and a four-core quota required")
     if Path("/sys/fs/cgroup/memory.max").read_text().strip() != str(12 * 1024**3):
         raise RuntimeError("Memory cap must be 12 GiB")
     versions = json.loads(Path("/input/versions.json").read_text())

@@ -9,3 +9,10 @@ models/
 *.gguf
 *.safetensors
 *.log
+/paper/*.pdf
+/paper/*.aux
+/paper/*.bbl
+/paper/*.blg
+/paper/*.fdb_latexmk
+/paper/*.fls
+/paper/*.out

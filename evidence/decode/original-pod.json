@@ -1,0 +1,153 @@
+{
+  "apiVersion": "v1",
+  "kind": "Pod",
+  "metadata": {
+    "name": "dli-u3-memory-charge-p90-20261022-r2",
+    "namespace": "dli-exp",
+    "labels": {
+      "research": "qwen-route-family"
+    }
+  },
+  "spec": {
+    "nodeSelector": {
+      "kubernetes.io/hostname": "rpi-worker-09"
+    },
+    "restartPolicy": "Never",
+    "activeDeadlineSeconds": 3600,
+    "automountServiceAccountToken": false,
+    "securityContext": {
+      "runAsUser": 1000,
+      "runAsGroup": 1000,
+      "runAsNonRoot": true,
+      "seccompProfile": {
+        "type": "RuntimeDefault"
+      }
+    },
+    "containers": [
+      {
+        "name": "worker",
+        "image": "python:3.11-slim-bookworm",
+        "command": [
+          "/bin/sh",
+          "-ec",
+          "python -m pip install --no-cache-dir --only-binary=:all: --target /output/deps 'https://download-r2.pytorch.org/whl/cpu/torch-2.11.0%2Bcpu-cp311-cp311-manylinux_2_28_aarch64.whl#sha256=46fbb0aa257bb781efbfad648f5b045c0e232573b661f1461593db61342e9096' transformers==5.7.0 numpy==2.2.6 > /output/install.log 2>&1; python -c \"import torch; assert torch.version.cuda is None, torch.version.cuda\"; python -c \"from transformers import AutoModel, AutoTokenizer; import getpass; print(getpass.getuser())\" > /output/preflight.log 2>&1; python -m pip freeze --path /output/deps > /output/packages.txt; python /input/research_u3_shared_profile.py > /output/profile.log 2>&1"
+        ],
+        "env": [
+          {
+            "name": "LD_LIBRARY_PATH",
+            "value": "/work/transition-arm64"
+          },
+          {
+            "name": "U3_ACCOUNTED_MODEL",
+            "value": "1"
+          },
+          {
+            "name": "U3_BATCHES",
+            "value": "1,4,8"
+          },
+          {
+            "name": "PYTHONPATH",
+            "value": "/output/deps:/input"
+          },
+          {
+            "name": "HOME",
+            "value": "/tmp"
+          },
+          {
+            "name": "USER",
+            "value": "u3"
+          },
+          {
+            "name": "LOGNAME",
+            "value": "u3"
+          },
+          {
+            "name": "TORCHINDUCTOR_CACHE_DIR",
+            "value": "/tmp/torchinductor"
+          },
+          {
+            "name": "XDG_CACHE_HOME",
+            "value": "/tmp/cache"
+          },
+          {
+            "name": "HF_HUB_OFFLINE",
+            "value": "1"
+          },
+          {
+            "name": "TRANSFORMERS_OFFLINE",
+            "value": "1"
+          }
+        ],
+        "resources": {
+          "requests": {
+            "cpu": "1",
+            "memory": "12Gi"
+          },
+          "limits": {
+            "cpu": "4",
+            "memory": "12Gi"
+          }
+        },
+        "securityContext": {
+          "allowPrivilegeEscalation": false,
+          "readOnlyRootFilesystem": true,
+          "capabilities": {
+            "drop": [
+              "ALL"
+            ]
+          }
+        },
+        "volumeMounts": [
+          {
+            "name": "artifacts",
+            "mountPath": "/work",
+            "readOnly": true
+          },
+          {
+            "name": "input",
+            "mountPath": "/input",
+            "readOnly": true
+          },
+          {
+            "name": "output",
+            "mountPath": "/output",
+            "readOnly": false
+          },
+          {
+            "name": "tmp",
+            "mountPath": "/tmp"
+          }
+        ]
+      }
+    ],
+    "volumes": [
+      {
+        "name": "artifacts",
+        "hostPath": {
+          "path": "/home/mipeda/dli-research-v2/14b-bprime-preparation-20261015/output",
+          "type": "Directory"
+        }
+      },
+      {
+        "name": "input",
+        "hostPath": {
+          "path": "/home/mipeda/dli-research-v2/u3-charge-p90-20261022-r2/input",
+          "type": "Directory"
+        }
+      },
+      {
+        "name": "output",
+        "hostPath": {
+          "path": "/home/mipeda/dli-research-v2/u3-charge-p90-20261022-r2/output",
+          "type": "Directory"
+        }
+      },
+      {
+        "name": "tmp",
+        "emptyDir": {
+          "sizeLimit": "2Gi"
+        }
+      }
+    ]
+  }
+}

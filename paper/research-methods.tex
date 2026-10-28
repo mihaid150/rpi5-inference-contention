@@ -1,0 +1,108 @@
+\section{Experimental Design}
+\label{sec:methods}
+\subsection{Experimental Setups}
+\textbf{Distributed mechanism pilot.} Each of four ARM stage workers uses one compute thread. Activations pass through \texttt{kubectl exec}. Three
+64-token synthetic cycles measure process and node memory after warmup. Three CoQA
+conversations \citep{coqa}, with 458--513-token contexts and gold history,
+compare Q4, static Q3 stage 0, retained transitions and full replay. Teacher
+forcing and generation use separate passes with the same switch schedule.
+This validates state handling. It does not measure production transport performance.
+
+\textbf{Raspberry Pi 5 execution.} E1--E3 run on a Raspberry Pi 5 with
+16 GB physical RAM and NVMe storage. Its four Cortex-A76 cores have a
+2.4\,GHz maximum clock, dot-product and FP16 support and 2\,MiB shared L3.
+The full Qwen2.5-14B-Instruct Q4\_K\_M model is approximately 8.79\,GB.
+Inference is CPU-only, with no GPU. The container receives a four-CPU quota
+and a 12-GiB memory safety cap. This cap is distinct from physical RAM and
+is not a measured minimum deployment requirement. Governor
+settings stay unchanged. Thermal and other variation are not fully eliminated.
+The short and long prompts contain 184 and 565 tokens. Synthetic prefix tests
+use 128, 256, 512 and 1024 tokens with cleared KV. These are length probes,
+not four independent QA tasks.
+Three cyclic repetitions produce descriptive medians, not confidence bounds.
+
+\subsection{A Competitive Static Baseline}
+We build an unmodified \texttt{llama-server} from the same frozen runtime
+revision as the private worker (\texttt{838374375cb8}). It uses one slot, context 2048, logical batch
+512, repacking, four prefill threads and two decode threads and no GPU. Four candidates
+use physical batches of 64, 256 and 512 with F32 KV and flash attention off, plus batch
+512 with F16 KV and flash-auto. This search covers four configurations and does not establish the best
+possible backend. The F32 arms isolate batch size. The last arm
+is a competitive configuration, not a single-variable causal ablation.
+
+Selection uses only the existing supported short and long cases, three cyclic
+repetitions each. Minimum median answer time among complete passing arms
+selects the batch512/F16/flash-auto configuration. All configurations are fixed
+before new-document inference. Explicit token IDs, greedy generation, repeat
+penalty 1 and a 64-token cap match the private prototype. Prompt reuse is off.
+Token and cache counters check for prefix reuse and truncation.
+Requests start without reused prompt state. Production caching is outside
+this comparison.
+
+\subsection{QA on Separate Articles}
+The subsequent cohort selects 24 distinct SQuAD2 article titles
+\citep{squad2}, one paragraph and question per title, alternating 12 answerable and
+12 unanswerable questions. Source order and a prospective 1200-token bound
+select inputs without model outputs. An exact quoted-ID scan covers 4,997
+prior local JSON/JSONL records, excluding an article if a question ID appears.
+Exact normalized CoQA story duplicates are also excluded. The scan does not cover unlogged exposure, paraphrases or model pretraining. The
+cohort is separate from tuning, not a broad confirmatory sample or a household
+utility dataset. An earlier conservative CoQA preparation failed its cohort
+availability gate before inference and was not relaxed retrospectively.
+
+Each arm generates once per article after clearing KV. We retain official
+SQuAD reference-based EM/F1, raw text and tokens, exact-reference agreement, citation
+locator and EOS. The frozen automatic task pass requires a reference-exact
+answer with the supplied source and chunk, or bare \texttt{unknown} without a
+citation for an unanswerable case. Candidate admission checks for losses on
+cases passed by standard. These checks measure reference matching and formatting. They do not replace
+human assessment of meaning. A blinded review packet and separate key exist. Human review is pending.
+Later inspection explains formatting failures while retaining the original scores.
+
+\input{research-allocation}
+
+\subsection{Earlier Sequential Episode Control}
+Before E1--E3 (Section~\ref{sec:budget}), four policies compare standard concurrent, standard deferred, full-prototype
+concurrent and skip4-prototype concurrent. Three cyclic matched blocks add
+three different answerable cohort documents to the existing real Git update
+with 81 new chunks. These are three matched document episodes, not three
+within-document replications. All policies receive the same snapshots per block.
+There is no padding or artificial full-corpus reembedding.
+
+Each episode builds fresh v1 outside timing and verifies absence of the new
+source. The encoder is \texttt{sentence-transformers/all-MiniLM-L6-v2}.
+It uses intra-op 2/inter-op 1, batch 4 and stable chunks of at most
+256 encoder tokens. The current request starts when the update arrives and uses the supplied
+context chosen in advance. The new request, after current completion and publication,
+uses actual dense top-3 retrieval from v2. The gold passage is never substituted.
+Current-query retrieval is not independently evaluated. The application score
+checks the new source and version, the answer, and every citation against retrieved
+locators. Failed answers remain in timing and quality records. No candidate
+with a new-document regression can qualify for an automatic joint-benefit claim.
+
+\subsection{Analysis Procedure}
+For each matched case, we compare current-answer time, publication time and
+new-answer latency. We report medians and paired differences without combining
+different update modes or treating documents as repeated runs of one request.
+We inspect prefill and generation separately to locate the cost of an allocation.
+Answers that fail a check remain in both the timing record and the quality count.
+
+For E3, we compare each saved prediction with its measured value and report
+mean absolute error and relative error. We also check whether the predicted
+policy order agrees with each matched pair. After E3, we add a simple baseline
+using the E2 median total time for each policy. This is a later diagnostic,
+not a comparison chosen before E3. No predictor is refitted.
+
+\subsection{Records and Earlier Experiments}
+Protocols, hashes of source and configuration files, outputs and failures are retained.
+The final execution campaign contains 112 cells. The later validation contains
+108 cells plus 12 application episodes. File-backed versus anonymous RSS,
+process high-water marks and pod-lifetime peaks have different scopes. Page
+ownership is not normalized. The standard package's first deployment missed
+a shared library and stopped before inference. The corrected package was
+verified on ARM before the measured run. Earlier transport failures and input
+amendments remain in the record.
+
+The earlier TinyLlama accounting and quality and CoQA switch-position protocols
+remain separate in the appendix. Their original thresholds and verdicts are
+not replaced by the later exploratory criteria. A read-only audit script checks tables and figure data against the saved reports.

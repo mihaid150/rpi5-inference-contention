@@ -1,0 +1,68 @@
+\section{Evaluation Methodology}
+\label{sec:problem}
+Our methodology follows the effect of an inference change from resource use
+to the final answer. It separates four questions, summarized in
+Table~\ref{tab:research-questions}. The implemented workflow is shown in
+Figure~\ref{fig:research-system}.
+
+\begin{table}[!htb]
+\caption{Research questions and the evidence used to answer them.}
+\label{tab:research-questions}
+\centering
+\begin{tabular}{@{}p{.7cm}p{3.6cm}p{2.7cm}@{}}
+\toprule
+ & Question & Evidence\\
+\midrule
+RQ1 & Does released memory let concurrent work progress? & Process and node memory, update progress\\[3pt]
+RQ2 & Do backend settings and CPU allocations improve execution? & Standard backend, prefill and generation times\\[3pt]
+RQ3 & Do individual answers and citations remain valid? & Paired QA checks, raw answers and citations\\[3pt]
+RQ4 & Does a change improve the full episode, and can its timing be predicted? & Publication, request completion and prediction errors\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\input{figures/research-system}
+
+\subsection{Evaluation Steps}
+\textbf{1. Establish isolated controls.} Fix the model, backend, inputs and
+resource budget. Run ingestion and inference alone, then together. Record
+startup, memory use and phase times. A standard backend provides the execution
+reference so that poor settings are not mistaken for an optimization opportunity.
+
+\textbf{2. Measure the application episode.} Start an update while the current
+request runs. Schedule a new question independently, wait for its required index
+version, retrieve evidence and submit the request. Compare policies on matched
+inputs and arrivals. Keep answer, citation and version checks separate from
+latency. This step connects a local resource change to the user's request.
+
+\textbf{3. Test the explanation.} Estimate phase durations from the earlier
+runs, save the predictions and their hashes, then evaluate other document and
+arrival combinations. Retain errors and failed answers without changing the
+policy, labels or predictor to improve the result. E1, E2 and E3 instantiate
+these steps with the experiments defined in Section~\ref{sec:budget}.
+
+\subsection{Episode Measurements}
+The current request keeps its original context while the update worker chunks
+and embeds changed documents and publishes v2. A new question must retrieve
+and cite the new evidence. Let $T_c$ be current completion, $T_p$ publication
+and $T_f$ new-answer completion, measured from update arrival. We report all
+three times and latency from the new question's own arrival. Finishing
+generation does not mean that an answer passes the quality checks.
+
+In the earlier sequential control, the new request starts after both current
+completion and publication. Its timing is
+\begin{equation}
+T_f=\max(T_c,T_p)+T_{\mathrm{retrieve}}+T_{\mathrm{new\ request}}.
+\label{eq:critical-path}
+\end{equation}
+For independent arrivals, retrieval waits for arrival and publication. The new
+request then queues for the inference slot. The E3 estimate follows this order,
+using measured phase durations. The order is a property of the experiment.
+Whether the phase estimates predict other cases is tested separately.
+
+We have no application SLA or independently reviewed utility score. We therefore
+report timing and answer checks directly, without a weighted score chosen after
+the results. Correct answers, supported citations, relevant versions and
+abstention are assessed as separate outcomes.
+
+\input{research-mechanisms}

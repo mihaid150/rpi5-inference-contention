@@ -1,0 +1,61 @@
+\section{Introduction}
+A document assistant must keep answering questions as its sources change.
+New documents need to become searchable, and answers need to be supported by
+the retrieved text. Both requirements have been studied in search and RAG
+systems \citep{freshdiskann,metis,alce}. When ingestion and LLM inference run
+on the same small machine, they also compete for CPU time and memory.
+
+There are several ways to share those resources. Delaying an update gives
+inference more time but makes users wait for new information. Reserving cores
+for ingestion can help it finish sooner. A fixed reservation, however, can
+continue to limit inference after embedding has finished. We study how these
+choices affect the whole request. Does an earlier index update lead to an
+earlier answer, or does the cost appear elsewhere?
+
+Recent measurement studies ask similar questions about other parts of LLM
+serving. Breaking the Ice identifies the stages responsible for startup time.
+\emph{Speculative Decoding: Performance or Illusion?} checks whether speedups
+seen in prototypes hold in a production engine \citep{breakingice,specillusion}.
+\emph{Beyond the Buzz} studies how workloads and configurations change the
+benefits of disaggregation \citep{beyondbuzz}. These works show the value of
+measuring where an optimization saves time and where it adds cost.
+
+Scheduling systems already account for different inference phases.
+Sarathi-Serve uses chunked prefills, DistServe separates prefill and decode
+resources, and SuperInfer coordinates scheduling with KV transfers
+\citep{sarathi,distserve,superinfer}. METIS adapts RAG configuration and
+scheduling to meet quality requirements \citep{metis}. We build on this
+perspective with an evaluation framework for CPU allocation, document publication and
+answer completion on a Raspberry Pi 5. We evaluate fixed allocations.
+We do not introduce a new adaptive scheduler.
+
+Our method has three steps. We first run inference and ingestion separately
+and together, recording phase times and checking which CPUs each thread can
+use. We then run matched application episodes with different update policies
+and request arrival times. Finally, we fix timing predictions before testing
+them on other documents and arrivals. At every step, we check answer quality,
+citations and the retrieved version separately from response time.
+Section~\ref{sec:problem} defines the evaluation steps.
+
+We run the full Qwen2.5-14B-Instruct model in Q4\_K\_M on a Raspberry Pi 5
+with 16 GB RAM, alongside the MiniLM document worker. This gives a concrete
+setting for studying contention on a small CPU system. The 27 diagnostic
+cells show a clear trade-off. Reserving two
+cores for ingestion almost halves update time under concurrency, but increases
+the long-prompt answer time from 174.3 to 246.4\,s. Most of the extra time is in
+prefill. In 36 application episodes, publication finishes before current
+inference under both concurrent policies, even when the index is rebuilt.
+The fixed partition also slows the next request. In 12 further episodes, the
+predictions correctly rank the two policies in six pairs, but their accuracy
+is no better than a simple baseline added after the experiment.
+
+Our contribution is an evaluation methodology and its implemented framework.
+We built the controller for CPU allocation and independent request arrivals,
+connected versioned document publication to retrieval and inference, and added
+phase measurements, resource sampling and answer checks. The framework retains
+inputs, outputs and prediction hashes so each comparison can be traced to its
+configuration. These components make the allocation trade-offs measurable with
+existing runtimes. Earlier precision, backend and QA experiments provide
+separate controls rather than extra repetitions of the 75 cells. Our documents
+and arrivals are controlled cases, not production traces. Dynamic core
+reassignment and independent human review of answer correctness remain open.

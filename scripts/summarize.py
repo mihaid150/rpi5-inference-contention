@@ -41,11 +41,11 @@ def summarize(root):
                     k
                     for row in observations
                     for k, v in row.items()
-                    if isinstance(v, (int, float)) and not isinstance(v, bool)
+                    if isinstance(v, (int, float)) and (not isinstance(v, bool))
                 }
             )
             medians = {
-                k: statistics.median(row[k] for row in observations if k in row)
+                k: statistics.median((row[k] for row in observations if k in row))
                 for k in keys
             }
             results.append(
@@ -61,8 +61,10 @@ def summarize(root):
         raise ValueError("E2 changed after prediction freeze")
     summary["e3"]["prediction_mae_s"] = {
         key: statistics.mean(
-            row["prediction_check"]["absolute_error_s"][key]
-            for row in reports["e3"]["rows"]
+            (
+                row["prediction_check"]["absolute_error_s"][key]
+                for row in reports["e3"]["rows"]
+            )
         )
         for key in reports["e3"]["rows"][0]["prediction_check"]["absolute_error_s"]
     }

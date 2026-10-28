@@ -1,0 +1,260 @@
+{
+  "created_unix": 1793115850.8651123,
+  "source": "results/shared-budget-14b/shared-budget-14b-e2-20261027-r2/raw/report.json",
+  "source_sha256": "2755b5f0468a53c66a38623ee42ea0bf70bf326fd8614932d09c59697bf52bf4",
+  "plan_sha256": "8ae75f200b13364f8868879ca8f480b52bbd8d509675b7f8b3e94e8f15acd081",
+  "training": "E2 incremental, six observations per fixed policy; E1 prerequisite only",
+  "formula": "submission=max(arrival,publication)+retrieval; finish=max(submission,current_completion)+fresh_service",
+  "assumptions": [
+    "policy-specific phase medians; no per-document fitting",
+    "fresh service is E2 median engine prompt+generation time, not queued request duration",
+    "future prompt length/output token count not known; no E3 output oracle",
+    "notification and HTTP overhead unmodeled",
+    "earlier publication may affect overlap: prediction errors retained"
+  ],
+  "phases": {
+    "shared": {
+      "current_complete_s": 176.38584083877504,
+      "publication_s": 14.279226646758616,
+      "retrieval_s": 0.37026028521358967,
+      "fresh_service_s": 117.631048
+    },
+    "partition-2-2": {
+      "current_complete_s": 246.96736364858225,
+      "publication_s": 7.318799348082393,
+      "retrieval_s": 0.16630171239376068,
+      "fresh_service_s": 165.75696
+    }
+  },
+  "predictions": [
+    {
+      "cell": {
+        "id": "prediction-check-001",
+        "stage": "prediction-check",
+        "block": 1,
+        "fixture": "newdoc-06",
+        "update": "incremental",
+        "fresh_arrival_s": 30,
+        "policy": "shared"
+      },
+      "prediction": {
+        "current_complete_s": 176.38584083877504,
+        "publication_s": 14.279226646758616,
+        "fresh_submission_s": 30.37026028521359,
+        "fresh_complete_s": 294.01688883877506,
+        "fresh_latency_from_actual_arrival_s": 264.01688883877506,
+        "bottleneck": "current-slot"
+      }
+    },
+    {
+      "cell": {
+        "id": "prediction-check-002",
+        "stage": "prediction-check",
+        "block": 1,
+        "fixture": "newdoc-06",
+        "update": "incremental",
+        "fresh_arrival_s": 30,
+        "policy": "partition-2-2"
+      },
+      "prediction": {
+        "current_complete_s": 246.96736364858225,
+        "publication_s": 7.318799348082393,
+        "fresh_submission_s": 30.16630171239376,
+        "fresh_complete_s": 412.72432364858224,
+        "fresh_latency_from_actual_arrival_s": 382.72432364858224,
+        "bottleneck": "current-slot"
+      }
+    },
+    {
+      "cell": {
+        "id": "prediction-check-003",
+        "stage": "prediction-check",
+        "block": 1,
+        "fixture": "newdoc-06",
+        "update": "incremental",
+        "fresh_arrival_s": 60,
+        "policy": "shared"
+      },
+      "prediction": {
+        "current_complete_s": 176.38584083877504,
+        "publication_s": 14.279226646758616,
+        "fresh_submission_s": 60.37026028521359,
+        "fresh_complete_s": 294.01688883877506,
+        "fresh_latency_from_actual_arrival_s": 234.01688883877506,
+        "bottleneck": "current-slot"
+      }
+    },
+    {
+      "cell": {
+        "id": "prediction-check-004",
+        "stage": "prediction-check",
+        "block": 1,
+        "fixture": "newdoc-06",
+        "update": "incremental",
+        "fresh_arrival_s": 60,
+        "policy": "partition-2-2"
+      },
+      "prediction": {
+        "current_complete_s": 246.96736364858225,
+        "publication_s": 7.318799348082393,
+        "fresh_submission_s": 60.16630171239376,
+        "fresh_complete_s": 412.72432364858224,
+        "fresh_latency_from_actual_arrival_s": 352.72432364858224,
+        "bottleneck": "current-slot"
+      }
+    },
+    {
+      "cell": {
+        "id": "prediction-check-005",
+        "stage": "prediction-check",
+        "block": 2,
+        "fixture": "newdoc-08",
+        "update": "incremental",
+        "fresh_arrival_s": 30,
+        "policy": "partition-2-2"
+      },
+      "prediction": {
+        "current_complete_s": 246.96736364858225,
+        "publication_s": 7.318799348082393,
+        "fresh_submission_s": 30.16630171239376,
+        "fresh_complete_s": 412.72432364858224,
+        "fresh_latency_from_actual_arrival_s": 382.72432364858224,
+        "bottleneck": "current-slot"
+      }
+    },
+    {
+      "cell": {
+        "id": "prediction-check-006",
+        "stage": "prediction-check",
+        "block": 2,
+        "fixture": "newdoc-08",
+        "update": "incremental",
+        "fresh_arrival_s": 30,
+        "policy": "shared"
+      },
+      "prediction": {
+        "current_complete_s": 176.38584083877504,
+        "publication_s": 14.279226646758616,
+        "fresh_submission_s": 30.37026028521359,
+        "fresh_complete_s": 294.01688883877506,
+        "fresh_latency_from_actual_arrival_s": 264.01688883877506,
+        "bottleneck": "current-slot"
+      }
+    },
+    {
+      "cell": {
+        "id": "prediction-check-007",
+        "stage": "prediction-check",
+        "block": 2,
+        "fixture": "newdoc-08",
+        "update": "incremental",
+        "fresh_arrival_s": 60,
+        "policy": "partition-2-2"
+      },
+      "prediction": {
+        "current_complete_s": 246.96736364858225,
+        "publication_s": 7.318799348082393,
+        "fresh_submission_s": 60.16630171239376,
+        "fresh_complete_s": 412.72432364858224,
+        "fresh_latency_from_actual_arrival_s": 352.72432364858224,
+        "bottleneck": "current-slot"
+      }
+    },
+    {
+      "cell": {
+        "id": "prediction-check-008",
+        "stage": "prediction-check",
+        "block": 2,
+        "fixture": "newdoc-08",
+        "update": "incremental",
+        "fresh_arrival_s": 60,
+        "policy": "shared"
+      },
+      "prediction": {
+        "current_complete_s": 176.38584083877504,
+        "publication_s": 14.279226646758616,
+        "fresh_submission_s": 60.37026028521359,
+        "fresh_complete_s": 294.01688883877506,
+        "fresh_latency_from_actual_arrival_s": 234.01688883877506,
+        "bottleneck": "current-slot"
+      }
+    },
+    {
+      "cell": {
+        "id": "prediction-check-009",
+        "stage": "prediction-check",
+        "block": 3,
+        "fixture": "newdoc-10",
+        "update": "incremental",
+        "fresh_arrival_s": 30,
+        "policy": "shared"
+      },
+      "prediction": {
+        "current_complete_s": 176.38584083877504,
+        "publication_s": 14.279226646758616,
+        "fresh_submission_s": 30.37026028521359,
+        "fresh_complete_s": 294.01688883877506,
+        "fresh_latency_from_actual_arrival_s": 264.01688883877506,
+        "bottleneck": "current-slot"
+      }
+    },
+    {
+      "cell": {
+        "id": "prediction-check-010",
+        "stage": "prediction-check",
+        "block": 3,
+        "fixture": "newdoc-10",
+        "update": "incremental",
+        "fresh_arrival_s": 30,
+        "policy": "partition-2-2"
+      },
+      "prediction": {
+        "current_complete_s": 246.96736364858225,
+        "publication_s": 7.318799348082393,
+        "fresh_submission_s": 30.16630171239376,
+        "fresh_complete_s": 412.72432364858224,
+        "fresh_latency_from_actual_arrival_s": 382.72432364858224,
+        "bottleneck": "current-slot"
+      }
+    },
+    {
+      "cell": {
+        "id": "prediction-check-011",
+        "stage": "prediction-check",
+        "block": 3,
+        "fixture": "newdoc-10",
+        "update": "incremental",
+        "fresh_arrival_s": 60,
+        "policy": "shared"
+      },
+      "prediction": {
+        "current_complete_s": 176.38584083877504,
+        "publication_s": 14.279226646758616,
+        "fresh_submission_s": 60.37026028521359,
+        "fresh_complete_s": 294.01688883877506,
+        "fresh_latency_from_actual_arrival_s": 234.01688883877506,
+        "bottleneck": "current-slot"
+      }
+    },
+    {
+      "cell": {
+        "id": "prediction-check-012",
+        "stage": "prediction-check",
+        "block": 3,
+        "fixture": "newdoc-10",
+        "update": "incremental",
+        "fresh_arrival_s": 60,
+        "policy": "partition-2-2"
+      },
+      "prediction": {
+        "current_complete_s": 246.96736364858225,
+        "publication_s": 7.318799348082393,
+        "fresh_submission_s": 60.16630171239376,
+        "fresh_complete_s": 412.72432364858224,
+        "fresh_latency_from_actual_arrival_s": 352.72432364858224,
+        "bottleneck": "current-slot"
+      }
+    }
+  ],
+  "semantic_validation": false
+}

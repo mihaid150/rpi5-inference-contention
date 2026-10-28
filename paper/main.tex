@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{graphicx,booktabs}
+\usepackage{amsmath,amssymb}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,fit,backgrounds}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{xurl}
+\usepackage[hyperfootnotes=false]{hyperref}
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+\usepackage{mlsys2025}
+\definecolor{answerblue}{HTML}{31688E}
+\definecolor{updatepurple}{HTML}{7860A0}
+\definecolor{freshorange}{HTML}{CE8A32}
+\definecolor{passgreen}{HTML}{3B8C71}
+\definecolor{formatamber}{HTML}{E3B65D}
+\definecolor{failgray}{HTML}{B6BEC8}
+\hypersetup{hypertexnames=false,pdftitle={From Resource Savings to Useful Answers},pdfsubject={Research characterization draft. Official blind-review template}}
+\mlsystitlerunning{From Resource Savings to Useful Answers}
+\begin{document}
+\twocolumn[
+\mlsystitle{From Resource Savings to Useful Answers:\\Characterizing Shared ARM Inference and Document Updates}
+\begin{mlsysauthorlist}
+\mlsysauthor{Anonymous Authors}{anon}
+\end{mlsysauthorlist}
+\mlsysaffiliation{anon}{Anonymous Institution}
+\mlsyscorrespondingauthor{Anonymous Author}{anon.email@domain.com}
+\mlsyskeywords{edge inference, resource contention, RAG, grounded answers, experimental methodology}
+\vskip 0.3in
+\begin{abstract}
+A document assistant must answer questions while new documents are indexed on the same machine. We present an evaluation methodology and an implemented framework that schedules concurrent jobs and independent requests, enforces CPU allocations, links index publication to retrieval, and records phase times, resource use and answer checks. We evaluate Qwen2.5-14B-Instruct in Q4\_K\_M on a Raspberry Pi 5 in 75 cells covering isolated controls, matched update episodes and predictions fixed before testing other cases. Reserving two cores improves ingestion (13.8 to 7.0\,s) but slows the long-prompt answer (174.3 to 246.4\,s), mainly in prefill. Publication precedes slot release in all concurrent E2/E3 episodes (36/36), while prediction error is comparable to a simple baseline (MAE 22.22\,s versus 21.48\,s). The framework exposes the cost of fixed reservations and separates timing gains from answer validity, with independent semantic review still pending.
+\end{abstract}
+]
+\input{research-introduction}
+\input{research-related}
+\input{research-problem}
+\input{research-methods}
+\input{research-results}
+\input{research-discussion}
+\section{Conclusion}
+We implemented an evaluation framework that coordinates inference and document
+ingestion, controls CPU allocations, records request and publication events,
+and checks answers against the retrieved version and citations. It connects
+resource measurements to the time required to answer a question on new evidence.
+
+The proposed methodology makes these problems observable through isolated
+controls, independent-arrival episodes and predictions frozen before timing
+holdout evaluation. Fixed 2+2 allocation reduces update time but raises prefill
+and answer latency, and publication finishes before the current inference slot
+is released in every concurrent E2/E3 episode. The predictor ranks the two
+policies correctly in six pairs, but its mean absolute error does not improve
+on the simple baseline. Answer checks also remain necessary because generated
+outputs can fail the strict reference contract even when retrieval succeeds.
+\bibliography{references}
+\bibliographystyle{mlsys2025}
+\end{document}

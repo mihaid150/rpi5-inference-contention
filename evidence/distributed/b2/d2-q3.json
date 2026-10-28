@@ -1,0 +1,18 @@
+{
+  "source_id": "3kibxj1wd5uklt1p4y6cybg9wmhok0",
+  "mode": "q3",
+  "text": "Yes, two detectives were obstructing him in Salthouse.",
+  "stop": "eos",
+  "em": 0.0,
+  "f1": 0.2222222222222222,
+  "tokens": [
+    {
+      "kl_reference_to_candidate": 0.46297689094435773,
+      "reference_logp": -16.762546635820044,
+      "candidate_logp": -15.391952327904571,
+      "top1_agreement": false
+    }
+  ],
+  "logits_sha256": "c4fbac50b1c30ca15921ee6e10168f7f2c810c46b5c2ff50dfd748e7ca20c888",
+  "elapsed_s": 1517.234723913949
+}

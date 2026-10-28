@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "technical_only": true,
+  "documents": 3,
+  "jobs": 12,
+  "scores": {
+    "q4": {
+      "f1": 0.6666666666666666,
+      "em": 0.6666666666666666,
+      "mean_document_kl": 0.0,
+      "mean_elapsed_s": 1536.5183968129568
+    },
+    "q3": {
+      "f1": 0.7407407407407408,
+      "em": 0.6666666666666666,
+      "mean_document_kl": 0.18248942605145893,
+      "mean_elapsed_s": 1595.7727648613509
+    },
+    "retained": {
+      "f1": 0.6666666666666666,
+      "em": 0.6666666666666666,
+      "mean_document_kl": 0.08349959458876481,
+      "mean_elapsed_s": 1542.0915243306663
+    },
+    "rebuild": {
+      "f1": 0.6666666666666666,
+      "em": 0.6666666666666666,
+      "mean_document_kl": 0.0,
+      "mean_elapsed_s": 4089.8904778020224
+    }
+  },
+  "semantic_review_required": true
+}

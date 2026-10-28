@@ -1,0 +1,21 @@
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[font=\scriptsize,>=Latex]
+\fill[answerblue] (0,.72) rectangle ++(.25,.16);\node[anchor=west] at (.33,.80) {Current inference};
+\fill[updatepurple] (3.1,.72) rectangle ++(.25,.16);\node[anchor=west] at (3.43,.80) {Incremental publication};
+\fill[freshorange] (7.0,.72) rectangle ++(.25,.16);\node[anchor=west] at (7.33,.80) {New-version inference};
+\input{generated/episode-timeline}
+\draw[->,black!60] (0,-4.28)--(11.15,-4.28);
+\foreach \t in {0,50,100,150,200}{\draw[black!60] (\t*.054,-4.22)--(\t*.054,-4.34);\node[anchor=north] at (\t*.054,-4.37) {\t};}
+\node at (5.4,-4.92) {Elapsed seconds since update arrival};
+\end{tikzpicture}
+\caption{Measured critical path, first predeclared matched episode (Normandy),
+not a timeline assembled from unrelated medians. Purple ticks label publication;
+right labels mark new-answer completion. Publication precedes current-answer
+completion for all concurrent arms, so accelerating publication does not release
+the serial inference slot earlier. Deferral instead delays publication until the
+current answer, leaving fresh completion similar in this episode. The full
+prototype answers ``France'' but emits an invalid citation prefix; its timing
+is preserved as a failed task. Dotted gaps are post-gate retrieval/submission.}
+\label{fig:research-episode}
+\end{figure*}

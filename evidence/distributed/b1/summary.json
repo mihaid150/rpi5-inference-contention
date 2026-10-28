@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "cycles": 3,
+  "median_pss_saving_bytes": 401141760,
+  "scope": "process footprint only; node capacity and colocated utility unproven"
+}

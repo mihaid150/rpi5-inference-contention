@@ -8,7 +8,7 @@ import subprocess
 import time
 
 
-def manifest(image, assets, output, node, name):
+def manifest(image, assets, output, node, name, stage="e1-e3"):
     mounts = [
         ("input", str(assets), "/input"),
         ("models", str(assets / "models"), "/models"),
@@ -40,6 +40,11 @@ def manifest(image, assets, output, node, name):
                         dict(
                             name="evaluation",
                             image=image,
+                            command=(
+                                ["python", "/app/scripts/campaign.py"]
+                                if stage == "e1-e3"
+                                else ["python", "/app/scripts/legacy_entry.py", stage]
+                            ),
                             resources=dict(
                                 requests=dict(cpu="4", memory="12Gi"),
                                 limits=dict(cpu="4", memory="12Gi"),
@@ -67,7 +72,7 @@ def manifest(image, assets, output, node, name):
     )
 
 
-def command(image, assets, output, name):
+def command(image, assets, output, name, stage="e1-e3"):
     return [
         "docker",
         "run",
@@ -97,16 +102,26 @@ def command(image, assets, output, name):
         "--mount",
         f"type=bind,src={assets},dst=/input,readonly",
         "--mount",
-        f'type=bind,src={assets / "models"},dst=/models,readonly',
+        f"type=bind,src={assets / 'models'},dst=/models,readonly",
         "--mount",
         f"type=bind,src={output},dst=/output",
+        "--entrypoint",
+        "python",
         image,
-    ]
+        (
+            "/app/scripts/campaign.py"
+            if stage == "e1-e3"
+            else "/app/scripts/legacy_entry.py"
+        ),
+    ] + ([] if stage == "e1-e3" else [stage])
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--engine", choices=["docker", "kubernetes"], default="docker")
+    parser.add_argument(
+        "--stage", choices=["e1-e3", "decode", "prefill", "validation"], default="e1-e3"
+    )
     parser.add_argument("--assets", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--image", default="shared-budget-evaluation:local")
@@ -117,16 +132,16 @@ def main():
     args = parser.parse_args()
     if not re.fullmatch("[a-z0-9]([-a-z0-9]{0,60}[a-z0-9])?", args.name):
         parser.error("Name must be a Kubernetes-compatible identifier")
-    assets, output = args.assets.resolve(), args.output.resolve()
-    if args.engine == "kubernetes" and not args.node:
+    assets, output = (args.assets.resolve(), args.output.resolve())
+    if args.engine == "kubernetes" and (not args.node):
         parser.error("--node is required for Kubernetes hostPath placement")
     if args.engine == "docker":
-        payload = command(args.image, assets, output, args.name)
+        payload = command(args.image, assets, output, args.name, args.stage)
         if args.dry_run:
             print(shlex.join(payload))
             return
     else:
-        payload = manifest(args.image, assets, output, args.node, args.name)
+        payload = manifest(args.image, assets, output, args.node, args.name, args.stage)
         if args.dry_run:
             print(json.dumps(payload, indent=2))
             return
@@ -147,8 +162,8 @@ def main():
             text=True,
             check=True,
         )
-    print(f'Status: {output / "status.json"}')
-    print(f'Completion marker: {output / "DONE"}')
+    print(f"Status: {output / 'status.json'}")
+    print(f"Completion marker: {output / 'DONE'}")
 
 
 if __name__ == "__main__":

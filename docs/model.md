@@ -41,3 +41,11 @@ byte-for-byte reconstruction. The script retains conversion logs and all
 intermediate hashes and fails if the result differs from the measured GGUF.
 Do not bypass this check. A mismatching artifact requires an explicitly
 reported replication with a different model, not a claim of exact reproduction.
+
+## Matched Q3 family for the full paper
+
+Use `--include-q3` when invoking `prepare_model.py` to produce Q4_K_M and
+Q3_K_M from the same F16 source and importance matrix. Both formats retain
+Q4_K token embeddings and output tensors. The script checks both recorded
+hashes. Pass the Q3 path to `prepare_assets.py --q3`, then use
+`prepare_shards.py` to construct tensor-verified stage partitions.

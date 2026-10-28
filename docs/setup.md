@@ -22,7 +22,7 @@ The HTTP backend binds to loopback inside its container; no host port is publish
 ## Assets
 
 `prepare_assets.py` downloads the pinned MiniLM model and Qwen tokenizer,
-downloads and checks the official SQuAD evaluator, copies fixed inputs, and
+extracts and checks the archived official evaluators, copies fixed inputs, and
 creates `assets-manifest.json`. It refuses to reuse an existing destination.
 It never downloads the 14B weights implicitly. Supply the verified GGUF via
 `--gguf` after obtaining it or rebuilding it.

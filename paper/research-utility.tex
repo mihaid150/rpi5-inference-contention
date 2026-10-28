@@ -1,0 +1,58 @@
+\subsubsection{Earlier Sequential Application Control}
+\label{sec:joint}
+\paragraph{Publication and answer times.}
+All 12 application episodes complete. Current answers pass their supported
+checks and retrieval locates the new source in v2 in every episode. Publication and retrieval therefore work in these episodes. We still need
+the answer checks to determine whether the new outputs are valid.
+
+\begin{table}[t]
+\caption{Median times from update arrival across three matched episode blocks
+with different new documents. $T_c$ is current completion, $T_p$ is publication and $T_f$ is new-answer completion. These are descriptive medians, not confidence bounds.}
+\label{tab:joint}
+\centering
+\begin{tabular}{lrrr}
+\toprule
+Policy & $T_c$ & $T_p$ & $T_f$\\
+\midrule
+\input{generated/application-rows}
+\end{tabular}
+\end{table}
+The full prototype publishes earlier than standard concurrent (10.3 versus
+14.7\,s median), but its current and fresh answers finish later (78.5 versus
+76.2\,s for current answers and 198.9 versus 189.8\,s for new answers). Skip4 publishes at 9.9\,s, with fresh completion
+189.6\,s, essentially the same scale as standard. It is already ineligible under
+the separate-document paired gate. Deferral protects current service (70.7\,s)
+but delays publication to 76.0\,s. None satisfies the frozen automatic joint
+benefit criterion.
+
+Figure~\ref{fig:research-episode} shows the timing of one measured episode. In every
+concurrent episode, publication precedes current-answer completion. Under the
+frozen single-slot trace, Equation~\ref{eq:critical-path} is then governed by
+current inference and the next request rather than publication. The measured result is that publication is already complete while
+current inference remains active, so accelerating publication does not advance
+the next request in these episodes. It does not
+prove that publication speed is irrelevant for earlier-arriving independent
+requests, multiple slots or another workload.
+\input{figures/research-episode}
+
+\paragraph{Answer checks.}
+The first two added documents ask about Normandy's country and Southern
+California's abbreviation. Standard answers ``France'' and ``SoCal'' with valid
+locators. Full prototype's first answer has the correct fact but an extra
+\texttt{source\_id:} prefix in the locator, which fails the contract. The third
+asks what kind of economy Victoria has. All arms generate a relevant elaboration
+containing the gold ``highly diversified'', but fail exact-reference scoring.
+The longer answer fails the scoring rule. Human review is needed before
+interpreting it as an error in the economic description.
+
+The original all-episode quality gate fails for standard as well as the
+candidates. We retain that failed result rather than relax the rule after reading the outputs. Separately, even a more permissive interpretation of that
+shared elaboration would not make full prototype dominate the measured latency
+vector: it publishes faster while answering later. Timing and answer validity are separate results. A new semantic assessment could change quality labels
+but would not change these measured timestamps or establish statistical benefit.
+
+The current response uses old pinned oracle evidence, whereas the new response
+uses actual retrieval. We therefore claim a versioned-update prototype with one
+retrieved fresh question per episode, not a fully validated production RAG
+trace. The workload demonstrates neither domain-specific household deployment
+utility nor a real-time service contract. Observed response times are in minutes.

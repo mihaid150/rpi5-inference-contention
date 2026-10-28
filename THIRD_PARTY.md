@@ -13,8 +13,9 @@ They are downloaded separately and retain their publishers' licenses.
 The six question/document fixtures in `assets/prior.json` derive from
 [SQuAD 2.0](https://rajpurkar.github.io/SQuAD-explorer/), by Rajpurkar et al.,
 with document and question identifiers retained. SQuAD is distributed under
-CC BY-SA 4.0. The official evaluator is downloaded separately and verified
-against the recorded SHA-256. It is not modified or bundled as project code.
+CC BY-SA 4.0. The official evaluator is archived unchanged in compressed form and verified
+against the recorded SHA-256 before extraction. It is third-party evidence,
+not modified project code.
 
 `assets/calibration.txt` contains the frozen chat rendering of 19 training
 conversations from [CoQA](https://stanfordnlp.github.io/coqa/), by Reddy et al.
@@ -28,3 +29,11 @@ Only the required snapshots are included, not the historical repository.
 
 Redistribution and use of third-party assets remain subject to their source
 terms. No new license over third-party content is implied by this package.
+
+The distributed quality evidence includes selected CoQA development conversations
+and derived full-vocabulary logit matrices. The full-paper QA evidence includes
+the selected 24 SQuAD paragraphs, questions and reference alternatives. These
+remain subject to the original dataset terms. The included research C++ workers
+are project code; the upstream llama.cpp source is fetched separately at the
+recorded revision. The official MLSys style files retain their original notices
+and have not been reformatted or stripped of third-party attribution.

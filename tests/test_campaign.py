@@ -15,6 +15,7 @@ from summarize import summarize
 
 
 class CampaignTests(unittest.TestCase):
+
     def simulate(self, root, fail_stage=None):
         output = root / "output"
         output.mkdir()
@@ -91,7 +92,7 @@ class CampaignTests(unittest.TestCase):
                     campaign.main()
             else:
                 campaign.main()
-        return output, calls
+        return (output, calls)
 
     def test_sequential_execution_freezes_before_holdout(self):
         with tempfile.TemporaryDirectory() as tmp:

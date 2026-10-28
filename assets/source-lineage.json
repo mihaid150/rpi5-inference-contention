@@ -1,0 +1,37 @@
+[
+  {
+    "recorded_source": "experiments/research-v2/route_worker.cpp",
+    "original_sha256": "ce9bb23330d395ba0dc4c9cc6b779694ccc89e8f64dfe18667f1b6245669d525",
+    "release_file": "native/route_worker.cpp",
+    "release_sha256": "4cfa7c6fc913ca8bba36369c5dad93208789d8b451cb03156a5f473b62a18d45",
+    "adaptation": "Comments removed and formatting normalized; release/control compile definitions retained"
+  },
+  {
+    "recorded_source": "experiments/research-v2/llama_cpu_executor.cpp",
+    "original_sha256": "5722b3115c80256037682ed450e2ff83063c676564ca3903386007397ac38c9b",
+    "release_file": "native/llama_cpu_executor.cpp",
+    "release_sha256": "dca3c6544a5b011fcc1103b08dc9ef5a0a25bbdb39c583b83ef448beacae6f79",
+    "adaptation": "Comments removed and formatting normalized"
+  },
+  {
+    "recorded_source": ".local-backups/attention-utility-poc-20261023/experiments/prefill-utility/worker.cpp",
+    "original_sha256": "bb39c09f9f1c95d973e33c51fae19535b69a36cb32ed3857496b4f073df43e15",
+    "release_file": "native/prefill_worker.cpp",
+    "release_sha256": "6cfa33611b8e263c0dca8a9ec121ef867c866a0acadf47863b9bf5fd75abb513",
+    "adaptation": "Comments removed and formatting normalized"
+  },
+  {
+    "recorded_source": ".local-backups/attention-utility-poc-20261023/scripts/prefill_utility/worker.py",
+    "original_sha256": "d5a512999a66f6bb381f58c4a9324fec9b30324137a58849c74da072e0471fc7",
+    "release_file": "scripts/legacy/prefill/worker.py",
+    "release_sha256": "20e289d68d58750774c1ee43c543ba834f8e3493de3a5ecdaca245d1cd9b61e2",
+    "adaptation": "Comments/docstrings removed, formatting normalized, configuration/output paths made portable"
+  },
+  {
+    "recorded_source": ".local-backups/attention-utility-poc-20261023/scripts/paper_validation/run.py",
+    "original_sha256": "0c685fa19d4712afbc0a728dc0602d2592e72c80f72ba0a46ed4ace6428f5a11",
+    "release_file": "scripts/legacy/validation/run.py",
+    "release_sha256": "1085e32545f82ee40759026e0a02b2571feeffe9bcc71cc921e6d144cf802bef",
+    "adaptation": "Comments/docstrings removed, formatting normalized, configuration/output/scorer paths made portable"
+  }
+]

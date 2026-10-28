@@ -1,0 +1,18 @@
+{
+  "source_id": "3kibxj1wd5uklt1p4y6cybg9wmhok0",
+  "mode": "retained",
+  "text": "Two detectives were obstructing him in Salthouse. One was asking questions and the other was bribing the servants to talk.",
+  "stop": "eos",
+  "em": 0.0,
+  "f1": 0.0,
+  "tokens": [
+    {
+      "kl_reference_to_candidate": 0.09340548962247677,
+      "reference_logp": -16.762546635820044,
+      "candidate_logp": -16.132765132079015,
+      "top1_agreement": true
+    }
+  ],
+  "logits_sha256": "9ce225f17ddd73bad24a14b2ac76221b80338eeac054cfd6908941c726c8e0ad",
+  "elapsed_s": 1479.5253905609716
+}

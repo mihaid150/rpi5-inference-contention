@@ -1,0 +1,6 @@
+{
+  "corpus": "/home/mihai-daian/work/distributed-layer-inference/results/research-u3/workload-audit-20261022/p90-corpus.json",
+  "sha256": "f2ea2c81cd012a9fb36d90beab5a92b6746c0a816d9e4322e60deabca8ffc066",
+  "batches": "1,4,8",
+  "inference_prompt": "fixed verified development request; not semantic evaluation of this update corpus"
+}

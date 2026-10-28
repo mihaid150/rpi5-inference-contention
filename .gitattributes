@@ -1,1 +1,12 @@
 assets/calibration.txt -text whitespace=-blank-at-eol,-blank-at-eof
+assets/legacy/** -text
+paper/evidence/** -text
+evidence/** -text
+protocols/*.md -text whitespace=-blank-at-eol,-blank-at-eof
+*.py text eol=lf
+*.cpp text eol=lf
+*.hpp text eol=lf
+paper/*.sty -text
+paper/*.bst -text
+paper/*.sty whitespace=-blank-at-eol,-blank-at-eof
+paper/*.bst whitespace=-blank-at-eol,-blank-at-eof

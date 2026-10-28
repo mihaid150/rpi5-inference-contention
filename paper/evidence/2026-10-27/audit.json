@@ -1,0 +1,112 @@
+{
+  "counts": {
+    "E1": 27,
+    "E2": 36,
+    "E3": 12,
+    "total_planned_cells": 75
+  },
+  "errors": {
+    "current_complete_s": {
+      "mae_s": 2.536277327608938,
+      "max_absolute_s": 7.2168372524902225,
+      "mape_percent": 1.3876911372741603
+    },
+    "publication_s": {
+      "mae_s": 0.5019279618281871,
+      "max_absolute_s": 1.0110659822821617,
+      "mape_percent": 5.162409462727031
+    },
+    "fresh_complete_s": {
+      "mae_s": 22.216038003120975,
+      "max_absolute_s": 34.76446541361048,
+      "mape_percent": 6.489050577966295
+    },
+    "fresh_latency_from_actual_arrival_s": {
+      "mae_s": 22.216181921019313,
+      "max_absolute_s": 34.764568534302555,
+      "mape_percent": 7.572714191002614
+    }
+  },
+  "e3_policies": {
+    "shared": {
+      "medians": {
+        "current_complete_s": 173.83611572207883,
+        "publication_s": 14.280714671127498,
+        "fresh_complete_s": 276.08554207067937
+      },
+      "phase_model_mae_s": 14.959087705100444,
+      "retrospective_constant_baseline_mae_s": 13.425574526190758
+    },
+    "partition-2-2": {
+      "medians": {
+        "current_complete_s": 246.10956788854674,
+        "publication_s": 7.5481481505557895,
+        "fresh_complete_s": 381.0873570293188
+      },
+      "phase_model_mae_s": 29.47298830114151,
+      "retrospective_constant_baseline_mae_s": 29.52975174287955
+    }
+  },
+  "e3_pairs": [
+    {
+      "fixture": "newdoc-06",
+      "arrival": 30,
+      "shared_faster": true,
+      "predicted_shared_faster": true
+    },
+    {
+      "fixture": "newdoc-06",
+      "arrival": 60,
+      "shared_faster": true,
+      "predicted_shared_faster": true
+    },
+    {
+      "fixture": "newdoc-08",
+      "arrival": 30,
+      "shared_faster": true,
+      "predicted_shared_faster": true
+    },
+    {
+      "fixture": "newdoc-08",
+      "arrival": 60,
+      "shared_faster": true,
+      "predicted_shared_faster": true
+    },
+    {
+      "fixture": "newdoc-10",
+      "arrival": 30,
+      "shared_faster": true,
+      "predicted_shared_faster": true
+    },
+    {
+      "fixture": "newdoc-10",
+      "arrival": 60,
+      "shared_faster": true,
+      "predicted_shared_faster": true
+    }
+  ],
+  "e3_publication_precedes_current": 12,
+  "affinity_samples_verified": 37475,
+  "quality": {
+    "E2": {
+      "current": 36,
+      "retrieval": 36,
+      "fresh": 24,
+      "episodes": 36
+    },
+    "E3": {
+      "current": 12,
+      "retrieval": 12,
+      "fresh": 8,
+      "episodes": 12
+    }
+  },
+  "source_sha256": {
+    "shared-budget-14b-e1-20261026": "ba08b7dc04ed690677bd3b3a9361e384216c8d9c2e6a2b2094e340e63a7bf5d8",
+    "shared-budget-14b-e2-20261027-r2": "2755b5f0468a53c66a38623ee42ea0bf70bf326fd8614932d09c59697bf52bf4",
+    "shared-budget-14b-e3-20261027": "37be259b1fc4878e3391d970ab207ee71a7acf42733a3ca483d056794aefadbd"
+  },
+  "prediction_sha256": "f5a83a7dc02957791d25a1db74e07d39c8dc37345b11a8f9da99dcfdba83aeaf",
+  "baseline_scope": "Constant-total E2 baseline is a post-hoc diagnostic, not preregistered confirmatory comparison; no prediction refit",
+  "semantic_review": "pending"
+}

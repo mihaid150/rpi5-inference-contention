@@ -1,0 +1,24 @@
+{
+  "source_id": "3ql2ofsm96ikkappb6p1v33w133nc7",
+  "mode": "retained",
+  "text": "the station",
+  "stop": "eos",
+  "em": 1.0,
+  "f1": 1.0,
+  "tokens": [
+    {
+      "kl_reference_to_candidate": 0.3100704039339251,
+      "reference_logp": -0.03695423856892244,
+      "candidate_logp": -0.4449560790038946,
+      "top1_agreement": true
+    },
+    {
+      "kl_reference_to_candidate": 1.114792317066796e-09,
+      "reference_logp": -1.3274449857565523e-07,
+      "candidate_logp": -1.3603207745373143e-07,
+      "top1_agreement": true
+    }
+  ],
+  "logits_sha256": "ddffb66e9ae31f8d2a04474e0eb4b166b86fb15cf83a6d71de8e2ee09ae89c35",
+  "elapsed_s": 1530.7266474469798
+}

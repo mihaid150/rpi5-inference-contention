@@ -14,7 +14,7 @@ def digest(path):
         return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
-def prepare(source, llama, output):
+def prepare(source, llama, output, include_q3=False):
     versions = json.loads((ROOT / "assets/versions.json").read_text())
     revision = subprocess.check_output(
         ["git", "-C", str(llama), "rev-parse", "HEAD"], text=True
@@ -22,7 +22,7 @@ def prepare(source, llama, output):
     if revision != versions["runtime_revision"]:
         raise ValueError("llama.cpp revision differs from the frozen runtime")
     output.mkdir(parents=True, exist_ok=False)
-    if shutil.disk_usage(output).free < 70_000_000_000:
+    if shutil.disk_usage(output).free < 70000000000:
         raise RuntimeError("At least 70 GB free disk required")
     corpus = ROOT / "assets/calibration.txt"
     if digest(corpus) != versions["calibration_sha256"]:
@@ -76,6 +76,11 @@ def prepare(source, llama, output):
             "1",
         ],
     ]
+    if include_q3:
+        extra = list(commands[-1])
+        extra[-3] = str(output / "Q3_K_M.gguf")
+        extra[-2] = "Q3_K_M"
+        commands.append(extra)
     for index, command in enumerate(commands):
         with (output / f"step-{index}.log").open("w") as log:
             subprocess.run(
@@ -89,8 +94,12 @@ def prepare(source, llama, output):
         name: digest(output / name)
         for name in ("model-f16.gguf", "imatrix.gguf", "Q4_K_M.gguf")
     }
+    if include_q3:
+        hashes["Q3_K_M.gguf"] = digest(output / "Q3_K_M.gguf")
     (output / "hashes.json").write_text(json.dumps(hashes, indent=2) + "\n")
-    if hashes["Q4_K_M.gguf"] != versions["model_sha256"]:
+    if hashes["Q4_K_M.gguf"] != versions["model_sha256"] or (
+        include_q3 and hashes["Q3_K_M.gguf"] != versions["q3_model_sha256"]
+    ):
         raise RuntimeError(
             "Rebuilt model differs from the recorded artifact. Retain logs and hashes; do not relabel as an exact reproduction."
         )
@@ -101,5 +110,11 @@ if __name__ == "__main__":
     parser.add_argument("--source", type=Path, required=True)
     parser.add_argument("--llama", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--include-q3", action="store_true")
     args = parser.parse_args()
-    prepare(args.source.resolve(), args.llama.resolve(), args.output.resolve())
+    prepare(
+        args.source.resolve(),
+        args.llama.resolve(),
+        args.output.resolve(),
+        args.include_q3,
+    )

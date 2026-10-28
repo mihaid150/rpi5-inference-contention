@@ -1,0 +1,30 @@
+{
+  "source_id": "3strjbfxowr0yl6x0fsbslmwvuztks",
+  "mode": "q3",
+  "text": "Portchester",
+  "stop": "eos",
+  "em": 1.0,
+  "f1": 1.0,
+  "tokens": [
+    {
+      "kl_reference_to_candidate": 3.9407432520387916e-06,
+      "reference_logp": -36.59745396597871,
+      "candidate_logp": -37.08589242898928,
+      "top1_agreement": true
+    },
+    {
+      "kl_reference_to_candidate": 0.031693271983361804,
+      "reference_logp": -0.48348179796262164,
+      "candidate_logp": -0.4397895681878947,
+      "top1_agreement": true
+    },
+    {
+      "kl_reference_to_candidate": 5.61718272596738e-09,
+      "reference_logp": -6.320804457693032e-08,
+      "candidate_logp": -8.954143847401972e-08,
+      "top1_agreement": true
+    }
+  ],
+  "logits_sha256": "dfb74778863a499c942955a189dee2d52a2e320d501b06ceb082d85745fbbdcd",
+  "elapsed_s": 1669.955860214075
+}

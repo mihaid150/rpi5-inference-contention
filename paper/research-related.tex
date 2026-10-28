@@ -1,0 +1,73 @@
+\section{Related Work: Evaluation and Resource Sharing}
+\subsection{Measurement Studies}
+Breaking the Ice divides vLLM startup into six stages, measures how their costs
+change with model and system parameters, and builds a predictor
+\citep{breakingice}. \citet{specillusion} test speculative decoding in vLLM
+across workloads, models and batch settings. They relate measured execution
+times to acceptance behavior and speedup bounds. These studies support using
+phase measurements and strong runtime controls. Empirical evaluation of
+autoregressive inference on resource-constrained Raspberry Pi 5 nodes also
+provides context for the platform used here \citep{daian2026rpi}.
+We apply this approach to
+ingestion and inference, check answers and retrieved versions, and fix timing
+predictions before testing other cases. Our study covers one 14B model and
+controlled documents. Its predictor does not show an accuracy advantage.
+
+\emph{Beyond the Buzz} explores how workloads and configurations affect
+prefill/decode disaggregation \citep{beyondbuzz}. ProfInfer uses eBPF probes to
+inspect inference in engines such as llama.cpp \citep{profinfer}. These Industry
+Track studies provide context for our design and measurements. ProfInfer also
+shows why operator and phase behavior matter. Our process and thread samples
+and server timers give less detail. They do not separate cache from bandwidth
+causes. We have not run either system as a competitor in our experiments.
+
+\subsection{Scheduling and CPU Allocation}
+Sarathi-Serve uses chunked prefills and stall-free batching to reduce
+prefill/decode interference. DistServe places the two phases on separate
+resources and tunes allocation for their latency requirements
+\citep{sarathi,distserve}. SuperInfer combines scheduling with KV transfers on
+Superchips to meet response time targets \citep{superinfer}. These systems
+already account for phase demand. We study the effect of a fixed CPU reservation
+that remains after ingestion ends. We do not test a scheduler that returns
+idle cores to inference or show that such a scheduler would be new.
+
+PagedAttention reduces KV fragmentation and supports sharing. FlexGen places
+work across GPU, CPU and disk to improve throughput with limited GPU memory
+\citep{pagedattention,flexgen}. Their objectives differ from the time to finish
+one interactive request. ServerlessLLM combines checkpoint loading, migration
+and scheduling based on startup cost \citep{serverlessllm}. This motivates
+reporting readiness separately from warm requests. Our execution baseline is
+the frozen ARM llama.cpp server \citep{llamacpp}. Published GPU speedups do
+not estimate what these systems would achieve within our CPU budget.
+
+\subsection{Freshness and Answer Quality in RAG}
+METIS adapts RAG configuration and scheduling to meet quality requirements
+\citep{metis}. FreshDiskANN maintains a graph index under streaming updates
+\citep{freshdiskann}. We study when a separately arriving question can use a
+published update while inference shares the same resources. Our MiniLM worker
+uses an exact dense index. We do not propose an ANN method or compare against
+implementations of METIS or FreshDiskANN.
+
+ALCE evaluates answer correctness and citation quality separately. SQuAD2
+includes questions that cannot be answered from the supplied text
+\citep{alce,squad2}. These works motivate our separate checks for answers,
+citations and versions. The earlier 24-article test includes unanswerable
+questions. E2/E3 use six answerable questions under different configurations.
+An exact-match failure alone does not show a hallucination. Human review is
+still needed to assess meaning and support.
+
+\subsection{Earlier Mechanism Controls}
+GPTQ and AWQ are quantization methods \citep{gptq,awq}. DroidSpeak and ElastKV
+reuse KV across model variants or precisions and selectively recompute state
+\citep{droidspeak,elastkv}. Attention omission has also been studied
+\citep{attentiondrop}. EdgeShard addresses placement across devices, while
+PipeLive supports live pipeline reconfiguration \citep{edgeshard,pipelive}.
+These works provide context for our earlier precision, state and execution
+controls. The E1--E3 evaluation instead centers on resource allocation.
+
+Our contribution is the evaluation framework and the measured relationship between CPU
+sharing, phase costs, fixed reservations and answer timing. All concurrent
+cases remain limited by the inference slot, and the predictor performs about
+as well as a simple baseline added later. The findings identify problems to
+test further. They do not establish a first general evaluation method,
+a new scheduler or superiority over the systems discussed here.

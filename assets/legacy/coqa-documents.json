@@ -1,0 +1,1627 @@
+[
+  {
+    "source": "gutenberg",
+    "id": "3strjbfxowr0yl6x0fsbslmwvuztks",
+    "filename": "data/gutenberg/txt/Charlotte Mary Yonge___A Reputed Changeling.txt/CHAPTER XVII_66af72ae8caecf58bb856eeb065f7894287777acc10b8a6d1e7f7f9",
+    "story": "CHAPTER XVII: MACHINATIONS \n\n\"Baby born to woe.\" \n\nF. T. PALGRAVE. \n\nWhen Anne Woodford began to wake from the constant thought of the grief and horror she had left at Portchester, and to feel more alive to her surroundings and less as if they were a kind of dream, in which she only mechanically took her part, one thing impressed itself on her gradually, and that was disappointment. If the previous shock had not blunted all her hopes and aspirations, perhaps she would have felt it sooner and more keenly; but she could not help realising that she had put herself into an inferior position whence there did not seem to be the promotion she had once anticipated. Her companion rockers were of an inferior grade to herself. Jane Humphreys was a harmless but silly girl, not much wiser, though less spoilt, than poor little Madam, and full of Cockney vulgarities. Education was unfashionable just then, and though Hester Bridgeman was bettor born and bred, being the daughter of an attorney in the city, she was not much better instructed, and had no pursuits except that of her own advantage. Pauline Dunord was by far the best of the three, but she seemed to live a life apart, taking very little interest in her companions or anything around her except her devotions and the bringing them over to her Church. The nursery was quite a separate establishment; there was no mingling with the guests of royalty, who were only seen in excited peeps from the window, or when solemnly introduced to the presence chamber to pay their respects to the Prince. As to books, the only secular one that Anne saw while at Whitehall was an odd volume of Parthenissa. The late King's summary of the Roman controversy was to be had in plenty, and nothing was more evident than that the only road to favour or promotion was in being thereby convinced. ",
+    "questions": [
+      {
+        "input_text": "who was Anne's companion",
+        "turn_id": 1
+      },
+      {
+        "input_text": "what was the only secular book she saw while at whitehall?",
+        "turn_id": 2
+      },
+      {
+        "input_text": "what feeling impressed upon Anne?",
+        "turn_id": 3
+      },
+      {
+        "input_text": "what place had she left?",
+        "turn_id": 4
+      },
+      {
+        "input_text": "did she think her companion was superior?",
+        "turn_id": 5
+      },
+      {
+        "input_text": "what did she leave at Portchester?",
+        "turn_id": 6
+      },
+      {
+        "input_text": "was the nursery connected or separate?",
+        "turn_id": 7
+      },
+      {
+        "input_text": "what was Pauline devoted to?",
+        "turn_id": 8
+      },
+      {
+        "input_text": "who used a lot of Cockney vulgarities?",
+        "turn_id": 9
+      },
+      {
+        "input_text": "was she threatening?",
+        "turn_id": 10
+      },
+      {
+        "input_text": "was she serious or silly?",
+        "turn_id": 11
+      },
+      {
+        "input_text": "how many rockers were there in total?",
+        "turn_id": 12
+      },
+      {
+        "input_text": "was Heter Bridgeman one of them?",
+        "turn_id": 13
+      },
+      {
+        "input_text": "who was she the daughter of?",
+        "turn_id": 14
+      },
+      {
+        "input_text": "did she have any pursuits?",
+        "turn_id": 15
+      },
+      {
+        "input_text": "what is the name of chapter 17?",
+        "turn_id": 16
+      }
+    ],
+    "answers": [
+      {
+        "span_start": 666,
+        "span_end": 688,
+        "span_text": "Her companion rockers ",
+        "input_text": "rockers",
+        "turn_id": 1
+      },
+      {
+        "span_start": 1567,
+        "span_end": 1652,
+        "span_text": "he only secular one that Anne saw while at Whitehall was an odd volume of Parthenissa",
+        "input_text": "an odd volume of Parthenissa",
+        "turn_id": 2
+      },
+      {
+        "span_start": 510,
+        "span_end": 593,
+        "span_text": "but she could not help realising that she had put herself into an inferior position",
+        "input_text": "she had put herself into an inferior position",
+        "turn_id": 3
+      },
+      {
+        "span_start": 152,
+        "span_end": 179,
+        "span_text": "she had left at Portchester",
+        "input_text": "t Portchester",
+        "turn_id": 4
+      },
+      {
+        "span_start": 666,
+        "span_end": 726,
+        "span_text": "Her companion rockers were of an inferior grade to herself. ",
+        "input_text": "no",
+        "turn_id": 5
+      },
+      {
+        "span_start": 107,
+        "span_end": 179,
+        "span_text": "the constant thought of the grief and horror she had left at Portchester",
+        "input_text": "the constant thought of the grief and horror",
+        "turn_id": 6
+      },
+      {
+        "span_start": 1313,
+        "span_end": 1359,
+        "span_text": "The nursery was quite a separate establishment",
+        "input_text": "separate",
+        "turn_id": 7
+      },
+      {
+        "span_start": 1300,
+        "span_end": 1311,
+        "span_text": " her Church",
+        "input_text": "her Church",
+        "turn_id": 8
+      },
+      {
+        "span_start": 725,
+        "span_end": 740,
+        "span_text": " Jane Humphreys",
+        "input_text": "Jane Humphreys",
+        "turn_id": 9
+      },
+      {
+        "span_start": 725,
+        "span_end": 770,
+        "span_text": " Jane Humphreys was a harmless but silly girl",
+        "input_text": "no",
+        "turn_id": 10
+      },
+      {
+        "span_start": 725,
+        "span_end": 771,
+        "span_text": " Jane Humphreys was a harmless but silly girl,",
+        "input_text": "silly",
+        "turn_id": 11
+      },
+      {
+        "span_start": 1094,
+        "span_end": 1143,
+        "span_text": " Pauline Dunord was by far the best of the three,",
+        "input_text": "four",
+        "turn_id": 12
+      },
+      {
+        "span_start": 863,
+        "span_end": 956,
+        "span_text": ". Education was unfashionable just then, and though Hester Bridgeman was bettor born and bred",
+        "input_text": ".yes",
+        "turn_id": 13
+      },
+      {
+        "span_start": 956,
+        "span_end": 1004,
+        "span_text": ", being the daughter of an attorney in the city,",
+        "input_text": "an attorney in the city,",
+        "turn_id": 14
+      },
+      {
+        "span_start": 1040,
+        "span_end": 1094,
+        "span_text": " and had no pursuits except that of her own advantage.",
+        "input_text": "only ones that were to her advantage",
+        "turn_id": 15
+      },
+      {
+        "span_start": 14,
+        "span_end": 27,
+        "span_text": "MACHINATIONS ",
+        "input_text": "MACHINATIONS",
+        "turn_id": 16
+      }
+    ],
+    "additional_answers": {
+      "0": [
+        {
+          "span_start": 666,
+          "span_end": 740,
+          "span_text": "Her companion rockers were of an inferior grade to herself. Jane Humphreys",
+          "input_text": "Jane Humphreys",
+          "turn_id": 1
+        },
+        {
+          "span_start": 1566,
+          "span_end": 1652,
+          "span_text": "the only secular one that Anne saw while at Whitehall was an odd volume of Parthenissa",
+          "input_text": "a volume of Parthenissa",
+          "turn_id": 2
+        },
+        {
+          "span_start": 312,
+          "span_end": 384,
+          "span_text": "one thing impressed itself on her gradually, and that was disappointment",
+          "input_text": "disappointment",
+          "turn_id": 3
+        },
+        {
+          "span_start": 152,
+          "span_end": 180,
+          "span_text": "she had left at Portchester,",
+          "input_text": "Portchester",
+          "turn_id": 4
+        },
+        {
+          "span_start": 666,
+          "span_end": 724,
+          "span_text": "Her companion rockers were of an inferior grade to herself",
+          "input_text": "no",
+          "turn_id": 5
+        },
+        {
+          "span_start": 131,
+          "span_end": 179,
+          "span_text": "the grief and horror she had left at Portchester",
+          "input_text": "grief",
+          "turn_id": 6
+        },
+        {
+          "span_start": 1312,
+          "span_end": 1359,
+          "span_text": " The nursery was quite a separate establishment",
+          "input_text": "separate",
+          "turn_id": 7
+        },
+        {
+          "span_start": 1257,
+          "span_end": 1311,
+          "span_text": "her devotions and the bringing them over to her Church",
+          "input_text": "the Church",
+          "turn_id": 8
+        },
+        {
+          "span_start": 832,
+          "span_end": 863,
+          "span_text": "and full of Cockney vulgarities",
+          "input_text": "Jane Humphreys",
+          "turn_id": 9
+        },
+        {
+          "span_start": 726,
+          "span_end": 755,
+          "span_text": "Jane Humphreys was a harmless",
+          "input_text": "no",
+          "turn_id": 10
+        },
+        {
+          "span_start": 725,
+          "span_end": 770,
+          "span_text": " Jane Humphreys was a harmless but silly girl",
+          "input_text": "silly",
+          "turn_id": 11
+        },
+        {
+          "span_start": 1121,
+          "span_end": 1142,
+          "span_text": "the best of the three",
+          "input_text": "three",
+          "turn_id": 12
+        },
+        {
+          "span_start": 915,
+          "span_end": 956,
+          "span_text": "Hester Bridgeman was bettor born and bred",
+          "input_text": "yes",
+          "turn_id": 13
+        },
+        {
+          "span_start": 958,
+          "span_end": 1003,
+          "span_text": "being the daughter of an attorney in the city",
+          "input_text": "an attorney",
+          "turn_id": 14
+        },
+        {
+          "span_start": 1040,
+          "span_end": 1060,
+          "span_text": " and had no pursuits",
+          "input_text": "no",
+          "turn_id": 15
+        },
+        {
+          "span_start": 0,
+          "span_end": 27,
+          "span_text": "CHAPTER XVII: MACHINATIONS ",
+          "input_text": "MACHINATIONS",
+          "turn_id": 16
+        }
+      ],
+      "1": [
+        {
+          "span_start": 726,
+          "span_end": 770,
+          "span_text": "Jane Humphreys was a harmless but silly girl",
+          "input_text": "Jane Humphreys",
+          "turn_id": 1
+        },
+        {
+          "span_start": 1575,
+          "span_end": 1652,
+          "span_text": "secular one that Anne saw while at Whitehall was an odd volume of Parthenissa",
+          "input_text": "volume of Parthenissa",
+          "turn_id": 2
+        },
+        {
+          "span_start": 322,
+          "span_end": 384,
+          "span_text": "impressed itself on her gradually, and that was disappointment",
+          "input_text": "disappointment",
+          "turn_id": 3
+        },
+        {
+          "span_start": 161,
+          "span_end": 179,
+          "span_text": "eft at Portchester",
+          "input_text": "Portchester",
+          "turn_id": 4
+        },
+        {
+          "span_start": 666,
+          "span_end": 713,
+          "span_text": "Her companion rockers were of an inferior grade",
+          "input_text": "no",
+          "turn_id": 5
+        },
+        {
+          "span_start": 135,
+          "span_end": 179,
+          "span_text": "grief and horror she had left at Portchester",
+          "input_text": "grief and horror",
+          "turn_id": 6
+        },
+        {
+          "span_start": 1313,
+          "span_end": 1360,
+          "span_text": "The nursery was quite a separate establishment;",
+          "input_text": "separate",
+          "turn_id": 7
+        },
+        {
+          "span_start": 1257,
+          "span_end": 1311,
+          "span_text": "her devotions and the bringing them over to her Church",
+          "input_text": "Church",
+          "turn_id": 8
+        },
+        {
+          "span_start": 726,
+          "span_end": 740,
+          "span_text": "Jane Humphreys",
+          "input_text": "Jane Humphreys",
+          "turn_id": 9
+        },
+        {
+          "span_start": 726,
+          "span_end": 755,
+          "span_text": "Jane Humphreys was a harmless",
+          "input_text": "no",
+          "turn_id": 10
+        },
+        {
+          "span_start": 726,
+          "span_end": 771,
+          "span_text": "Jane Humphreys was a harmless but silly girl,",
+          "input_text": "silly",
+          "turn_id": 11
+        },
+        {
+          "span_start": 1121,
+          "span_end": 1142,
+          "span_text": "the best of the three",
+          "input_text": "three",
+          "turn_id": 12
+        },
+        {
+          "span_start": 915,
+          "span_end": 931,
+          "span_text": "Hester Bridgeman",
+          "input_text": "Hester Bridgeman",
+          "turn_id": 13
+        },
+        {
+          "span_start": 968,
+          "span_end": 991,
+          "span_text": "daughter of an attorney",
+          "input_text": "an attorney",
+          "turn_id": 14
+        },
+        {
+          "span_start": 1049,
+          "span_end": 1093,
+          "span_text": "no pursuits except that of her own advantage",
+          "input_text": "yes",
+          "turn_id": 15
+        },
+        {
+          "span_start": 8,
+          "span_end": 27,
+          "span_text": "XVII: MACHINATIONS ",
+          "input_text": "MACHINATIONS",
+          "turn_id": 16
+        }
+      ],
+      "2": [
+        {
+          "span_start": 726,
+          "span_end": 740,
+          "span_text": "Jane Humphreys",
+          "input_text": "Jane Humphreys",
+          "turn_id": 1
+        },
+        {
+          "span_start": 1641,
+          "span_end": 1652,
+          "span_text": "Parthenissa",
+          "input_text": "Parthenissa",
+          "turn_id": 2
+        },
+        {
+          "span_start": 370,
+          "span_end": 384,
+          "span_text": "disappointment",
+          "input_text": "disappointment",
+          "turn_id": 3
+        },
+        {
+          "span_start": 168,
+          "span_end": 179,
+          "span_text": "Portchester",
+          "input_text": "Portchester",
+          "turn_id": 4
+        },
+        {
+          "span_start": 726,
+          "span_end": 770,
+          "span_text": "Jane Humphreys was a harmless but silly girl",
+          "input_text": "no",
+          "turn_id": 5
+        },
+        {
+          "span_start": 135,
+          "span_end": 151,
+          "span_text": "grief and horror",
+          "input_text": "grief and horror",
+          "turn_id": 6
+        },
+        {
+          "span_start": 1328,
+          "span_end": 1359,
+          "span_text": " quite a separate establishment",
+          "input_text": "separate",
+          "turn_id": 7
+        },
+        {
+          "span_start": 1257,
+          "span_end": 1311,
+          "span_text": "her devotions and the bringing them over to her Church",
+          "input_text": "the Church",
+          "turn_id": 8
+        },
+        {
+          "span_start": 726,
+          "span_end": 740,
+          "span_text": "Jane Humphreys",
+          "input_text": "Jane Humphreys",
+          "turn_id": 9
+        },
+        {
+          "span_start": 747,
+          "span_end": 771,
+          "span_text": "harmless but silly girl,",
+          "input_text": "no",
+          "turn_id": 10
+        },
+        {
+          "span_start": 747,
+          "span_end": 770,
+          "span_text": "harmless but silly girl",
+          "input_text": "silly",
+          "turn_id": 11
+        },
+        {
+          "span_start": 1095,
+          "span_end": 1142,
+          "span_text": "Pauline Dunord was by far the best of the three",
+          "input_text": "three",
+          "turn_id": 12
+        },
+        {
+          "span_start": 915,
+          "span_end": 931,
+          "span_text": "Hester Bridgeman",
+          "input_text": "yes",
+          "turn_id": 13
+        },
+        {
+          "span_start": 980,
+          "span_end": 1003,
+          "span_text": "an attorney in the city",
+          "input_text": "an attorney in the city",
+          "turn_id": 14
+        },
+        {
+          "span_start": 1045,
+          "span_end": 1092,
+          "span_text": "had no pursuits except that of her own advantag",
+          "input_text": "no",
+          "turn_id": 15
+        },
+        {
+          "span_start": 14,
+          "span_end": 27,
+          "span_text": "MACHINATIONS ",
+          "input_text": "MACHINATIONS",
+          "turn_id": 16
+        }
+      ]
+    },
+    "name": "data/gutenberg/txt/Charlotte Mary Yonge___A Reputed Changeling.txt/CHAPTER XVII_66af72ae8caecf58bb856eeb065f7894287777acc10b8a6d1e7f7f9"
+  },
+  {
+    "source": "gutenberg",
+    "id": "3kibxj1wd5uklt1p4y6cybg9wmhok0",
+    "filename": "data/gutenberg/txt/Edward Phillips Oppenheim___Jeanne of the Marshes.txt/CHAPTER IV_a70df2affdf6187d68a7cf73d788409b584d6c1803dadf896bb5762",
+    "story": "CHAPTER IV \n\nThe Princess looked up with ill-concealed eagerness as Forrest entered. \n\n\"Well,\" she asked, \"have you any news?\" \n\nForrest shook his head. \n\n\"None,\" he answered. \"I am up for the day only. Cecil will not let me stay any longer. He was here himself the day before yesterday. We take it by turns to come away.\" \n\n\"And there is nothing to tell me?\" the Princess asked. \"No change of any sort?\" \n\n\"None,\" Forrest answered. \"It is no good attempting to persuade ourselves that there is any.\" \n\n\"What are you up for, then?\" she asked. \n\nHe laughed hardly. \n\n\"I am like a diver,\" he answered, \"who has to come to the surface every now and then for fresh air. Life down at Salthouse is very nearly the acme of stagnation. Our only excitement day by day is the danger--and the hope.\" \n\n\"Is Cecil getting braver?\" the Princess asked. \n\n\"I think that he is, a little,\" Forrest answered. \n\nThe Princess nodded. \n\n\"We met him at the Bellamy Smiths',\" she said. \"It was quite a reunion. Andrew was there, and the Duke.\" \n\nForrest's face darkened. \n\n\"Meddling fool,\" he muttered. \"Do you know that there are two detectives now in Salthouse? They come and go and ask all manner of questions. One of them pretends that he believes Engleton was drowned, and walks always on the beach and hires boatmen to explore the creeks. The other sits in the inn and bribes the servants with drinks to talk. But don't let's talk about this any longer. How is Jeanne?\" ",
+    "questions": [
+      {
+        "input_text": "Who was looking for some message?",
+        "turn_id": 1
+      },
+      {
+        "input_text": "Who did she ask?",
+        "turn_id": 2
+      },
+      {
+        "input_text": "Did they have any messase?",
+        "turn_id": 3
+      },
+      {
+        "input_text": "Did anyone obsturcting him?",
+        "turn_id": 4
+      },
+      {
+        "input_text": "Who was that?",
+        "turn_id": 5
+      },
+      {
+        "input_text": "Did he arrive early?",
+        "turn_id": 6
+      },
+      {
+        "input_text": "Who did Forrest compared himself?",
+        "turn_id": 7
+      },
+      {
+        "input_text": "Did he feel good about it?",
+        "turn_id": 8
+      },
+      {
+        "input_text": "Did she ask anything about Cecil?",
+        "turn_id": 9
+      },
+      {
+        "input_text": "What was that?",
+        "turn_id": 10
+      },
+      {
+        "input_text": "Did she get any response?",
+        "turn_id": 11
+      },
+      {
+        "input_text": "What was it?",
+        "turn_id": 12
+      },
+      {
+        "input_text": "Where did they meet him?",
+        "turn_id": 13
+      },
+      {
+        "input_text": "How many other folks were there?",
+        "turn_id": 14
+      },
+      {
+        "input_text": "Who were they?",
+        "turn_id": 15
+      },
+      {
+        "input_text": "How was Forest's response to that?",
+        "turn_id": 16
+      },
+      {
+        "input_text": "Was he worried about somone's presence there?",
+        "turn_id": 17
+      },
+      {
+        "input_text": "Did they talk about any spies?",
+        "turn_id": 18
+      },
+      {
+        "input_text": "Who were frequenting Salthouse?",
+        "turn_id": 19
+      },
+      {
+        "input_text": "Wher they enquiring about something?",
+        "turn_id": 20
+      }
+    ],
+    "answers": [
+      {
+        "span_start": 13,
+        "span_end": 126,
+        "span_text": "The Princess looked up with ill-concealed eagerness as Forrest entered. \n\n\"Well,\" she asked, \"have you any news?\"",
+        "input_text": "The Princess",
+        "turn_id": 1
+      },
+      {
+        "span_start": 129,
+        "span_end": 153,
+        "span_text": "Forrest shook his head. ",
+        "input_text": "Forrest",
+        "turn_id": 2
+      },
+      {
+        "span_start": 155,
+        "span_end": 174,
+        "span_text": "\"None,\" he answered",
+        "input_text": "no",
+        "turn_id": 3
+      },
+      {
+        "span_start": 203,
+        "span_end": 241,
+        "span_text": "Cecil will not let me stay any longer.",
+        "input_text": "yes",
+        "turn_id": 4
+      },
+      {
+        "span_start": 203,
+        "span_end": 240,
+        "span_text": "Cecil will not let me stay any longer",
+        "input_text": "Cecil",
+        "turn_id": 5
+      },
+      {
+        "span_start": -1,
+        "span_end": -1,
+        "span_text": "unknown",
+        "input_text": "unknown",
+        "turn_id": 6
+      },
+      {
+        "span_start": 566,
+        "span_end": 587,
+        "span_text": "\"I am like a diver,\" ",
+        "input_text": "a diver",
+        "turn_id": 7
+      },
+      {
+        "span_start": 566,
+        "span_end": 789,
+        "span_text": "\"I am like a diver,\" he answered, \"who has to come to the surface every now and then for fresh air. Life down at Salthouse is very nearly the acme of stagnation. Our only excitement day by day is the danger--and the hope.\" ",
+        "input_text": "no",
+        "turn_id": 8
+      },
+      {
+        "span_start": 791,
+        "span_end": 837,
+        "span_text": "\"Is Cecil getting braver?\" the Princess asked.",
+        "input_text": "yes",
+        "turn_id": 9
+      },
+      {
+        "span_start": 791,
+        "span_end": 838,
+        "span_text": "\"Is Cecil getting braver?\" the Princess asked. ",
+        "input_text": "Is Cecil getting braver",
+        "turn_id": 10
+      },
+      {
+        "span_start": 840,
+        "span_end": 890,
+        "span_text": "\"I think that he is, a little,\" Forrest answered. ",
+        "input_text": "yes",
+        "turn_id": 11
+      },
+      {
+        "span_start": 840,
+        "span_end": 890,
+        "span_text": "\"I think that he is, a little,\" Forrest answered. ",
+        "input_text": "he is",
+        "turn_id": 12
+      },
+      {
+        "span_start": 915,
+        "span_end": 951,
+        "span_text": "\"We met him at the Bellamy Smiths',\"",
+        "input_text": "Bellamy Smiths",
+        "turn_id": 13
+      },
+      {
+        "span_start": 962,
+        "span_end": 1021,
+        "span_text": "\"It was quite a reunion. Andrew was there, and the Duke.\" \n",
+        "input_text": "two",
+        "turn_id": 14
+      },
+      {
+        "span_start": 986,
+        "span_end": 1018,
+        "span_text": " Andrew was there, and the Duke.",
+        "input_text": "Andrew and the Duke.",
+        "turn_id": 15
+      },
+      {
+        "span_start": 1022,
+        "span_end": 1048,
+        "span_text": "Forrest's face darkened. \n",
+        "input_text": "his  face darkened.",
+        "turn_id": 16
+      },
+      {
+        "span_start": 1049,
+        "span_end": 1079,
+        "span_text": "\"Meddling fool,\" he muttered. ",
+        "input_text": "no",
+        "turn_id": 17
+      },
+      {
+        "span_start": 1079,
+        "span_end": 1139,
+        "span_text": "\"Do you know that there are two detectives now in Salthouse?",
+        "input_text": "no",
+        "turn_id": 18
+      },
+      {
+        "span_start": 1080,
+        "span_end": 1137,
+        "span_text": "Do you know that there are two detectives now in Salthous",
+        "input_text": "detectives",
+        "turn_id": 19
+      },
+      {
+        "span_start": 1190,
+        "span_end": 1250,
+        "span_text": "One of them pretends that he believes Engleton was drowned, ",
+        "input_text": "yes",
+        "turn_id": 20
+      }
+    ],
+    "additional_answers": {
+      "0": [
+        {
+          "span_start": 13,
+          "span_end": 127,
+          "span_text": "The Princess looked up with ill-concealed eagerness as Forrest entered. \n\n\"Well,\" she asked, \"have you any news?\" ",
+          "input_text": "The Princess",
+          "turn_id": 1
+        },
+        {
+          "span_start": 87,
+          "span_end": 153,
+          "span_text": "\"Well,\" she asked, \"have you any news?\" \n\nForrest shook his head. ",
+          "input_text": "Forrest",
+          "turn_id": 2
+        },
+        {
+          "span_start": 87,
+          "span_end": 154,
+          "span_text": "\"Well,\" she asked, \"have you any news?\" \n\nForrest shook his head. \n",
+          "input_text": "no",
+          "turn_id": 3
+        },
+        {
+          "span_start": 202,
+          "span_end": 241,
+          "span_text": " Cecil will not let me stay any longer.",
+          "input_text": "yes",
+          "turn_id": 4
+        },
+        {
+          "span_start": 203,
+          "span_end": 241,
+          "span_text": "Cecil will not let me stay any longer.",
+          "input_text": "Cecil",
+          "turn_id": 5
+        },
+        {
+          "span_start": 242,
+          "span_end": 287,
+          "span_text": "He was here himself the day before yesterday.",
+          "input_text": "yes",
+          "turn_id": 6
+        },
+        {
+          "span_start": 566,
+          "span_end": 600,
+          "span_text": "\"I am like a diver,\" he answered, ",
+          "input_text": "a diver",
+          "turn_id": 7
+        },
+        {
+          "span_start": 665,
+          "span_end": 727,
+          "span_text": " Life down at Salthouse is very nearly the acme of stagnation.",
+          "input_text": "no",
+          "turn_id": 8
+        },
+        {
+          "span_start": 791,
+          "span_end": 838,
+          "span_text": "\"Is Cecil getting braver?\" the Princess asked. ",
+          "input_text": "yes",
+          "turn_id": 9
+        },
+        {
+          "span_start": 791,
+          "span_end": 838,
+          "span_text": "\"Is Cecil getting braver?\" the Princess asked. ",
+          "input_text": "\"Is Cecil getting braver?\"",
+          "turn_id": 10
+        },
+        {
+          "span_start": 791,
+          "span_end": 891,
+          "span_text": "\"Is Cecil getting braver?\" the Princess asked. \n\n\"I think that he is, a little,\" Forrest answered. \n",
+          "input_text": "yes",
+          "turn_id": 11
+        },
+        {
+          "span_start": 840,
+          "span_end": 888,
+          "span_text": "\"I think that he is, a little,\" Forrest answered",
+          "input_text": "I think that he is, a little",
+          "turn_id": 12
+        },
+        {
+          "span_start": 915,
+          "span_end": 961,
+          "span_text": "\"We met him at the Bellamy Smiths',\" she said.",
+          "input_text": "at the Bellamy Smiths'",
+          "turn_id": 13
+        },
+        {
+          "span_start": 961,
+          "span_end": 1020,
+          "span_text": " \"It was quite a reunion. Andrew was there, and the Duke.\" ",
+          "input_text": "two",
+          "turn_id": 14
+        },
+        {
+          "span_start": 987,
+          "span_end": 1020,
+          "span_text": "Andrew was there, and the Duke.\" ",
+          "input_text": "Andrew and the Duke",
+          "turn_id": 15
+        },
+        {
+          "span_start": 1022,
+          "span_end": 1080,
+          "span_text": "Forrest's face darkened. \n\n\"Meddling fool,\" he muttered. \"",
+          "input_text": "his face darkened",
+          "turn_id": 16
+        },
+        {
+          "span_start": 1079,
+          "span_end": 1139,
+          "span_text": "\"Do you know that there are two detectives now in Salthouse?",
+          "input_text": "yes",
+          "turn_id": 17
+        },
+        {
+          "span_start": 1077,
+          "span_end": 1139,
+          "span_text": ". \"Do you know that there are two detectives now in Salthouse?",
+          "input_text": "no",
+          "turn_id": 18
+        },
+        {
+          "span_start": 1079,
+          "span_end": 1140,
+          "span_text": "\"Do you know that there are two detectives now in Salthouse? ",
+          "input_text": "two detectives",
+          "turn_id": 19
+        },
+        {
+          "span_start": 1140,
+          "span_end": 1190,
+          "span_text": "They come and go and ask all manner of questions. ",
+          "input_text": "yes",
+          "turn_id": 20
+        }
+      ],
+      "1": [
+        {
+          "span_start": 1111,
+          "span_end": 1121,
+          "span_text": "detectives",
+          "input_text": "detectives",
+          "turn_id": 1
+        },
+        {
+          "span_start": 415,
+          "span_end": 422,
+          "span_text": "Forrest",
+          "input_text": "Forrest",
+          "turn_id": 2
+        },
+        {
+          "span_start": 408,
+          "span_end": 412,
+          "span_text": "None",
+          "input_text": "No",
+          "turn_id": 3
+        },
+        {
+          "span_text": "unknown",
+          "span_start": -1,
+          "span_end": -1,
+          "input_text": "unknown",
+          "turn_id": 4
+        },
+        {
+          "span_start": 1111,
+          "span_end": 1121,
+          "span_text": "detectives",
+          "input_text": "detectives",
+          "turn_id": 5
+        },
+        {
+          "span_start": 266,
+          "span_end": 286,
+          "span_text": "day before yesterday",
+          "input_text": "yes",
+          "turn_id": 6
+        },
+        {
+          "span_start": 576,
+          "span_end": 584,
+          "span_text": " a diver",
+          "input_text": "a diver",
+          "turn_id": 7
+        },
+        {
+          "span_start": 545,
+          "span_end": 555,
+          "span_text": "He laughed",
+          "input_text": "yes",
+          "turn_id": 8
+        },
+        {
+          "span_start": 818,
+          "span_end": 836,
+          "span_text": "the Princess asked",
+          "input_text": "yes",
+          "turn_id": 9
+        },
+        {
+          "span_start": 792,
+          "span_end": 816,
+          "span_text": "Is Cecil getting braver?",
+          "input_text": "Is Cecil getting braver?",
+          "turn_id": 10
+        },
+        {
+          "span_start": 872,
+          "span_end": 888,
+          "span_text": "Forrest answered",
+          "input_text": "yes",
+          "turn_id": 11
+        },
+        {
+          "span_start": 840,
+          "span_end": 869,
+          "span_text": "\"I think that he is, a little",
+          "input_text": "\"I think that he is, a little",
+          "turn_id": 12
+        },
+        {
+          "span_start": 927,
+          "span_end": 948,
+          "span_text": "at the Bellamy Smiths",
+          "input_text": "at the Bellamy Smiths",
+          "turn_id": 13
+        },
+        {
+          "span_start": 986,
+          "span_end": 1017,
+          "span_text": " Andrew was there, and the Duke",
+          "input_text": "Two",
+          "turn_id": 14
+        },
+        {
+          "span_start": 987,
+          "span_end": 1017,
+          "span_text": "Andrew was there, and the Duke",
+          "input_text": "Andrew and the Duke",
+          "turn_id": 15
+        },
+        {
+          "span_start": 1032,
+          "span_end": 1045,
+          "span_text": "face darkened",
+          "input_text": "his face darkened",
+          "turn_id": 16
+        },
+        {
+          "span_start": 1106,
+          "span_end": 1121,
+          "span_text": " two detectives",
+          "input_text": "yes",
+          "turn_id": 17
+        },
+        {
+          "span_start": 1111,
+          "span_end": 1121,
+          "span_text": "detectives",
+          "input_text": "yes",
+          "turn_id": 18
+        },
+        {
+          "span_start": 1111,
+          "span_end": 1121,
+          "span_text": "detectives",
+          "input_text": "detectives",
+          "turn_id": 19
+        },
+        {
+          "span_start": 1161,
+          "span_end": 1188,
+          "span_text": "ask all manner of questions",
+          "input_text": "yes",
+          "turn_id": 20
+        }
+      ],
+      "2": [
+        {
+          "span_start": 13,
+          "span_end": 25,
+          "span_text": "The Princess",
+          "input_text": "The Princess",
+          "turn_id": 1
+        },
+        {
+          "span_start": 67,
+          "span_end": 75,
+          "span_text": " Forrest",
+          "input_text": "Forrest",
+          "turn_id": 2
+        },
+        {
+          "span_start": 156,
+          "span_end": 161,
+          "span_text": "None,",
+          "input_text": "no",
+          "turn_id": 3
+        },
+        {
+          "span_start": 202,
+          "span_end": 242,
+          "span_text": " Cecil will not let me stay any longer. ",
+          "input_text": "yes",
+          "turn_id": 4
+        },
+        {
+          "span_start": 203,
+          "span_end": 208,
+          "span_text": "Cecil",
+          "input_text": "Cecil",
+          "turn_id": 5
+        },
+        {
+          "span_start": 242,
+          "span_end": 323,
+          "span_text": "He was here himself the day before yesterday. We take it by turns to come away.\" ",
+          "input_text": "yes",
+          "turn_id": 6
+        },
+        {
+          "span_start": 576,
+          "span_end": 585,
+          "span_text": " a diver,",
+          "input_text": "a diver,",
+          "turn_id": 7
+        },
+        {
+          "span_start": 728,
+          "span_end": 786,
+          "span_text": "Our only excitement day by day is the danger--and the hope",
+          "input_text": "no",
+          "turn_id": 8
+        },
+        {
+          "span_start": 791,
+          "span_end": 817,
+          "span_text": "\"Is Cecil getting braver?\"",
+          "input_text": "yes",
+          "turn_id": 9
+        },
+        {
+          "span_start": 792,
+          "span_end": 815,
+          "span_text": "Is Cecil getting braver",
+          "input_text": "Is Cecil getting braver",
+          "turn_id": 10
+        },
+        {
+          "span_start": 840,
+          "span_end": 869,
+          "span_text": "\"I think that he is, a little",
+          "input_text": "yes",
+          "turn_id": 11
+        },
+        {
+          "span_start": 841,
+          "span_end": 870,
+          "span_text": "I think that he is, a little,",
+          "input_text": "I think that he is, a little,",
+          "turn_id": 12
+        },
+        {
+          "span_start": 934,
+          "span_end": 948,
+          "span_text": "Bellamy Smiths",
+          "input_text": "Bellamy Smiths",
+          "turn_id": 13
+        },
+        {
+          "span_start": 987,
+          "span_end": 1017,
+          "span_text": "Andrew was there, and the Duke",
+          "input_text": "Two",
+          "turn_id": 14
+        },
+        {
+          "span_start": 987,
+          "span_end": 1017,
+          "span_text": "Andrew was there, and the Duke",
+          "input_text": "Andrew and the Duke",
+          "turn_id": 15
+        },
+        {
+          "span_start": 1032,
+          "span_end": 1045,
+          "span_text": "face darkened",
+          "input_text": "his face darkened",
+          "turn_id": 16
+        },
+        {
+          "span_start": 1080,
+          "span_end": 1138,
+          "span_text": "Do you know that there are two detectives now in Salthouse",
+          "input_text": "yes",
+          "turn_id": 17
+        },
+        {
+          "span_start": 1080,
+          "span_end": 1138,
+          "span_text": "Do you know that there are two detectives now in Salthouse",
+          "input_text": "yes",
+          "turn_id": 18
+        },
+        {
+          "span_start": 1106,
+          "span_end": 1121,
+          "span_text": " two detectives",
+          "input_text": "two detectives",
+          "turn_id": 19
+        },
+        {
+          "span_start": 1227,
+          "span_end": 1247,
+          "span_text": " Engleton was drowne",
+          "input_text": "yes",
+          "turn_id": 20
+        }
+      ]
+    },
+    "name": "data/gutenberg/txt/Edward Phillips Oppenheim___Jeanne of the Marshes.txt/CHAPTER IV_a70df2affdf6187d68a7cf73d788409b584d6c1803dadf896bb5762"
+  },
+  {
+    "source": "gutenberg",
+    "id": "3ql2ofsm96ikkappb6p1v33w133nc7",
+    "filename": "data/gutenberg/txt/Charlotte Mary Yonge___Modern Broods.txt/CHAPTER IX_64b657b074bbcd9dd2e1e07d0e034c18c9b36356e737697a918b668",
+    "story": "CHAPTER IX--GONE OVER TO THE ENEMY \n\n\n\n\"Can I teach thee, my beloved? can I teach thee?\" E. B. BROWNING. \n\nAgatha came home in due time, and Magdalen sent her sister to meet her at the station, where they found a merry Clipstone party in the waggonette waiting for Gillian, who was to come home at the same time. There was so much discussion of the new golf ground, that Vera had hardly a hand or a glance to bestow on Mr. Delrio, who jumped out of the same train, shook hands with Agatha, and bestirred himself in finding her luggage and calling a cab. \n\n\"How he is improved! What a pleasing, gentlemanly fellow he looks!\" she exclaimed, as she waved her thanks, while driving off in the cab. \n\n\"Is he not?\" said Paula, while Vera bridled and blushed. \"You will be delighted with his work. I never saw anything more lovely than little St. Cyriac the martyr.\" \n\n\"He is taken from Mrs. Henderson's little boy,\" added Vera; \"such a dear little darling.\" \n\n\"And his mother is to be done; indeed, he has sketched her for St. Juliet.\" \n\n\"Flapsy! St. Romeo, too, I suppose?\" \n\n\"Nonsense, Nag! There really was a St. Juliet or Julitta, and she was his mother, and they both were martyrs. I will tell you all the history,\" began Paula; but Agatha interposed. \n\n\"You must like having him down here. Sister must be much pleased with him. She used to like old Mr. Delrio.\" \n\n\"Well, we have not said much about him,\" owned Paula. \"He does not seem to wish it, or expect to be in with swells.\" ",
+    "questions": [
+      {
+        "input_text": "Who's the top quote by?",
+        "turn_id": 1
+      },
+      {
+        "input_text": "Who arrived just in time?",
+        "turn_id": 2
+      },
+      {
+        "input_text": "Who picked her up?",
+        "turn_id": 3
+      },
+      {
+        "input_text": "Where did they pick her up at?",
+        "turn_id": 4
+      },
+      {
+        "input_text": "Who was waiting in the wagon?",
+        "turn_id": 5
+      },
+      {
+        "input_text": "What did the discussions circle around?",
+        "turn_id": 6
+      },
+      {
+        "input_text": "Who did this keep Vera from giving attention?",
+        "turn_id": 7
+      },
+      {
+        "input_text": "What did he do after getting off the train?",
+        "turn_id": 8
+      },
+      {
+        "input_text": "What did she do after waving thanks?",
+        "turn_id": 9
+      },
+      {
+        "input_text": "What was the loveliest thing Paula had seen?",
+        "turn_id": 10
+      },
+      {
+        "input_text": "Does Mrs. Henderson have a son or daughter?",
+        "turn_id": 11
+      },
+      {
+        "input_text": "Who was the mother sketched for?",
+        "turn_id": 12
+      },
+      {
+        "input_text": "Who knew the history of the martyrs?",
+        "turn_id": 13
+      }
+    ],
+    "answers": [
+      {
+        "span_start": 39,
+        "span_end": 104,
+        "span_text": "\"Can I teach thee, my beloved? can I teach thee?\" E. B. BROWNING.",
+        "input_text": "E. B. BROWNING.",
+        "turn_id": 1
+      },
+      {
+        "span_start": 107,
+        "span_end": 135,
+        "span_text": "Agatha came home in due time",
+        "input_text": "Agatha",
+        "turn_id": 2
+      },
+      {
+        "span_start": 107,
+        "span_end": 192,
+        "span_text": "Agatha came home in due time, and Magdalen sent her sister to meet her at the station",
+        "input_text": "Magdalen's sister",
+        "turn_id": 3
+      },
+      {
+        "span_start": 137,
+        "span_end": 192,
+        "span_text": "and Magdalen sent her sister to meet her at the station",
+        "input_text": "the station",
+        "turn_id": 4
+      },
+      {
+        "span_start": 193,
+        "span_end": 272,
+        "span_text": " where they found a merry Clipstone party in the waggonette waiting for Gillian",
+        "input_text": "Clipstone",
+        "turn_id": 5
+      },
+      {
+        "span_start": 313,
+        "span_end": 365,
+        "span_text": "There was so much discussion of the new golf ground,",
+        "input_text": "the new golf ground,",
+        "turn_id": 6
+      },
+      {
+        "span_start": 370,
+        "span_end": 429,
+        "span_text": " Vera had hardly a hand or a glance to bestow on Mr. Delrio",
+        "input_text": "Mr. Delrio",
+        "turn_id": 7
+      },
+      {
+        "span_start": 431,
+        "span_end": 555,
+        "span_text": "who jumped out of the same train, shook hands with Agatha, and bestirred himself in finding her luggage and calling a cab. \n",
+        "input_text": "bestirred himself in finding her luggage and calling a cab",
+        "turn_id": 8
+      },
+      {
+        "span_start": 639,
+        "span_end": 694,
+        "span_text": "as she waved her thanks, while driving off in the cab. ",
+        "input_text": "Drove off in the cab.",
+        "turn_id": 9
+      },
+      {
+        "span_start": 790,
+        "span_end": 860,
+        "span_text": " I never saw anything more lovely than little St. Cyriac the martyr.\" ",
+        "input_text": "little St. Cyriac the martyr",
+        "turn_id": 10
+      },
+      {
+        "span_start": 862,
+        "span_end": 909,
+        "span_text": "\"He is taken from Mrs. Henderson's little boy,\"",
+        "input_text": "A son",
+        "turn_id": 11
+      },
+      {
+        "span_start": 993,
+        "span_end": 1027,
+        "span_text": "he has sketched her for St. Juliet",
+        "input_text": "St. Juliet",
+        "turn_id": 12
+      },
+      {
+        "span_start": 1180,
+        "span_end": 1226,
+        "span_text": " I will tell you all the history,\" began Paula",
+        "input_text": "Paula",
+        "turn_id": 13
+      }
+    ],
+    "additional_answers": {
+      "0": [
+        {
+          "span_start": 89,
+          "span_end": 103,
+          "span_text": "E. B. BROWNING",
+          "input_text": "E. B. BROWNING",
+          "turn_id": 1
+        },
+        {
+          "span_start": 107,
+          "span_end": 113,
+          "span_text": "Agatha",
+          "input_text": "Agatha",
+          "turn_id": 2
+        },
+        {
+          "span_start": 155,
+          "span_end": 165,
+          "span_text": "her sister",
+          "input_text": "her sister",
+          "turn_id": 3
+        },
+        {
+          "span_start": 181,
+          "span_end": 192,
+          "span_text": "the station",
+          "input_text": "the station",
+          "turn_id": 4
+        },
+        {
+          "span_start": 219,
+          "span_end": 234,
+          "span_text": "Clipstone party",
+          "input_text": "Clipstone party",
+          "turn_id": 5
+        },
+        {
+          "span_start": 353,
+          "span_end": 364,
+          "span_text": "golf ground",
+          "input_text": "golf ground",
+          "turn_id": 6
+        },
+        {
+          "span_start": 419,
+          "span_end": 429,
+          "span_text": "Mr. Delrio",
+          "input_text": "Mr. Delrio",
+          "turn_id": 7
+        },
+        {
+          "span_start": 465,
+          "span_end": 488,
+          "span_text": "shook hands with Agatha",
+          "input_text": "shook hands with Agatha",
+          "turn_id": 8
+        },
+        {
+          "span_start": 670,
+          "span_end": 693,
+          "span_text": "driving off in the cab.",
+          "input_text": "drove off in the cab.",
+          "turn_id": 9
+        },
+        {
+          "span_start": 836,
+          "span_end": 857,
+          "span_text": "St. Cyriac the martyr",
+          "input_text": "St. Cyriac the martyr",
+          "turn_id": 10
+        },
+        {
+          "span_start": 879,
+          "span_end": 907,
+          "span_text": " Mrs. Henderson's little boy",
+          "input_text": "Son.",
+          "turn_id": 11
+        },
+        {
+          "span_start": 1017,
+          "span_end": 1027,
+          "span_text": "St. Juliet",
+          "input_text": "St. Juliet",
+          "turn_id": 12
+        },
+        {
+          "span_start": 1221,
+          "span_end": 1226,
+          "span_text": "Paula",
+          "input_text": "Paula",
+          "turn_id": 13
+        }
+      ],
+      "1": [
+        {
+          "span_start": 39,
+          "span_end": 103,
+          "span_text": "\"Can I teach thee, my beloved? can I teach thee?\" E. B. BROWNING",
+          "input_text": "E. B. BROWNING",
+          "turn_id": 1
+        },
+        {
+          "span_start": 107,
+          "span_end": 135,
+          "span_text": "Agatha came home in due time",
+          "input_text": "Agatha",
+          "turn_id": 2
+        },
+        {
+          "span_start": 137,
+          "span_end": 273,
+          "span_text": "and Magdalen sent her sister to meet her at the station, where they found a merry Clipstone party in the waggonette waiting for Gillian,",
+          "input_text": "Magdalen's sister",
+          "turn_id": 3
+        },
+        {
+          "span_start": 107,
+          "span_end": 192,
+          "span_text": "Agatha came home in due time, and Magdalen sent her sister to meet her at the station",
+          "input_text": "The station",
+          "turn_id": 4
+        },
+        {
+          "span_start": 200,
+          "span_end": 272,
+          "span_text": "they found a merry Clipstone party in the waggonette waiting for Gillian",
+          "input_text": "Clipstone party",
+          "turn_id": 5
+        },
+        {
+          "span_start": 313,
+          "span_end": 364,
+          "span_text": "There was so much discussion of the new golf ground",
+          "input_text": "New golf ground",
+          "turn_id": 6
+        },
+        {
+          "span_start": 370,
+          "span_end": 429,
+          "span_text": " Vera had hardly a hand or a glance to bestow on Mr. Delrio",
+          "input_text": "Mr. Delrio",
+          "turn_id": 7
+        },
+        {
+          "span_start": 419,
+          "span_end": 488,
+          "span_text": "Mr. Delrio, who jumped out of the same train, shook hands with Agatha",
+          "input_text": "Shook hands with Agatha",
+          "turn_id": 8
+        },
+        {
+          "span_start": 639,
+          "span_end": 694,
+          "span_text": "as she waved her thanks, while driving off in the cab. ",
+          "input_text": "Drove off in the cab.",
+          "turn_id": 9
+        },
+        {
+          "span_start": 790,
+          "span_end": 857,
+          "span_text": " I never saw anything more lovely than little St. Cyriac the martyr",
+          "input_text": "St. Cyriac",
+          "turn_id": 10
+        },
+        {
+          "span_start": 862,
+          "span_end": 909,
+          "span_text": "\"He is taken from Mrs. Henderson's little boy,\"",
+          "input_text": "Son",
+          "turn_id": 11
+        },
+        {
+          "span_start": 993,
+          "span_end": 1027,
+          "span_text": "he has sketched her for St. Juliet",
+          "input_text": "St. Juliet",
+          "turn_id": 12
+        },
+        {
+          "span_start": 1180,
+          "span_end": 1251,
+          "span_text": " I will tell you all the history,\" began Paula; but Agatha interposed. ",
+          "input_text": "Paula",
+          "turn_id": 13
+        }
+      ],
+      "2": [
+        {
+          "span_start": 89,
+          "span_end": 103,
+          "span_text": "E. B. BROWNING",
+          "input_text": "E. B. BROWNING",
+          "turn_id": 1
+        },
+        {
+          "span_start": 107,
+          "span_end": 113,
+          "span_text": "Agatha",
+          "input_text": "Agatha",
+          "turn_id": 2
+        },
+        {
+          "span_start": 141,
+          "span_end": 165,
+          "span_text": "Magdalen sent her sister",
+          "input_text": "Magdalen's sister",
+          "turn_id": 3
+        },
+        {
+          "span_start": 181,
+          "span_end": 192,
+          "span_text": "the station",
+          "input_text": "the station",
+          "turn_id": 4
+        },
+        {
+          "span_start": 265,
+          "span_end": 272,
+          "span_text": "Gillian",
+          "input_text": "Gillian",
+          "turn_id": 5
+        },
+        {
+          "span_start": 349,
+          "span_end": 364,
+          "span_text": "new golf ground",
+          "input_text": "new golf ground",
+          "turn_id": 6
+        },
+        {
+          "span_start": 419,
+          "span_end": 429,
+          "span_text": "Mr. Delrio",
+          "input_text": "Mr. Delrio",
+          "turn_id": 7
+        },
+        {
+          "span_start": 465,
+          "span_end": 476,
+          "span_text": "shook hands",
+          "input_text": "shook hands",
+          "turn_id": 8
+        },
+        {
+          "span_start": 670,
+          "span_end": 681,
+          "span_text": "driving off",
+          "input_text": "drove off",
+          "turn_id": 9
+        },
+        {
+          "span_start": 836,
+          "span_end": 857,
+          "span_text": "St. Cyriac the martyr",
+          "input_text": "St. Cyriac the martyr",
+          "turn_id": 10
+        },
+        {
+          "span_start": 897,
+          "span_end": 907,
+          "span_text": "little boy",
+          "input_text": "son",
+          "turn_id": 11
+        },
+        {
+          "span_start": 1017,
+          "span_end": 1028,
+          "span_text": "St. Juliet.",
+          "input_text": "St. Juliet.",
+          "turn_id": 12
+        },
+        {
+          "span_start": 1221,
+          "span_end": 1226,
+          "span_text": "Paula",
+          "input_text": "Paula",
+          "turn_id": 13
+        }
+      ]
+    },
+    "name": "data/gutenberg/txt/Charlotte Mary Yonge___Modern Broods.txt/CHAPTER IX_64b657b074bbcd9dd2e1e07d0e034c18c9b36356e737697a918b668"
+  }
+]

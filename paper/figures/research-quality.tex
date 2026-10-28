@@ -1,0 +1,23 @@
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[font=\scriptsize]
+\node at (1.37,.67) {12 answerable articles};\node at (4.20,.67) {12 unanswerable articles};
+\foreach \i in {0,...,23} {\pgfmathtruncatemacro{\n}{mod(\i,12)+1}\node[font=\tiny] at (\i*.235+.104,.40) {\n};}
+\node[anchor=east] at (-.12,.13) {Standard};
+\node[anchor=east] at (-.12,-.27) {Full};
+\node[anchor=east] at (-.12,-.67) {Skip4};
+\input{generated/quality-cells}
+\draw[black!45] (2.79,-.88)--(2.79,.31);
+\fill[passgreen] (-.55,-1.18) rectangle ++(.16,.16);\node[anchor=west] at (-.34,-1.1) {Frozen task pass};
+\fill[formatamber] (1.72,-1.18) rectangle ++(.16,.16);\node[anchor=west] at (1.93,-1.1) {Abstention + format failure};
+\fill[failgray] (.65,-1.58) rectangle ++(.16,.16);\node[anchor=west] at (.86,-1.5) {Other automatic failure; semantic review pending};
+\end{tikzpicture}
+\caption{Paired outcomes retain the case identities hidden by equal totals.
+Article order within each half follows the frozen cohort. Green is the original
+automatic pass; amber is a post-hoc diagnostic for unanswerable cases beginning
+with \texttt{unknown} but failing the contract. Gray does not mean proven factual
+error: it includes lexical and citation mismatch. Standard/full each pass 10/24;
+skip4 passes a different 10/24 and loses two standard-passing cases. No diagnostic
+color changes the frozen verdict.}
+\label{fig:research-quality}
+\end{figure}

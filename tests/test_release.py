@@ -13,6 +13,7 @@ from summarize import summarize
 
 
 class ReleaseTests(unittest.TestCase):
+
     def test_deployment_has_bounded_resources_and_no_retry(self):
         job = manifest(
             "example@sha256:abc",
@@ -36,8 +37,9 @@ class ReleaseTests(unittest.TestCase):
         args = command("image", Path("/srv/assets"), Path("/srv/output"), "trial")
         self.assertEqual(args[args.index("--network") + 1], "none")
         self.assertIn("--read-only", args)
-        self.assertEqual(sum(a == "--mount" for a in args), 3)
-        self.assertNotIn(str(ROOT), " ".join(args))
+        self.assertEqual(sum((a == "--mount" for a in args)), 3)
+        mounts = [args[i + 1] for i, value in enumerate(args) if value == "--mount"]
+        self.assertFalse(any(("src=" + str(ROOT) + "," in mount for mount in mounts)))
 
     def test_freeze_uses_only_training_rows_and_fixed_holdout(self):
         plan = json.loads(

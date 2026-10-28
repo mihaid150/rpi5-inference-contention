@@ -1,0 +1,111 @@
+{
+  "sources": {
+    "validation.json": "c5e1bb9a1f97da53a495e923829e8f716bfed6b6d14fbdd2d63abaefe3006136",
+    "prefill.json": "264ec3d803d6245de568929434c773005af00d3f403549f7aba259a4acf04206"
+  },
+  "baseline": [
+    {
+      "arm": "server-512-default",
+      "fixture": "dev-shards",
+      "n": 3,
+      "median": 70.24177931249142,
+      "minimum": 70.03862370364368,
+      "maximum": 70.45960350334644
+    },
+    {
+      "arm": "server-512-default",
+      "fixture": "eval-original-u3",
+      "n": 3,
+      "median": 164.04898924846202,
+      "minimum": 163.33717543352395,
+      "maximum": 164.09453083015978
+    },
+    {
+      "arm": "prototype-full",
+      "fixture": "dev-shards",
+      "n": 3,
+      "median": 72.94941492099315,
+      "minimum": 72.71371527947485,
+      "maximum": 76.07584218401462
+    },
+    {
+      "arm": "prototype-full",
+      "fixture": "eval-original-u3",
+      "n": 3,
+      "median": 167.10999172739685,
+      "minimum": 165.52653677668422,
+      "maximum": 172.87527653109282
+    },
+    {
+      "arm": "prototype-skip4",
+      "fixture": "dev-shards",
+      "n": 3,
+      "median": 74.33773727435619,
+      "minimum": 71.84859963413328,
+      "maximum": 74.81691194046289
+    },
+    {
+      "arm": "prototype-skip4",
+      "fixture": "eval-original-u3",
+      "n": 3,
+      "median": 169.60262409597635,
+      "minimum": 164.3331059338525,
+      "maximum": 171.31317029241472
+    }
+  ],
+  "quality": [
+    {
+      "arm": "server-512-default",
+      "f1": 0.49074074074074076,
+      "em": 0.4583333333333333,
+      "answerable_pass": 10,
+      "unanswerable_pass": 0
+    },
+    {
+      "arm": "prototype-full",
+      "f1": 0.49074074074074076,
+      "em": 0.4583333333333333,
+      "answerable_pass": 10,
+      "unanswerable_pass": 0
+    },
+    {
+      "arm": "prototype-skip4",
+      "f1": 0.6342592592592593,
+      "em": 0.5833333333333334,
+      "answerable_pass": 8,
+      "unanswerable_pass": 2
+    }
+  ],
+  "application": [
+    {
+      "policy": "standard-concurrent",
+      "current_answer_s": 76.18532675970346,
+      "publication_s": 14.664926461875439,
+      "fresh_answer_s": 189.84871364478022,
+      "valid": 2
+    },
+    {
+      "policy": "standard-deferred",
+      "current_answer_s": 70.72777968738228,
+      "publication_s": 76.02223173249513,
+      "fresh_answer_s": 188.95712901838124,
+      "valid": 2
+    },
+    {
+      "policy": "prototype-full",
+      "current_answer_s": 78.48528226837516,
+      "publication_s": 10.31117857247591,
+      "fresh_answer_s": 198.85304421652108,
+      "valid": 1
+    },
+    {
+      "policy": "prototype-skip4",
+      "current_answer_s": 76.55735342949629,
+      "publication_s": 9.917438129894435,
+      "fresh_answer_s": 189.55378556996584,
+      "valid": 2
+    }
+  ],
+  "application_design": "Three matched episode blocks, each with a different newly added article; no within-document replications",
+  "limitations": "Automatic frozen verdicts retained. Format diagnostics are post hoc and do not reclassify passes."
+}

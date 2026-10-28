@@ -1,0 +1,50 @@
+[
+  {
+    "path": "evidence/distributed/b2/d0-q3.npy.gz",
+    "raw_sha256": "b1aaa75e70e2a4c152542d97bb2caa66137fa793bd94ac35fae01a5aae626c30"
+  },
+  {
+    "path": "evidence/distributed/b2/d0-rebuild.npy.gz",
+    "raw_sha256": "6b3688e543bccfd946e4690093635071fbc8ec93b6658a7a128ee97831902580"
+  },
+  {
+    "path": "evidence/distributed/b2/d2-q4.npy.gz",
+    "raw_sha256": "9ee7cc126ac7cf994efafd4d21203c5804695dba0c00db765c171896226d7361"
+  },
+  {
+    "path": "evidence/distributed/b2/d1-q4.npy.gz",
+    "raw_sha256": "c7118ca23fd700117d094db51884d759282e8d636a060f70e7e1f3e76d7e28c5"
+  },
+  {
+    "path": "evidence/distributed/b2/d0-retained.npy.gz",
+    "raw_sha256": "ddffb66e9ae31f8d2a04474e0eb4b166b86fb15cf83a6d71de8e2ee09ae89c35"
+  },
+  {
+    "path": "evidence/distributed/b2/d1-rebuild.npy.gz",
+    "raw_sha256": "c7118ca23fd700117d094db51884d759282e8d636a060f70e7e1f3e76d7e28c5"
+  },
+  {
+    "path": "evidence/distributed/b2/d1-q3.npy.gz",
+    "raw_sha256": "dfb74778863a499c942955a189dee2d52a2e320d501b06ceb082d85745fbbdcd"
+  },
+  {
+    "path": "evidence/distributed/b2/d2-q3.npy.gz",
+    "raw_sha256": "c4fbac50b1c30ca15921ee6e10168f7f2c810c46b5c2ff50dfd748e7ca20c888"
+  },
+  {
+    "path": "evidence/distributed/b2/d2-rebuild.npy.gz",
+    "raw_sha256": "9ee7cc126ac7cf994efafd4d21203c5804695dba0c00db765c171896226d7361"
+  },
+  {
+    "path": "evidence/distributed/b2/d1-retained.npy.gz",
+    "raw_sha256": "16ee3a96baee7dd7d4c13d013efad7e4449dfad15052e095aaa5483e41365fad"
+  },
+  {
+    "path": "evidence/distributed/b2/d2-retained.npy.gz",
+    "raw_sha256": "9ce225f17ddd73bad24a14b2ac76221b80338eeac054cfd6908941c726c8e0ad"
+  },
+  {
+    "path": "evidence/distributed/b2/d0-q4.npy.gz",
+    "raw_sha256": "6b3688e543bccfd946e4690093635071fbc8ec93b6658a7a128ee97831902580"
+  }
+]

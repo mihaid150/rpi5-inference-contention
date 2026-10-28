@@ -1,0 +1,11 @@
+{
+  "namespace": "research",
+  "image": "shared-paper-evaluation:local",
+  "shard_manifest": "/absolute/path/to/workspace/shards/manifest.json",
+  "nodes": [
+    {"name": "pi-stage-0", "shard_dir": "/srv/paper-shards"},
+    {"name": "pi-stage-1", "shard_dir": "/srv/paper-shards"},
+    {"name": "pi-stage-2", "shard_dir": "/srv/paper-shards"},
+    {"name": "pi-stage-3", "shard_dir": "/srv/paper-shards"}
+  ]
+}
