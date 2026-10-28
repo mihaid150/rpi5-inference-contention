@@ -22,7 +22,9 @@ one optional real-shard integration test. The same tests and complete evidence
 audit pass in a clean Python 3.11/NumPy 2.2.6 container, with the repository
 read-only and networking disabled. The optional integration test also passes
 locally when compatible small Qwen shards are supplied, so all 38 pass in that
-configuration. Those shards are test prerequisites, not bundled model weights.
+configuration. Those shards are test prerequisites, not bundled model weights. A fresh
+single-branch clone also passes the complete evidence audit and all model-free
+tests, with a clean Git status.
 
 Tests cover inherited affinity, disjoint sets, independent arrivals, deferred
 publication, atomic index visibility, preservation of v1, sampler thread exit,
