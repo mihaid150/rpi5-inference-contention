@@ -49,12 +49,10 @@ restricted decode worker, private attention runtime, prefill worker and numerica
 reference worker. Cross-compilation requires no ARM emulation; execution of
 those ARM binaries has not been repeated on the study nodes for this release.
 
-## Manuscript and deployment
+## Artifact packaging and deployment
 
-The supplied main paper builds to twelve pages including references, with main
-content within ten pages. The separate artifact appendix builds to three pages.
-There are no unresolved references or overfull boxes. Official style files
-remain byte-identical to the active manuscript's original files.
+Manuscript sources, submission PDFs and conference style files are excluded.
+Recorded evidence and its audit inputs remain under `analysis/`.
 Docker/Kubernetes launch plans and the whole-paper schedule have non-executing
 preview paths. Building the worker artifact creates no research pods.
 

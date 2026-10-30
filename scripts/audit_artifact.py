@@ -42,10 +42,10 @@ def audit():
     )
     assert original["scripts/legacy/validation/run.py"] == vconfig["sources"]["run.py"]
     subprocess.run(
-        [sys.executable, str(ROOT / "paper/build_research_evidence.py")], check=True
+        [sys.executable, str(ROOT / "analysis/build_research_evidence.py")], check=True
     )
     subprocess.run(
-        [sys.executable, str(ROOT / "paper/build_budget_evidence.py")], check=True
+        [sys.executable, str(ROOT / "analysis/build_budget_evidence.py")], check=True
     )
     validation = json.loads((ROOT / "assets/legacy/validation.json").read_text())
     for key, name in [
@@ -160,7 +160,7 @@ def audit():
                 abs(statistics.mean(row[metric] for row in rows) - summary[mode][key])
                 < 1e-9
             )
-    memory_figure = (ROOT / "paper/figures/memory.tex").read_text()
+    memory_figure = (ROOT / "analysis/figures/memory.tex").read_text()
     for i, cycle in enumerate(cycles, 1):
         assert f"(Cycle {i},{cycle['pss_saving_bytes']/2**20:.2f})" in memory_figure
         assert f"(Cycle {i},{cycle['node_available_delta']/2**20:.2f})" in memory_figure
@@ -172,7 +172,7 @@ def audit():
     )
     assert [round(r["update"]["publish_total_s"], 2) for r in rows] == [3.64, 11.77]
     reports = {
-        name: json.loads((ROOT / f"paper/evidence/2026-10-27/{name}.json").read_text())
+        name: json.loads((ROOT / f"analysis/evidence/2026-10-27/{name}.json").read_text())
         for name in ("e1", "e2", "e3")
     }
     policies = {
@@ -205,7 +205,7 @@ def audit():
                     assert thread["cpus"] == expected
     assert sample_count == 37475
     original = json.loads((ROOT / "evidence/e2-original/report.json").read_text())
-    e2 = json.loads((ROOT / "paper/evidence/2026-10-27/e2.json").read_text())
+    e2 = json.loads((ROOT / "analysis/evidence/2026-10-27/e2.json").read_text())
     assert len(original["rows"]) == 17
     for saved, continued in zip(original["rows"], e2["rows"]):
         assert saved == {k: v for k, v in continued.items() if k != "artifact_run"}

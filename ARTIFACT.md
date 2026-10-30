@@ -53,8 +53,8 @@ subset of completed cells.
 The current main paper reports the Qwen14B study. Earlier TinyLlama A/P0/C
 protocols were narrative background in an older appendix, not data pooled into
 these results. They are not silently relabeled as reproducible Qwen experiments.
-The supplied appendix has been updated to describe the current artifact rather
-than point to unrelated local archives. The pre-release history is not bundled.
+The evidence guide at `docs/evidence.md` describes run accounting and
+measurement scope without distributing the manuscript or its submission appendix. The pre-release history is not bundled.
 
 ## Status
 

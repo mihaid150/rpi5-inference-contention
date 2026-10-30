@@ -76,7 +76,7 @@ python3 scripts/launch.py --assets workspace/assets --output results/e1-e3-attem
 | `configs/` | Frozen E1–E3 schedule and configurable four-node deployment example |
 | `protocols/` | Original experimental design records, retained as historical evidence |
 | `evidence/` | Required frozen results, compressed logits and affinity samples |
-| `paper/` | Active manuscript source, official style, frozen reports and figure/table audit scripts |
+| `analysis/` | Frozen reports, derived verification inputs and evidence audit scripts |
 | `docs/` | Configuration, infrastructure, deployment, execution and interpretation |
 
 The branch has an independent root commit. It excludes unrelated repository

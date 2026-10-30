@@ -4,8 +4,6 @@
 assets/calibration.txt -text whitespace=-blank-at-eol,-blank-at-eof
 assets/legacy/** -text
 assets/official/** -text
-paper/evidence/** -text
+analysis/evidence/** -text
 evidence/** -text
 protocols/*.md -text whitespace=-blank-at-eol,-blank-at-eof
-paper/*.sty -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
-paper/*.bst -text whitespace=-blank-at-eol,-blank-at-eof,-space-before-tab
